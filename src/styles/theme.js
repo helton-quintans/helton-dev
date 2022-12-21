@@ -18,6 +18,7 @@ export const theme = extendTheme({
   fonts: {
     heading: 'Roboto',
     body: 'Roboto',
+    // mono: "", fonts para código
   },
 
   styles: {
