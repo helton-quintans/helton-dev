@@ -29,8 +29,8 @@ import {
         <Drawer isOpen={isOpen} placement="left" onClose={onClose}>
           <DrawerOverlay>
             <DrawerContent bg="gray.800" p="4">
-              <DrawerCloseButton mt="6" />
-              <DrawerHeader>Navigation</DrawerHeader>
+              <DrawerCloseButton mt="10" />
+              <DrawerHeader mt="4">Navigation</DrawerHeader>
   
               <DrawerBody>
                 <SidebarNav />

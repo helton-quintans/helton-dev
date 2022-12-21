@@ -23,24 +23,24 @@ export function Header() {
   return (
     <Flex as="header" w="100%" maxWidth={1440} h="20" px="6" mt="4">
       {!isWideVersion && (
-          <>
-              <IconButton
-                aria-label="Open Navigation"
-                icon={<Icon as={RiMenuLine} />}
-                fontSize="24"
-                variant="unstyled"
-                onClick={onOpen}
-                pt="6"
-                ></IconButton>
-          </>
-        )}
+        <>
+          <IconButton
+            aria-label="Open Navigation"
+            icon={<Icon as={RiMenuLine} />}
+            fontSize="24"
+            variant="unstyled"
+            onClick={onOpen}
+            pt="6"
+          ></IconButton>
+        </>
+      )}
 
       <Logo />
 
-      {/* {isWideVersion && <Navbar /> } */}
+      {isWideVersion && <SearchBox />}
 
       <Flex align="center" ml="auto">
-        <NavBar />
+        {isWideVersion && <NavBar />}
 
         <Profile showProfileData={isWideVersion} />
       </Flex>
