@@ -1,4 +1,52 @@
-import { Flex, SimpleGrid, Box, Text, theme } from "@chakra-ui/react";
+import {
+  Flex,
+  Avatar,
+  Box,
+  Button,
+  Heading,
+  Text,
+  useColorModeValue,
+  Skeleton,
+  SkeletonCircle,
+  SkeletonText,
+  Stack,
+  AspectRatio,
+  Center,
+  SimpleGrid,
+  Grid,
+  GridItem,
+  StackItem,
+  Tooltip,
+  HStack,
+  Image,
+  Divider,
+  Spacer,
+} from "@chakra-ui/react";
+import {
+  SiCss3,
+  SiFigma,
+  SiHtml5,
+  SiJavascript,
+  SiJest,
+  SiPuppeteer,
+  SiSass,
+  SiStyledcomponents,
+  SiTailwindcss,
+  SiTypescript,
+  SiChakraui,
+  SiDocker,
+  SiNextdotjs,
+  SiLinux,
+  SiReact,
+  SiMongodb,
+  SiGit,
+  SiGithub,
+  SiGitlab,
+  SiNodedotjs,
+  SiCypress,
+} from "react-icons/si";
+import { FaGithub, FaNodeJs, FaReact } from "react-icons/fa";
+import { DiMysql } from "react-icons/di";
 
 import { Header } from "../components/Header";
 import { Sidebar } from "../components/Sidebar";
@@ -8,9 +56,7 @@ export default function Dashboard() {
     <Flex direction="column" h="100vh">
       <Header />
 
-      <Flex w="100%" my="6" maxWidth={1480} mx="auto" px="6">
-        <Sidebar />
-      </Flex>
+      <Sidebar />
     </Flex>
   );
 }

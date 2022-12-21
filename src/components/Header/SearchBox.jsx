@@ -24,7 +24,7 @@ export function SearchBox() {
         mr="4"
       />
 
-      <Icon as={RiSearchLine} fontSize="20" />
+      <Icon as={RiSearchLine} fontSize="20" color="gray.300" />
     </Flex>
   );
 }
