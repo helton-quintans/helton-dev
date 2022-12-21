@@ -1,6 +1,13 @@
+import { Flex, SimpleGrid, Box, Text, theme } from "@chakra-ui/react";
 
-export default function Home() {
+import { Header } from "../components/Header";
+
+export default function Dashboard() {
   return (
-   <h1>Hello</h1>
-  )
+    <Flex direction="column" h="100vh">
+      <Header />
+
+    
+    </Flex>
+  );
 }
