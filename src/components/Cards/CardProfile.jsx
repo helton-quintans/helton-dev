@@ -70,7 +70,7 @@ export function CardProfile() {
       <CardBody px="4">
         <Flex justify="center">
           <Avatar
-            size={["2xl", "xl"]}
+            size="2xl"
             name="Helton Quintãns"
             src="https://github.com/helton-quintans.png"
             alt="Autor do portfólio segurando um microfone"
