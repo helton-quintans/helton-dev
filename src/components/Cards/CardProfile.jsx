@@ -66,7 +66,7 @@ import { Profile } from "../Header/Profile";
 
 export function CardProfile() {
   return (
-    <Card maxW={["sm", "xl"]} variant="gost" >
+    <Card maxW={["sm", "xl"]} variant="gost">
       <CardBody px="4">
         <Flex justify="center">
           <Avatar
@@ -77,7 +77,12 @@ export function CardProfile() {
           >
             {" "}
             <AvatarBadge boxSize="0.7em" bg="transparent">
-              <Icon as={FaDev} fontSize={20} textColor="#FFE13B" color="gray.900" />
+              <Icon
+                as={FaDev}
+                fontSize={20}
+                textColor="#FFE13B"
+                color="gray.900"
+              />
             </AvatarBadge>
           </Avatar>
         </Flex>
@@ -99,10 +104,15 @@ export function CardProfile() {
             </span>
           </Heading>
 
-          <Divider />
+          <Skeleton
+            justify="flex-end"
+            startColor="pink.900"
+            endColor="#FFE13B"
+            height="2px"
+          />
 
           <Flex justify="center">
-            <Heading size={["4xl", "xl"]} fontWeight="700" textAlign="center">
+            <Heading size={["4xl", "2xl"]} fontWeight="700" textAlign="center">
               <Text as="span" textColor="gray.50">
                 I work with{" "}
                 <Text as="span" color="telegram.500">
@@ -111,24 +121,27 @@ export function CardProfile() {
                 Ecosystem.
               </Text>{" "}
               <Center color="telegram.500">
-                <SiReact fontSize={65} />
+                <SiReact fontSize={50} />
               </Center>
             </Heading>
           </Flex>
-          <Divider />
+          <Skeleton
+            justify="flex-end"
+            startColor="pink.900"
+            endColor="#FFE13B"
+            height="2px"
+          />
 
-          <Text px="4" textAlign="center" textColor="gray.200" >
+          <Text px="4" textAlign="center" textColor="gray.200">
             <Highlight
               query={["modern applications"]}
               styles={{ px: "2", py: "1", rounded: "full", bg: "#FFE13B" }}
-              
             >
               Specialize in UI/UX design and responsive web design, i develop
               and test high-end modern applications.
             </Highlight>
           </Text>
 
-          <Divider />
           <Center textColor="gray.200">
             <span role="img" aria-label="flagBrazil">
               from Brazil 🇧🇷
