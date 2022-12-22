@@ -230,7 +230,6 @@ export default function Home() {
               />
             </Box>
           </SimpleGrid>
-          <Divider />
           <Flex spacing="4">
             <Flex
               flex="1"
@@ -283,7 +282,7 @@ export default function Home() {
       </Flex>
       {/* //!END Content creator*/}
 
-      <Divider />
+      {/* <Divider /> */}
 
       {/* <Flex as="section" direction="column" h="100vh" justify="center">
         <Heading
