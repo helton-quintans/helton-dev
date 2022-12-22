@@ -82,8 +82,8 @@ export function CardProfile() {
           </Avatar>
         </Flex>
 
-        <Stack mt="6" spacing="3" justify="center" justifyContent="center">
-          <Heading size={["2xl", "lg"]} textAlign="center">
+        <Stack mt="6" spacing="3">
+          <Heading size={["2xl", "lg"]} textAlign="center" textColor="gray.100">
             {" "}
             Hi, my name is{" "}
             <Text
