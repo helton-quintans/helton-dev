@@ -76,8 +76,8 @@ export function CardProfile() {
             alt="Autor do portfólio segurando um microfone"
           >
             {" "}
-            <AvatarBadge boxSize="0.7em" bg="gray.900">
-              <Icon as={FaDev} fontSize={20} bg="gray.900"color="#FFE13B" />
+            <AvatarBadge boxSize="0.7em" bg="transparent">
+              <Icon as={FaDev} fontSize={20} textColor="#FFE13B" color="gray.900" />
             </AvatarBadge>
           </Avatar>
         </Flex>
