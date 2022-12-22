@@ -30,7 +30,7 @@ export function NavBar() {
        <NavLink icon={SiAboutdotme} color="gray.700" href="#">
         About
       </NavLink>
-      <NavLink icon={RiCodeBoxLine} color="gray.700" href="#">
+      <NavLink icon={RiCodeBoxLine} color="gray.700" href="#projects">
         Projects
       </NavLink>
       <NavLink icon={VscFilePdf} color="gray.700" href="#">

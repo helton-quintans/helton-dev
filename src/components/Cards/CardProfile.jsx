@@ -112,7 +112,7 @@ export function CardProfile() {
           />
 
           <Flex justify="center">
-            <Heading size={["3xl", "xl"]} fontWeight="700" textAlign="center">
+            <Heading size={["4xl", "xl"]} fontWeight="700" textAlign="center">
               <Text as="span" textColor="gray.50">
                 I work with{" "}
                 <Text as="span" color="telegram.500">

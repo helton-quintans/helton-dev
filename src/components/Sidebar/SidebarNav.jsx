@@ -1,4 +1,5 @@
-import { Stack, Divider } from "@chakra-ui/react";
+import { Stack, Divider, Box } from "@chakra-ui/react";
+import Link from "next/link";
 import {
   RiContactsLine,
   RiDashboardLine,
@@ -15,7 +16,10 @@ import { NavSection } from "./NavSection";
 export function SidebarNav() {
   return (
     <Stack spacing="12" my="8" align="flex-start">
-      <NavLink icon={RiCodeBoxLine} color="gray.700" href="/">
+      <Box>
+        <Link href="#projects">About</Link>
+      </Box>
+      <NavLink icon={RiCodeBoxLine} color="gray.700" href="#projects">
         Projects
       </NavLink>
       <NavLink icon={VscFilePdf} color="gray.700" href="#">
