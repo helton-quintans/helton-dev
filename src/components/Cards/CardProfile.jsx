@@ -66,11 +66,11 @@ import { Profile } from "../Header/Profile";
 
 export function CardProfile() {
   return (
-    <Card maxW={["sm", "xl"]} variant="gost">
+    <Card maxW={["sm", "lg"]} variant="gost">
       <CardBody px="4">
         <Flex justify="center">
           <Avatar
-            size="2xl"
+            size={["2xl", "xl"]}
             name="Helton Quintãns"
             src="https://github.com/helton-quintans.png"
             alt="Autor do portfólio segurando um microfone"
@@ -112,7 +112,7 @@ export function CardProfile() {
           />
 
           <Flex justify="center">
-            <Heading size={["4xl", "2xl"]} fontWeight="700" textAlign="center">
+            <Heading size={["3xl", "xl"]} fontWeight="700" textAlign="center">
               <Text as="span" textColor="gray.50">
                 I work with{" "}
                 <Text as="span" color="telegram.500">
@@ -149,7 +149,7 @@ export function CardProfile() {
           </Center>
         </Stack>
       </CardBody>
-      <CardFooter justify="center" p="1">
+      <CardFooter justify="center" p="0">
         <ButtonGroup spacing="8">
           <IconButton
             variant="outline"

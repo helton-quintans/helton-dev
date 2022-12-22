@@ -82,7 +82,7 @@ export default function Home() {
         </Flex>
       </Flex>
 
-      <Divider />
+      {/* <Divider /> */}
 
       {/* //!Content creator*/}
       <Flex as="section" h="100%" justify="center">
