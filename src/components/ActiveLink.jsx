@@ -4,7 +4,7 @@ import { cloneElement, ReactElement } from "react";
 
 export function ActiveLink({
   children,
-  shouldMatchHref = false,
+  shouldMatchHref = true,
   ...rest
 }) {
   const { asPath } = useRouter();

@@ -70,6 +70,7 @@ export function CardProfile() {
       <CardBody px="4">
         <Flex justify="center">
           <Avatar
+            id="avatarHome"
             size="2xl"
             name="Helton Quintãns"
             src="https://github.com/helton-quintans.png"

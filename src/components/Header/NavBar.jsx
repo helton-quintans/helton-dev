@@ -1,4 +1,5 @@
-import { HStack, Icon } from "@chakra-ui/react";
+import { HStack, Icon, Link } from "@chakra-ui/react";
+import NextLink from "next/link";
 import {
   RiDashboardLine,
   RiCodeBoxLine,
@@ -6,10 +7,7 @@ import {
   RiUserAddLine,
 } from "react-icons/ri";
 
-import {
-  SiAboutdotme
-} from "react-icons/si";
-
+import { SiAboutdotme } from "react-icons/si";
 
 import { VscFilePdf } from "react-icons/vsc";
 import { ImBlog } from "react-icons/im";
@@ -27,23 +25,24 @@ export function NavBar() {
       borderColor="gray.700"
       borderRightWidth={1}
     >
-       <NavLink icon={SiAboutdotme} color="gray.700" href="#">
+      {/* <NavLink icon={SiAboutdotme} color="gray.700" href="/">
+        About
+      </NavLink> */}
+      <NavLink icon={SiAboutdotme} color="gray.700" href="/">
         About
       </NavLink>
-      <NavLink icon={RiCodeBoxLine} color="gray.700" href="#projects">
+      {/* <NavLink icon={RiCodeBoxLine} color="gray.700" href="/#projects">
         Projects
-      </NavLink>
-      <NavLink icon={VscFilePdf} color="gray.700" href="#">
+      </NavLink> */}
+      <NavLink icon={VscFilePdf} color="gray.700" href="/resume">
         Resume
       </NavLink>
-      <NavLink icon={ImBlog} color="gray.700" href="#">
+      <NavLink icon={ImBlog} color="gray.700" href="/blog">
         Blog
       </NavLink>
 
-      SiAboutdotme
-
-      {/* <Icon as={RiNotificationLine} fontSize="20" color="gray.700" />
-      <Icon as={RiUserAddLine} fontSize="20" color="gray.700" /> */}
+      <Icon as={RiNotificationLine} fontSize="20" color="gray.700" />
+      <Icon as={RiUserAddLine} fontSize="20" color="gray.700" />
     </HStack>
   );
 }
