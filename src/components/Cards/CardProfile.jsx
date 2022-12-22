@@ -83,12 +83,12 @@ export function CardProfile() {
         </Flex>
 
         <Stack mt="6" spacing="3">
-          <Heading size={["2xl", "lg"]} textAlign="center" textColor="gray.100">
+          <Heading size={["2xl", "lg"]} textAlign="center" textColor="gray.200">
             {" "}
             Hi, my name is{" "}
             <Text
               as="span"
-              borderBottom="4px solid"
+              // borderBottom="4px solid"
               borderColor="telegram.500"
               color="#FFE13B"
             >
@@ -103,7 +103,7 @@ export function CardProfile() {
 
           <Flex justify="center">
             <Heading size={["4xl", "xl"]} fontWeight="700" textAlign="center">
-              <Text as="span">
+              <Text as="span" textColor="gray.50">
                 I work with{" "}
                 <Text as="span" color="telegram.500">
                   React
@@ -117,11 +117,11 @@ export function CardProfile() {
           </Flex>
           <Divider />
 
-          <Text px="4" textAlign="center">
+          <Text px="4" textAlign="center" textColor="gray.200" >
             <Highlight
               query={["modern applications"]}
               styles={{ px: "2", py: "1", rounded: "full", bg: "#FFE13B" }}
-              col
+              
             >
               Specialize in UI/UX design and responsive web design, i develop
               and test high-end modern applications.
@@ -129,14 +129,14 @@ export function CardProfile() {
           </Text>
 
           <Divider />
-          <Center>
+          <Center textColor="gray.200">
             <span role="img" aria-label="flagBrazil">
               from Brazil 🇧🇷
             </span>
           </Center>
         </Stack>
       </CardBody>
-      <CardFooter justify="center">
+      <CardFooter justify="center" p="1">
         <ButtonGroup spacing="8">
           <IconButton
             variant="outline"
