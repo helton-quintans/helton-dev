@@ -28,7 +28,7 @@ export function NavBar() {
       {/* <NavLink icon={SiAboutdotme} color="gray.700" href="/">
         About
       </NavLink> */}
-      <NavLink icon={SiAboutdotme} color="gray.700" href="/">
+      <NavLink icon={SiAboutdotme} color="gray.700" href="/#avatar">
         About
       </NavLink>
       {/* <NavLink icon={RiCodeBoxLine} color="gray.700" href="/#projects">

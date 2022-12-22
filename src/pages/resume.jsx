@@ -24,6 +24,7 @@ import { SlGraduation } from "react-icons/sl";
 import { Header } from "../components/Header";
 
 import { MdOutlineFileDownload } from "react-icons/md";
+import Footer from "../components/Footer";
 
 const ResumeSection = memo(({ title, children }) => {
   return (
@@ -344,6 +345,8 @@ const ResumeSection = memo(({ title, children }) => {
           </CardBody>
         </Card>
       </Center>
+
+      <Footer />
     </>
   );
 });

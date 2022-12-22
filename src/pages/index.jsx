@@ -68,6 +68,7 @@ import { DiMysql } from "react-icons/di";
 import { Header } from "../components/Header";
 import { Sidebar } from "../components/Sidebar";
 import { CardProfile } from "../components/Cards/CardProfile";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -87,7 +88,7 @@ export default function Home() {
         <Heading
           as="h1"
           id="projects"
-          // mt="10"
+          mt="10"
           textAlign="center"
           borderBottom="4px solid"
           borderColor="#FFE13B"
@@ -99,7 +100,7 @@ export default function Home() {
         </Text>
       </Flex>
 
-      <SimpleGrid minChildWidth="320px" gap={2}>
+      <SimpleGrid minChildWidth="320px" mt="10" gap={2}>
         <Box
           p="4"
           borderRadius="8"
@@ -559,7 +560,7 @@ export default function Home() {
         </Text>
       </Flex>
 
-      <SimpleGrid as="section" gap={6} mt="16" px="6" minChildWidth="320px">
+      <SimpleGrid as="section" gap={6} mt="20" px="6" minChildWidth="320px">
         <>
           <Box
             boxShadow="dark-lg"
@@ -1152,11 +1153,11 @@ export default function Home() {
 
       {/* //!Content creator*/}
       <Flex as="section" h="100vh" justify="center">
-        <Stack px="4" spacing="4">
+        <Stack px="4" spacing="">
           <Heading
             as="h1"
             id="projects"
-            mt="10"
+            mt="16"
             textAlign="center"
             borderBottom="4px solid"
             borderColor="#FFE13B"
@@ -1164,14 +1165,12 @@ export default function Home() {
             Content Creation
             {/* <span>💛</span> */}
           </Heading>{" "}
-          <Text textAlign="center" py="4" color="gray.200">
-            <Highlight
-              query={["videos", "fundamental programming concepts"]}
-              styles={{ px: "2", py: "1", rounded: "full", bg: "#FFE13B" }}
-            >
+          <Text textAlign="center" color="gray.200">
+            <Text>
               I make videos to teach people how to rebuild and redefine
               fundamental programming concepts on Youtube
-            </Highlight>{" "}
+            </Text>
+
             <IconButton
               variant="filled"
               color="#F5423E"
@@ -1187,6 +1186,7 @@ export default function Home() {
             align="center"
             p="2"
             justifyItems="center"
+            mt="4"
           >
             <AspectRatio
               justifyContent="center"
@@ -1274,12 +1274,12 @@ export default function Home() {
           </Flex> */}
           {/* //!END Botões de interação */}
           <Divider />
-        
         </Stack>
       </Flex>
       {/* //!END Content creator*/}
 
-      {/* <Divider /> */}
+      <Divider />
+      <Footer />
     </>
   );
 }

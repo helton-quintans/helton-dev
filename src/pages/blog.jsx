@@ -26,6 +26,7 @@ import { SlGraduation } from "react-icons/sl";
 import { Header } from "../components/Header";
 
 import { MdOutlineFileDownload } from "react-icons/md";
+import Footer from "../components/Footer";
 
 export default function Blog() {
   return (
@@ -47,9 +48,11 @@ export default function Blog() {
           coming soon
         </Text>
       </Flex>
-      <Center size="sm" mt="18">
-        <Image maxW="350px" src="/svg/construction.svg" />
+      <Center size="sm" mt="8">
+        <Image maxW="350px" maxH="190px" src="/svg/construction.svg" />
       </Center>
+
+      <Footer />
     </>
   );
 }

@@ -16,16 +16,16 @@ import { NavSection } from "./NavSection";
 export function SidebarNav() {
   return (
     <Stack spacing="12" my="8" align="flex-start">
-      <Box>
-        <Link href="#projects">About</Link>
-      </Box>
-      <NavLink icon={RiCodeBoxLine} color="gray.700" href="#projects">
-        Projects
+      <NavLink icon={RiCodeBoxLine} color="gray.700" href="/#avatar">
+        About
       </NavLink>
-      <NavLink icon={VscFilePdf} color="gray.700" href="#">
+      {/* <NavLink icon={RiCodeBoxLine} color="gray.700" href="/#projects">
+        Projects
+      </NavLink> */}
+      <NavLink icon={VscFilePdf} color="gray.700" href="/resume">
         Resume
       </NavLink>
-      <NavLink icon={ImBlog} color="gray.700" href="#">
+      <NavLink icon={ImBlog} color="gray.700" href="/blog">
         Blog
       </NavLink>
     </Stack>
