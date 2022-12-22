@@ -5,6 +5,12 @@ import {
   RiNotificationLine,
   RiUserAddLine,
 } from "react-icons/ri";
+
+import {
+  SiAboutdotme
+} from "react-icons/si";
+
+
 import { VscFilePdf } from "react-icons/vsc";
 import { ImBlog } from "react-icons/im";
 
@@ -21,7 +27,10 @@ export function NavBar() {
       borderColor="gray.700"
       borderRightWidth={1}
     >
-      <NavLink icon={RiCodeBoxLine} color="gray.700" href="/">
+       <NavLink icon={SiAboutdotme} color="gray.700" href="#">
+        About
+      </NavLink>
+      <NavLink icon={RiCodeBoxLine} color="gray.700" href="#">
         Projects
       </NavLink>
       <NavLink icon={VscFilePdf} color="gray.700" href="#">
@@ -30,6 +39,8 @@ export function NavBar() {
       <NavLink icon={ImBlog} color="gray.700" href="#">
         Blog
       </NavLink>
+
+      SiAboutdotme
 
       {/* <Icon as={RiNotificationLine} fontSize="20" color="gray.700" />
       <Icon as={RiUserAddLine} fontSize="20" color="gray.700" /> */}

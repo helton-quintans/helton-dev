@@ -21,6 +21,10 @@ import {
   Image,
   Divider,
   Spacer,
+  Card,
+  CardBody,
+  ButtonGroup,
+  CardFooter,
 } from "@chakra-ui/react";
 import {
   SiCss3,
@@ -50,13 +54,18 @@ import { DiMysql } from "react-icons/di";
 
 import { Header } from "../components/Header";
 import { Sidebar } from "../components/Sidebar";
+import { CardProfile } from "../components/Cards/CardProfile";
 
-export default function Dashboard() {
+export default function Home() {
   return (
     <Flex direction="column" h="100vh">
       <Header />
 
       <Sidebar />
+
+      <Flex as="section" justify="center">
+        <CardProfile/>
+      </Flex>
     </Flex>
   );
 }

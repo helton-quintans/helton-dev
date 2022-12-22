@@ -10,7 +10,7 @@ export function Logo() {
       align="center"
     >
       helton
-      <Text as="span" color="yellow.300" ml="1">
+      <Text as="span" color="#FFE13B" ml="1">
         .
       </Text>
       dev
