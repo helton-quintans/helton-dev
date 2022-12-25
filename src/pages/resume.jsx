@@ -240,7 +240,7 @@ const ResumeSection = memo(({ title, children }) => {
                     segmento de alimentação e delivery.
                   </Text>
 
-                  <Text textColor="gray.100" fontWeight="bold">
+                  <Text textColor="telegram.500" fontWeight="bold">
                     Desenvolvedor Front-end freelancer
                   </Text>
                   <List spacing={3}>
@@ -269,9 +269,9 @@ const ResumeSection = memo(({ title, children }) => {
                     projetos.
                   </Text>
 
-                  <Text fontWeight="bold">Assistente Administrativo</Text>
-                  <List spacing={3}>
-                    <ListItem>
+                  <Text textColor="telegram.500" fontWeight="bold">Assistente Administrativo</Text>
+                  <List textColor="gray.100" spacing={3}>
+                    <ListItem >
                       <ListIcon as={MdCheckCircle} color="#FFE13B" />
                       Cobertura no atendimento a civis e militares para a
                       garantia dos direitos assistenciais como Assistência,
@@ -305,7 +305,7 @@ const ResumeSection = memo(({ title, children }) => {
                   INFORMAÇÕES COMPLEMENTARES | CURSOS E CONGRESSOS
                 </Heading>
 
-                <List spacing={3}>
+                <List textColor="gray.100" spacing={3}>
                   <ListItem>
                     <ListIcon as={SlGraduation} color="#FFE13B" />
                     2021 | Curso Ignite - RocketSeat
