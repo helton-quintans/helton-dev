@@ -188,7 +188,9 @@ const ResumeSection = memo(({ title, children }) => {
                     projetos.
                   </Text>
 
-                  <Text textColor="telegram.500" fontWeight="bold">Analista de Testes e Qualidade</Text>
+                  <Text textColor="telegram.500" fontWeight="bold">
+                    Analista de Testes e Qualidade
+                  </Text>
                   <List spacing={3}>
                     <ListItem>
                       <ListIcon as={MdCheckCircle} color="#FFE13B" />
@@ -258,20 +260,21 @@ const ResumeSection = memo(({ title, children }) => {
                   </List>
                 </Text>
 
-                <Text pt="2" fontSize="sm">
+                <Box pt="2" fontSize="sm">
                   <Text textColor="telegram.500">
                     FORÇA AÉREA BRASILEIRA | 2011 a 2017
                   </Text>
                   <Text textColor="gray.100" as="i">
                     {" "}
-                    Empresa Privada / A WATI é uma empresa de prestação de
-                    serviços de TI e especializada na terceirização e gestão de
-                    projetos.
+                    Empresa Pública / A FAB atua no ramo aéreo das Forças
+                    Armadas do Brasil.
                   </Text>
 
-                  <Text textColor="telegram.500" fontWeight="bold">Assistente Administrativo</Text>
-                  <List textColor="gray.100" spacing={3}>
-                    <ListItem >
+                  <Text textColor="telegram.500" fontWeight="bold">
+                    Assistente Administrativo
+                  </Text>
+                  <List spacing={3}>
+                    <ListItem textColor="gray.100">
                       <ListIcon as={MdCheckCircle} color="#FFE13B" />
                       Cobertura no atendimento a civis e militares para a
                       garantia dos direitos assistenciais como Assistência,
@@ -279,18 +282,18 @@ const ResumeSection = memo(({ title, children }) => {
                       Auxílio natalidade, Auxílio Transporte e Declaração de
                       Beneficiários.
                     </ListItem>
-                    <ListItem>
+                    <ListItem textColor="gray.100">
                       <ListIcon as={MdCheckCircle} color="#FFE13B" />
                       Publicação dos processos e seus desfechos em boletim
                       oficial da FAB e no Diário Oficial da União.
                     </ListItem>
-                    <ListItem>
+                    <ListItem textColor="gray.100">
                       <ListIcon as={MdCheckCircle} color="#FFE13B" />
                       Cobertura da Prestação de Contas e Auditoria dos
                       benefícios concedidos pela União.
                     </ListItem>
                   </List>
-                </Text>
+                </Box>
 
                 <Divider py="2" />
 
@@ -306,40 +309,40 @@ const ResumeSection = memo(({ title, children }) => {
                 </Heading>
 
                 <List textColor="gray.100" spacing={3}>
-                  <ListItem>
+                  <ListItem textColor="gray.100">
                     <ListIcon as={SlGraduation} color="#FFE13B" />
                     2021 | Curso Ignite - RocketSeat
                   </ListItem>
-                  <ListItem>
+                  <ListItem textColor="gray.100">
                     <ListIcon as={SlGraduation} color="#FFE13B" />
                     2020 | Fundamentos de Arquitetura de Sistemas – Digital
                     Innovation One.
                   </ListItem>
-                  <ListItem>
+                  <ListItem textColor="gray.100">
                     <ListIcon as={SlGraduation} color="#FFE13B" />
                     2019 | Introdução ao ReactJS - Digital Innovation One.
                   </ListItem>
-                  <ListItem>
+                  <ListItem textColor="gray.100">
                     <ListIcon as={SlGraduation} color="#FFE13B" />
                     Introdução ao NodeJS com Express - Digital Innovation One.
                   </ListItem>
-                  <ListItem>
+                  <ListItem textColor="gray.100">
                     <ListIcon as={SlGraduation} color="#FFE13B" />
                     2019 | Introdução ao Git e GitHub - Digital Innovation One.
                   </ListItem>
-                  <ListItem>
+                  <ListItem textColor="gray.100">
                     <ListIcon as={SlGraduation} color="#FFE13B" />
                     Automação de Testes com Robot Framework básico – Udemy.
                   </ListItem>
-                  <ListItem>
+                  <ListItem textColor="gray.100">
                     <ListIcon as={SlGraduation} color="#FFE13B" />
                     2019 | Javascript - Web moderna - Cod3r.
                   </ListItem>
-                  <ListItem>
+                  <ListItem textColor="gray.100">
                     <ListIcon as={SlGraduation} color="#FFE13B" />
                     2019 | TSPI - Júlio de Lima.
                   </ListItem>
-                  <ListItem>
+                  <ListItem textColor="gray.100">
                     <ListIcon as={SlGraduation} color="#FFE13B" />
                     2018 | Lógica de Programação – Fuctura Tecnologia.
                   </ListItem>
