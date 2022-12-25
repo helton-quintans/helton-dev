@@ -66,11 +66,10 @@ import { Profile } from "../Header/Profile";
 
 export function CardProfile() {
   return (
-    <Card maxW={["sm", "lg"]} variant="gost">
+    <Card maxW={["sm", "lg"]} mt="24"variant="gost">
       <CardBody px="4">
         <Flex justify="center">
           <Avatar
-            id="avatarHome"
             size="2xl"
             name="Helton Quintãns"
             src="https://github.com/helton-quintans.png"

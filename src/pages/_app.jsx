@@ -10,12 +10,12 @@ const queryClient = new QueryClient();
 function MyApp({ Component, pageProps }) {
   return (
     <ChakraProvider theme={theme}>
-      <QueryClientProvider client={queryClient}>
-        <SidebarDrawerProvider>
+      <SidebarDrawerProvider>
+        <QueryClientProvider client={queryClient}>
           <Component {...pageProps} />
-        </SidebarDrawerProvider>
-        <ReactQueryDevtools />
-      </QueryClientProvider>
+          <ReactQueryDevtools />
+        </QueryClientProvider>
+      </SidebarDrawerProvider>
     </ChakraProvider>
   );
 }

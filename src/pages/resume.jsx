@@ -25,12 +25,14 @@ import { Header } from "../components/Header";
 
 import { MdOutlineFileDownload } from "react-icons/md";
 import Footer from "../components/Footer";
+import { Sidebar } from "../components/Sidebar";
 
 const ResumeSection = memo(({ title, children }) => {
   return (
     <>
       <Header />
-      <Center py="4">
+      <Sidebar />
+      <Center py="4" pt="24">
         <Link target="_blank" download href="/cv.pdf">
           <IconButton
             variant="outline"

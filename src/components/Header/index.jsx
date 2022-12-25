@@ -21,7 +21,17 @@ export function Header() {
   });
 
   return (
-    <Flex as="header" w="100%" maxWidth={1440} h="20" px="6" mt="4">
+    <Flex
+      as="header"
+      bgColor="gray.900"
+      position="fixed"
+      zIndex="1"
+      w="100%"
+      maxWidth={1440}
+      h="20"
+      px="6"
+      mt="0"
+    >
       {!isWideVersion && (
         <>
           <IconButton

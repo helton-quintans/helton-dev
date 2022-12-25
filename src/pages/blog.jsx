@@ -27,12 +27,14 @@ import { Header } from "../components/Header";
 
 import { MdOutlineFileDownload } from "react-icons/md";
 import Footer from "../components/Footer";
+import { Sidebar } from "../components/Sidebar";
 
 export default function Blog() {
   return (
     <>
       <Header />
-      <Flex as="section" direction="column" h="100%" justify="center">
+      <Sidebar />
+      <Flex as="section" direction="column" h="100%" pt="24" justify="center">
         <Heading
           as="h1"
           id="projects"

@@ -19,9 +19,7 @@ export function SidebarNav() {
       <NavLink icon={RiCodeBoxLine} color="gray.700" href="/#avatar">
         About
       </NavLink>
-      {/* <NavLink icon={RiCodeBoxLine} color="gray.700" href="/#projects">
-        Projects
-      </NavLink> */}
+
       <NavLink icon={VscFilePdf} color="gray.700" href="/resume">
         Resume
       </NavLink>

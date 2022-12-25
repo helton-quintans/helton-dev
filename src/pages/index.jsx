@@ -30,6 +30,7 @@ import {
   IconButton,
   Highlight,
   Icon,
+  Link,
 } from "@chakra-ui/react";
 import {
   SiCss3,
@@ -53,6 +54,7 @@ import {
   SiGitlab,
   SiNodedotjs,
   SiCypress,
+  SiWhatsapp,
 } from "react-icons/si";
 import {
   FaGithub,
@@ -64,6 +66,7 @@ import {
 import { BiLike, BiChat, BiShare } from "react-icons/bi";
 import { IoMdMicrophone } from "react-icons/io";
 import { DiMysql } from "react-icons/di";
+import NextLink from "next/link";
 
 import { Header } from "../components/Header";
 import { Sidebar } from "../components/Sidebar";
@@ -74,9 +77,9 @@ export default function Home() {
   return (
     <>
       {/* //!Profile Section */}
-      <Flex direction="column" h="100vh">
-        <Header />
+      <Header />
 
+      <Flex direction="column" h="100vh">
         <Sidebar />
 
         <Flex as="section" justify="center" maxH="100%">
@@ -147,6 +150,7 @@ export default function Home() {
                 variant="outline"
                 size="md"
                 fontSize="20px"
+                href="https://github.com/helton-quintans/portfolio/blob/main/style.css"
               >
                 See more
               </Button>
@@ -1280,6 +1284,14 @@ export default function Home() {
 
       <Divider />
       <Footer />
+      <IconButton
+        zIndex="2"
+        ml="95%"
+        mt="95%"
+        position="fixed"
+        aria-label="WhatsApp"
+        icon={<SiWhatsapp />}
+      />
     </>
   );
 }

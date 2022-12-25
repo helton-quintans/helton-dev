@@ -25,10 +25,8 @@ export function NavBar() {
       borderColor="gray.700"
       borderRightWidth={1}
     >
-      {/* <NavLink icon={SiAboutdotme} color="gray.700" href="/">
-        About
-      </NavLink> */}
-      <NavLink icon={SiAboutdotme} color="gray.700" href="/#avatar">
+      
+      <NavLink icon={SiAboutdotme} color="gray.700" href="/#">
         About
       </NavLink>
       {/* <NavLink icon={RiCodeBoxLine} color="gray.700" href="/#projects">
