@@ -49,7 +49,7 @@ const ResumeSection = memo(({ title, children }) => {
             <Heading size="md" color="#FFE13B">
               Helton Quintans da Silva
             </Heading>
-            <Text>Brasileiro, 30 anos</Text>
+            <Text textColor="gray.100">Brasileiro, 30 anos</Text>
           </CardHeader>
 
           <CardBody>
@@ -60,10 +60,11 @@ const ResumeSection = memo(({ title, children }) => {
                   textTransform="uppercase"
                   borderBottom="2px solid"
                   borderBottomColor="#FFE13B"
+                  textColor="gray.50"
                 >
                   RESUMO DE QUALIFICAÇÃO
                 </Heading>
-                <Text pt="2" fontSize="sm">
+                <Text textColor="gray.100" pt="2" fontSize="sm">
                   Atuação no segmento da Tecnologia da Informação, certificado
                   pelo SFPC® - Scrum Foundations Professional Certificate com
                   experiência desenvolvendo e testando aplicações no ecossistema
@@ -81,10 +82,11 @@ const ResumeSection = memo(({ title, children }) => {
                   textTransform="uppercase"
                   borderBottom="2px solid"
                   borderBottomColor="#FFE13B"
+                  textColor="gray.50"
                 >
                   FORMAÇÃO ACADÊMICA
                 </Heading>
-                <Text pt="2" fontSize="sm">
+                <Text textColor="gray.100" pt="2" fontSize="sm">
                   <Text>
                     Graduando em Análise e desenvolvimento de sistemas.
                   </Text>
@@ -102,7 +104,7 @@ const ResumeSection = memo(({ title, children }) => {
 
                   <Text fontWeight="bold" color="telegram.500">
                     {" "}
-                    Conhecimentos Específicos::
+                    Conhecimentos Específicos:
                   </Text>
 
                   <Text>
@@ -122,10 +124,11 @@ const ResumeSection = memo(({ title, children }) => {
                   textTransform="uppercase"
                   borderBottom="2px solid"
                   borderBottomColor="#FFE13B"
+                  textColor="gray.50"
                 >
                   EXPERIÊNCIA PROFISSIONAL
                 </Heading>
-                <Text pt="2" fontSize="sm">
+                <Text textColor="gray.100" pt="2" fontSize="sm">
                   <Text textColor="telegram.500">
                     AEOLUS CLOUD | Recife | PE 2022 a Atual
                   </Text>
@@ -174,7 +177,7 @@ const ResumeSection = memo(({ title, children }) => {
                   </List>
                 </Text>
 
-                <Text pt="2" fontSize="sm">
+                <Text textColor="gray.100" pt="2" fontSize="sm">
                   <Text textColor="telegram.500">
                     WATI | São Paulo | SP 2020 a 2021
                   </Text>
@@ -185,7 +188,7 @@ const ResumeSection = memo(({ title, children }) => {
                     projetos.
                   </Text>
 
-                  <Text fontWeight="bold">Analista de Testes e Qualidade</Text>
+                  <Text textColor="telegram.500" fontWeight="bold">Analista de Testes e Qualidade</Text>
                   <List spacing={3}>
                     <ListItem>
                       <ListIcon as={MdCheckCircle} color="#FFE13B" />
@@ -229,7 +232,7 @@ const ResumeSection = memo(({ title, children }) => {
                   </List>
                 </Text>
 
-                <Text pt="2" fontSize="sm">
+                <Text textColor="gray.100" pt="2" fontSize="sm">
                   <Text textColor="telegram.500">YANAK | PE | 2019 a 2020</Text>
                   <Text as="i">
                     {" "}
@@ -237,7 +240,7 @@ const ResumeSection = memo(({ title, children }) => {
                     segmento de alimentação e delivery.
                   </Text>
 
-                  <Text fontWeight="bold">
+                  <Text textColor="gray.100" fontWeight="bold">
                     Desenvolvedor Front-end freelancer
                   </Text>
                   <List spacing={3}>
@@ -259,7 +262,7 @@ const ResumeSection = memo(({ title, children }) => {
                   <Text textColor="telegram.500">
                     FORÇA AÉREA BRASILEIRA | 2011 a 2017
                   </Text>
-                  <Text as="i">
+                  <Text textColor="gray.100" as="i">
                     {" "}
                     Empresa Privada / A WATI é uma empresa de prestação de
                     serviços de TI e especializada na terceirização e gestão de
@@ -297,6 +300,7 @@ const ResumeSection = memo(({ title, children }) => {
                   borderBottom="2px solid"
                   borderBottomColor="#FFE13B"
                   my="4"
+                  textColor="gray.50"
                 >
                   INFORMAÇÕES COMPLEMENTARES | CURSOS E CONGRESSOS
                 </Heading>
