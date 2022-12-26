@@ -63,7 +63,7 @@ import { FaGithub, FaNodeJs, FaReact } from "react-icons/fa";
 import { DiMysql } from "react-icons/di";
 
 import { Profile } from "../Header/Profile";
-import { Router, useRouter } from "next/router";
+import { useRouter } from "next/router";
 
 export function CardProfile() {
   const router = useRouter();

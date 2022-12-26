@@ -67,6 +67,7 @@ import { BiLike, BiChat, BiShare } from "react-icons/bi";
 import { IoMdMicrophone } from "react-icons/io";
 import { DiMysql } from "react-icons/di";
 import NextLink from "next/link";
+import { useRouter } from "next/router";
 
 import { Header } from "../components/Header";
 import { Sidebar } from "../components/Sidebar";
@@ -74,6 +75,7 @@ import { CardProfile } from "../components/Cards/CardProfile";
 import Footer from "../components/Footer";
 
 export default function Home() {
+  const router = useRouter();
   return (
     <>
       {/* //!Profile Section */}
@@ -150,7 +152,9 @@ export default function Home() {
                 variant="outline"
                 size="md"
                 fontSize="20px"
-                href="https://github.com/helton-quintans/portfolio/blob/main/style.css"
+                onClick={() =>
+                  router.push("https://dashgo-henna.vercel.app/dashboard")
+                }
               >
                 See more
               </Button>
@@ -211,6 +215,9 @@ export default function Home() {
                 variant="outline"
                 size="md"
                 fontSize="20px"
+                onClick={() =>
+                  router.push("https://github.com/helton-quintans/yan-bot")
+                }
               >
                 See more
               </Button>
@@ -266,6 +273,9 @@ export default function Home() {
                 variant="outline"
                 size="md"
                 fontSize="20px"
+                onClick={() =>
+                  router.push("https://github.com/helton-quintans/hq-news")
+                }
               >
                 See more
               </Button>
@@ -322,6 +332,7 @@ export default function Home() {
                 variant="outline"
                 size="md"
                 fontSize="20px"
+                onClick={() => router.push("https://feed-omega.vercel.app/")}
               >
                 See more
               </Button>
@@ -374,6 +385,9 @@ export default function Home() {
                 variant="outline"
                 size="md"
                 fontSize="20px"
+                onClick={() =>
+                  router.push("https://github.com/helton-quintans/watch.me")
+                }
               >
                 See more
               </Button>
@@ -429,6 +443,9 @@ export default function Home() {
                 variant="outline"
                 size="md"
                 fontSize="20px"
+                onClick={() =>
+                  router.push("https://github.com/helton-quintans/b7delivery")
+                }
               >
                 See more
               </Button>
@@ -486,6 +503,7 @@ export default function Home() {
                 variant="outline"
                 size="md"
                 fontSize="20px"
+                onClick={() => router.push("https://rocketshoes.netlify.app/")}
               >
                 See more
               </Button>
@@ -538,6 +556,9 @@ export default function Home() {
                 variant="outline"
                 size="md"
                 fontSize="20px"
+                onClick={() =>
+                  router.push("https://competent-bardeen-548773.netlify.app/")
+                }
               >
                 See more
               </Button>
