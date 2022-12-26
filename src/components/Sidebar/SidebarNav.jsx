@@ -16,7 +16,7 @@ import { NavSection } from "./NavSection";
 export function SidebarNav() {
   return (
     <Stack spacing="12" my="8" align="flex-start">
-      <NavLink icon={RiCodeBoxLine} color="gray.700" href="/#avatar">
+      <NavLink icon={RiCodeBoxLine} color="gray.700" href="/#">
         About
       </NavLink>
 

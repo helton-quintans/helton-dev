@@ -63,10 +63,12 @@ import { FaGithub, FaNodeJs, FaReact } from "react-icons/fa";
 import { DiMysql } from "react-icons/di";
 
 import { Profile } from "../Header/Profile";
+import { Router, useRouter } from "next/router";
 
 export function CardProfile() {
+  const router = useRouter();
   return (
-    <Card maxW={["sm", "lg"]} mt="24"variant="gost">
+    <Card maxW={["sm", "lg"]} mt="24" variant="gost">
       <CardBody px="4">
         <Flex justify="center">
           <Avatar
@@ -156,24 +158,36 @@ export function CardProfile() {
             color="#FFE13B"
             size="lg"
             icon={<SiGithub />}
+            onClick={() => router.push("https://github.com/helton-quintans")}
           />
           <IconButton
             variant="outline"
             color="#FFE13B"
             size="lg"
             icon={<SiLinkedin />}
+            onClick={() =>
+              router.push("https://www.linkedin.com/in/heltonquintans/")
+            }
           />
           <IconButton
             variant="outline"
             color="#FFE13B"
             size="lg"
             icon={<SiYoutube />}
+            onClick={() =>
+              router.push(
+                "https://www.youtube.com/channel/UCWe9h44jq9KiHYFmJTvgchQ"
+              )
+            }
           />
           <IconButton
             variant="outline"
             color="#FFE13B"
             size="lg"
             icon={<SiInstagram />}
+            onClick={() =>
+              router.push("https://www.instagram.com/helton_quintans/")
+            }
           />
         </ButtonGroup>
       </CardFooter>
