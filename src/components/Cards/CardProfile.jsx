@@ -90,7 +90,7 @@ export function CardProfile() {
         </Flex>
 
         <Stack mt="6" spacing="3">
-          <Heading size={["2xl", "lg"]} textAlign="center" textColor="gray.200">
+          <Heading size={["2xl", "lg"]} textAlign="center" textColor="gray.50">
             {" "}
             Hi, my name is{" "}
             <Text
