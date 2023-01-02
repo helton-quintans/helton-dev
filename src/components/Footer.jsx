@@ -35,7 +35,7 @@ export default function Footer() {
         <Logo />
       </Flex>
       <Text pt={6} fontSize={"sm"} textAlign={"center"}>
-        Helton Quintãns | All rights reserved | © 2022
+        Helton Quintãns | All rights reserved | © 2023
       </Text>
     </Box>
   );
