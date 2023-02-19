@@ -19,7 +19,7 @@ import {
   StackItem,
   Tooltip,
   HStack,
-  Image,
+  Image as ChakraImage,
   Divider,
   Spacer,
   Card,
@@ -68,6 +68,7 @@ import { IoMdMicrophone } from "react-icons/io";
 import { DiMysql } from "react-icons/di";
 import NextLink from "next/link";
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 import { Header } from "../components/Header";
 import { Sidebar } from "../components/Sidebar";
@@ -130,7 +131,10 @@ export default function Home() {
             >
               Dashgo
             </Text>
-            <Image src="/images/dashgo.png" />
+
+            <Box textAlign="center">
+              <Image src="/images/dashgo.png" width={800} height={600} style={{ margin: "0 auto" }}/>
+            </Box>
 
             <Box
               size="md"
@@ -188,7 +192,13 @@ export default function Home() {
             >
               Yan Bot
             </Text>
-            <Image src="/images/yanBot.png" />
+
+            <Image
+              src="/images/yanBot.png"
+              width={800}
+              height={600}
+              style={{ margin: "0 auto" }}
+            />
 
             <Box
               size="md"
@@ -251,7 +261,13 @@ export default function Home() {
             >
               hq.news
             </Text>
-            <Image src="/images/hqNews.png" />
+
+            <Image
+              src="/images/hqNews.png"
+              width={800}
+              height={600}
+              style={{ margin: "0 auto" }}
+            />
 
             <Box
               size="md"
@@ -309,7 +325,13 @@ export default function Home() {
             >
               Feed
             </Text>
-            <Image src="/images/feed.png" />
+
+            <Image
+              src="/images/feed.png"
+              width={800}
+              height={600}
+              style={{ margin: "0 auto" }}
+            />
 
             <Box
               size="md"
@@ -361,8 +383,15 @@ export default function Home() {
             >
               Watch.me
             </Text>
-            <Image src="/images/watchMe.png" />
 
+            <Box textAlign="center">
+              <Image
+                src="/images/watchMe.png"
+                width={800}
+                height={600}
+                style={{ margin: "0 auto" }}
+              />
+            </Box>
             <Box
               size="md"
               d="flex"
@@ -421,8 +450,15 @@ export default function Home() {
             >
               B7Delivery
             </Text>
-            <Image src="/images/delivery.png" />
 
+            <Box textAlign="center">
+              <Image
+                src="/images/delivery.png"
+                width={800}
+                height={600}
+                style={{ margin: "0 auto" }}
+              />
+            </Box>
             <Box
               size="md"
               d="flex"
@@ -479,7 +515,18 @@ export default function Home() {
             >
               Rocketshoes
             </Text>
-            <Image src="/images/rocketshoes.png" />
+
+            <Box
+              textAlign="
+            center"
+            >
+              <Image
+                src="/images/rocketshoes.png"
+                width={800}
+                height={600}
+                style={{ margin: "0 auto" }}
+              />
+            </Box>
 
             <Box
               size="md"
@@ -532,7 +579,15 @@ export default function Home() {
             >
               Control of Expenses
             </Text>
-            <Image src="/images/controleDeDespesas.png" />
+
+            <Box textAlign="center">
+              <Image
+                src="/images/controleDeDespesas.png"
+                width={720}
+                height={600}
+                style={{ margin: "0 auto" }}
+              />
+            </Box>
 
             <Box
               size="md"

@@ -76,6 +76,7 @@ export function CardProfile() {
             name="Helton Quintãns"
             src="https://github.com/helton-quintans.png"
             alt="Autor do portfólio segurando um microfone"
+            priority
           >
             {" "}
             <AvatarBadge boxSize="0.7em" bg="transparent">
