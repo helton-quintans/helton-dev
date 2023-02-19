@@ -29,13 +29,15 @@ import { MdOutlineFileDownload } from "react-icons/md";
 import { Logo } from "./Header/Logo";
 
 export default function Footer() {
+  const currentYear = new Date().getFullYear();
+
   return (
     <Box py={6}>
       <Flex align={"center"} justify="center">
         <Logo />
       </Flex>
       <Text pt={6} fontSize={"sm"} textAlign={"center"}>
-        Helton Quintãns | All rights reserved | © 2023
+        Helton Quintãns | All rights reserved | © {currentYear}
       </Text>
     </Box>
   );
