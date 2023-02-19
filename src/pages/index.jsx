@@ -85,7 +85,7 @@ export default function Home() {
       <Flex direction="column" h="100vh">
         <Sidebar />
 
-        <Flex as="section" justify="center" maxH="100%">
+        <Flex as="section" justify="center">
           <CardProfile />
         </Flex>
       </Flex>
@@ -94,7 +94,6 @@ export default function Home() {
         <Heading
           as="h1"
           id="projects"
-          mt="10"
           textAlign="center"
           borderBottom="4px solid"
           borderColor="#FFE13B"
