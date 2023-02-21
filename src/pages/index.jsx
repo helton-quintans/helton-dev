@@ -1357,7 +1357,7 @@ export default function Home() {
       </Flex>
       {/* //!END Content creator*/}
 
-      <Divider />
+      {/* <Divider /> */}
       <Footer />
       <IconButton
         zIndex="2"

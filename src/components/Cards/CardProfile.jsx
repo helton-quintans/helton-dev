@@ -67,10 +67,11 @@ import { useRouter } from "next/router";
 
 export function CardProfile() {
   const router = useRouter();
+
   return (
-    <Card maxW={["sm", "lg"]} mt={["36", "40"]} variant="gost">
+    <Card maxW={["sm", "lg"]} mt={["24", "28"]} h="78vh" variant="gost">
       <CardBody px="4">
-        {/* <Flex justify="center">
+        <Flex justify="center">
           <Avatar
             size="2xl"
             name="Helton Quintãns"
@@ -87,7 +88,7 @@ export function CardProfile() {
               />
             </AvatarBadge>
           </Avatar>
-        </Flex> */}
+        </Flex>
 
         <Stack mt="6" spacing="3">
           <Heading size={["2xl", "lg"]} textAlign="center" textColor="gray.50">
@@ -114,7 +115,7 @@ export function CardProfile() {
           />
 
           <Flex justify="center">
-            <Heading size={["4xl", "xl"]} fontWeight="700" textAlign="center">
+            <Heading size={["2xl", "xl"]} fontWeight="700" textAlign="center">
               <Text as="span" textColor="gray.50">
                 I work with{" "}
                 <Text as="span" color="telegram.500">
