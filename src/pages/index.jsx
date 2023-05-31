@@ -84,7 +84,7 @@ export default function Home() {
         </Flex>
       </Flex>
 
-      <Flex as="section" direction="column" h="100%" justify="center">
+      <Flex bg="white"as="section" direction="column" h="100%" justify="center">
         <Heading
           as="h1"
           id="projects"
@@ -98,8 +98,6 @@ export default function Home() {
         <Text textAlign="center" px="4">
           Welcome to my projects
         </Text>
-      </Flex>
-
       <SimpleGrid minChildWidth="320px" mt="10" gap={2}>
         <Box
           p="4"
@@ -541,6 +539,8 @@ export default function Home() {
           </Box>
         </Box>
       </SimpleGrid>
+      </Flex>
+
 
       {/* //!TECHS */}
       <Flex as="section" direction="column" h="100%" justify="center">
