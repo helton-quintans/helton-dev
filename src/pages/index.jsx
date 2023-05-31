@@ -14,37 +14,13 @@ import {
   IconButton,
   Highlight,
 } from "@chakra-ui/react";
-import {
-  SiCss3,
-  SiFigma,
-  SiHtml5,
-  SiJavascript,
-  SiJest,
-  SiPuppeteer,
-  SiSass,
-  SiStyledcomponents,
-  SiTailwindcss,
-  SiTypescript,
-  SiChakraui,
-  SiDocker,
-  SiNextdotjs,
-  SiLinux,
-  SiReact,
-  SiMongodb,
-  SiGit,
-  SiGithub,
-  SiGitlab,
-  SiNodedotjs,
-  SiCypress,
-} from "react-icons/si";
+
 import { FaLinkedin, FaYoutube } from "react-icons/fa";
-import { DiMysql } from "react-icons/di";
 
 import { Header } from "../components/Header";
 import { Sidebar } from "../components/Sidebar";
 import { CardProfile } from "../components/Cards/CardProfile";
 import Footer from "../components/Footer";
-import { TechBox } from "../components/TechBox";
 import { TechSection } from "../components/TechSection";
 
 export default function Home() {
