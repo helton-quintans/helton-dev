@@ -8,7 +8,6 @@ import {
   Stack,
   AspectRatio,
   SimpleGrid,
-  HStack,
   Image,
   Divider,
   IconButton,
@@ -494,7 +493,6 @@ export default function Home() {
         </SimpleGrid>
       </Flex>
 
-      {/* //!TECHS */}
       <TechSection />
 
       {/* <Divider /> */}

@@ -23,7 +23,7 @@ import {
   SiTailwindcss,
   SiTypescript,
 } from "react-icons/si";
-import { TechBox } from "../TechBox";
+import { TechBox } from "./TechBox";
 
 export function TechSection() {
   return (

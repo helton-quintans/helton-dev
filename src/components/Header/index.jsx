@@ -23,13 +23,7 @@ export function Header() {
   });
 
   return (
-    <Flex
-      as="header"
-      w="100%"
-      h="20"
-      px="6"
-      mt="4"
-    >
+    <Flex as="header" w="100%" h="20" px="6" mt="4">
       {!isWideVersion && (
         <>
           <IconButton
@@ -48,10 +42,10 @@ export function Header() {
 
       {/* {isWideVersion && <SearchBox />} */}
 
-        {isWideVersion && <NavBar />}
+      {isWideVersion && <NavBar />}
 
-     <Spacer />
-      <Flex align="center" >
+      {/* <Spacer /> */}
+      <Flex align="center">
         <Profile showProfileData={isWideVersion} />
       </Flex>
     </Flex>

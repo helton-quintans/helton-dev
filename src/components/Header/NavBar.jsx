@@ -1,10 +1,6 @@
 import { HStack, Icon, Link } from "@chakra-ui/react";
 import NextLink from "next/link";
-import {
-
-  RiNotificationLine,
-  RiUserAddLine,
-} from "react-icons/ri";
+import { RiNotificationLine, RiUserAddLine } from "react-icons/ri";
 
 import { SiAboutdotme } from "react-icons/si";
 
@@ -16,7 +12,7 @@ import { NavLink } from "../Sidebar/NavLink";
 export function NavBar() {
   return (
     <HStack
-      spacing={["6", "28"]}
+      spacing={["6", "20"]}
       mx={["6", "8"]}
       pr={["6", "8"]}
       py="1"
