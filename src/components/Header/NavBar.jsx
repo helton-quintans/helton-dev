@@ -1,8 +1,7 @@
 import { HStack, Icon, Link } from "@chakra-ui/react";
 import NextLink from "next/link";
 import {
-  RiDashboardLine,
-  RiCodeBoxLine,
+
   RiNotificationLine,
   RiUserAddLine,
 } from "react-icons/ri";
@@ -17,6 +16,7 @@ import { NavLink } from "../Sidebar/NavLink";
 export function NavBar() {
   return (
     <HStack
+    bg="red"
       spacing={["6", "8"]}
       mx={["6", "8"]}
       pr={["6", "8"]}
@@ -41,8 +41,8 @@ export function NavBar() {
         Blog
       </NavLink>
 
-      <Icon as={RiNotificationLine} fontSize="20" color="gray.700" />
-      <Icon as={RiUserAddLine} fontSize="20" color="gray.700" />
+      {/* <Icon as={RiNotificationLine} fontSize="20" color="gray.700" />
+      <Icon as={RiUserAddLine} fontSize="20" color="gray.700" /> */}
     </HStack>
   );
 }

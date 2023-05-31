@@ -1,15 +1,17 @@
 import {
   Box,
+  Center,
   Flex,
   Icon,
   IconButton,
+  Spacer,
   useBreakpointValue,
 } from "@chakra-ui/react";
 import { RiMenuLine } from "react-icons/ri";
 
 import { useSidebarDrawer } from "../../contexts/SidebarDrawerContext";
 import { Logo } from "./Logo";
-import { NavBar, Navbar } from "./NavBar";
+import { NavBar } from "./NavBar";
 import { Profile } from "./Profile";
 import { SearchBox } from "./SearchBox";
 
@@ -36,11 +38,16 @@ export function Header() {
       )}
 
       <Logo />
+      <Spacer />
 
       {/* {isWideVersion && <SearchBox />} */}
 
-      <Flex align="center" ml="auto">
-        {isWideVersion && <NavBar />}
+        {isWideVersion && 
+
+          <NavBar />
+        }
+<Spacer />
+      <Flex align="center" >
 
         <Profile showProfileData={isWideVersion} />
       </Flex>
