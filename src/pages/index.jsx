@@ -79,12 +79,12 @@ export default function Home() {
 
         <Sidebar />
 
-        <Flex as="section" justify="center" maxH="100%">
+        <Flex as="section" justify="center" h={`calc(100vh - 20px)`}>
           <CardProfile />
         </Flex>
       </Flex>
 
-      <Flex bg="white"as="section" direction="column" h="100%" justify="center">
+      <Flex as="section" direction="column" h="100%" justify="center">
         <Heading
           as="h1"
           id="projects"
@@ -540,7 +540,6 @@ export default function Home() {
         </Box>
       </SimpleGrid>
       </Flex>
-
 
       {/* //!TECHS */}
       <Flex as="section" direction="column" h="100%" justify="center">
