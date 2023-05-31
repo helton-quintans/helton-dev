@@ -1,26 +1,11 @@
 import {
   Flex,
   Avatar,
-  Box,
-  Button,
   Heading,
   Text,
-  useColorModeValue,
   Skeleton,
-  SkeletonCircle,
-  SkeletonText,
   Stack,
-  AspectRatio,
   Center,
-  SimpleGrid,
-  Grid,
-  GridItem,
-  StackItem,
-  Tooltip,
-  HStack,
-  Image,
-  Divider,
-  Spacer,
   Card,
   CardBody,
   ButtonGroup,
@@ -31,44 +16,26 @@ import {
   Icon,
 } from "@chakra-ui/react";
 import {
-  SiCss3,
-  SiFigma,
-  SiHtml5,
-  SiJavascript,
-  SiJest,
-  SiPuppeteer,
-  SiSass,
-  SiStyledcomponents,
-  SiTailwindcss,
-  SiTypescript,
-  SiChakraui,
-  SiDocker,
-  SiNextdotjs,
-  SiLinux,
   SiReact,
-  SiMongodb,
-  SiGit,
   SiGithub,
-  SiGitlab,
-  SiNodedotjs,
-  SiCypress,
   SiYoutube,
   SiLinkedin,
   SiInstagram,
 } from "react-icons/si";
-import { GiBrazilFlag } from "react-icons/gi";
 import { FaDev } from "react-icons/fa";
-
-import { FaGithub, FaNodeJs, FaReact } from "react-icons/fa";
-import { DiMysql } from "react-icons/di";
-
-import { Profile } from "../Header/Profile";
 
 export function CardProfile() {
   return (
-    <Card maxW={["sm", "lg"]} variant="gost" h="100%" py={["0", "150"]} justify="center" alignItems="center">
-      <CardBody  px="4" >
-        <Flex justify="center" >
+    <Card
+      maxW={["sm", "lg"]}
+      variant="gost"
+      h="100%"
+      py={["0", "150"]}
+      justify="center"
+      alignItems="center"
+    >
+      <CardBody px="4">
+        <Flex justify="center">
           <Avatar
             id="avatarHome"
             size="2xl"
@@ -146,36 +113,55 @@ export function CardProfile() {
               from Brazil 🇧🇷
             </span>
           </Center>
-      <CardFooter justify="center" >
-        <ButtonGroup spacing="8">
-          <IconButton
-            variant="outline"
-            color="#FFE13B"
-            size="lg"
-            icon={<SiGithub />}
-          />
-          <IconButton
-            variant="outline"
-            color="#FFE13B"
-            size="lg"
-            icon={<SiLinkedin />}
-          />
-          <IconButton
-            variant="outline"
-            color="#FFE13B"
-            size="lg"
-            icon={<SiYoutube />}
-          />
-          <IconButton
-            variant="outline"
-            color="#FFE13B"
-            size="lg"
-            icon={<SiInstagram />}
-          />
-        </ButtonGroup>
-      </CardFooter>
+          <CardFooter justify="center">
+            <ButtonGroup spacing="8">
+              <IconButton
+                variant="outline"
+                color="#FFE13B"
+                size="lg"
+                icon={<SiGithub />}
+                _hover={{
+                  opacity: 0.7,
+                  transform: "scale(1.2)",
+                  transition: "all 0.2s ease-in-out",
+                }}
+              />
+              <IconButton
+                variant="outline"
+                color="#FFE13B"
+                size="lg"
+                icon={<SiLinkedin />}
+                _hover={{
+                  opacity: 0.7,
+                  transform: "scale(1.2)",
+                  transition: "all 0.2s ease-in-out",
+                }}
+              />
+              <IconButton
+                variant="outline"
+                color="#FFE13B"
+                size="lg"
+                icon={<SiYoutube />}
+                _hover={{
+                  opacity: 0.7,
+                  transform: "scale(1.2)",
+                  transition: "all 0.2s ease-in-out",
+                }}
+              />
+              <IconButton
+                variant="outline"
+                color="#FFE13B"
+                size="lg"
+                icon={<SiInstagram />}
+                _hover={{
+                  opacity: 0.7,
+                  transform: "scale(1.2)",
+                  transition: "all 0.2s ease-in-out",
+                }}
+              />
+            </ButtonGroup>
+          </CardFooter>
         </Stack>
-
       </CardBody>
     </Card>
   );
