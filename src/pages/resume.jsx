@@ -17,7 +17,7 @@ import {
   StackDivider,
   Text,
 } from "@chakra-ui/react";
-import { FC, memo, PropsWithChildren } from "react";
+import { memo } from "react";
 import { MdCheckCircle } from "react-icons/md";
 import { SlGraduation } from "react-icons/sl";
 
@@ -37,6 +37,11 @@ const ResumeSection = memo(({ title, children }) => {
             me="2"
             aria-label="Search database"
             icon={<MdOutlineFileDownload />}
+            _hover={{
+              opacity: 0.7,
+              transform: "scale(1.2)",
+              transition: "all 0.2s ease-in-out",
+            }}
           ></IconButton>
           Donwload Resume
         </Link>
