@@ -814,12 +814,12 @@ export default function Home() {
             </Flex>
           </Flex> */}
           {/* //!END Botões de interação */}
-          <Divider />
         </Stack>
       </Flex>
       {/* //!END Content creator*/}
 
       <Divider />
+      {/* //!START Content comments */}
       <Footer />
     </>
   );
