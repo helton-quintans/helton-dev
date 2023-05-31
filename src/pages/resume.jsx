@@ -52,7 +52,7 @@ const ResumeSection = memo(({ title, children }) => {
             <Text>Brasileiro, 30 anos</Text>
           </CardHeader>
 
-          <CardBody>
+          <CardBody color="gray.50">
             <Stack divider={<StackDivider />} spacing="4">
               <Box>
                 <Heading
@@ -125,9 +125,63 @@ const ResumeSection = memo(({ title, children }) => {
                 >
                   EXPERIÊNCIA PROFISSIONAL
                 </Heading>
+
                 <Text pt="2" fontSize="sm">
                   <Text textColor="telegram.500">
-                    AEOLUS CLOUD | Recife | PE 2022 a Atual
+                    Nuvem Tecnologia | Cuiabá | MT - 2023 a 2023 (4 meses)
+                  </Text>
+                  <Text as="i">
+                    {" "}
+                    Empresa Privada | Empresa do setor agrícola que atual na
+                    exportação de milho, soja e algodão.
+                  </Text>
+
+                  <Text fontWeight="bold" color="telegram.500">
+                    {" "}
+                    Desenvolvedor Front-End Pleno
+                  </Text>
+                  <List spacing={3}>
+                    <ListItem>
+                      <ListIcon as={MdCheckCircle} color="#FFE13B" />
+                      Atuação em time ágil (SCRUM e Kanban)
+                    </ListItem>
+                    <ListItem>
+                      <ListIcon as={MdCheckCircle} color="#FFE13B" />
+                      Desenvolvimento de interfaces utilizando o ecossistema
+                      React, Styled Components, Chakra Ui, Ant-Design e
+                      Prime-React.
+                    </ListItem>
+                    <ListItem>
+                      <ListIcon as={MdCheckCircle} color="#FFE13B" />
+                      Typescript.
+                    </ListItem>
+                    <ListItem>
+                      <ListIcon as={MdCheckCircle} color="#FFE13B" />
+                      React Query
+                    </ListItem>
+                    <ListItem>
+                      <ListIcon as={MdCheckCircle} color="#FFE13B" />
+                      Utilização do JIRA e Azure.
+                    </ListItem>
+                    <ListItem>
+                      <ListIcon as={MdCheckCircle} color="#FFE13B" />
+                      Swagger e documentação.
+                    </ListItem>
+                    <ListItem>
+                      <ListIcon as={MdCheckCircle} color="#FFE13B" />
+                      Desenvolvimento em sitema integrado com ERPs agícolas que
+                      utiliza imagens de satélite e referência geoespacial.
+                    </ListItem>
+                    <ListItem>
+                      <ListIcon as={MdCheckCircle} color="#FFE13B" />
+                      Configuração de ambientes IOS.
+                    </ListItem>
+                  </List>
+                </Text>
+
+                <Text pt="2" fontSize="sm">
+                  <Text textColor="telegram.500">
+                    AEOLUS CLOUD | Recife | PE - 2022 a 2023 (1 ano e 1 mês)
                   </Text>
                   <Text as="i">
                     {" "}
@@ -176,7 +230,7 @@ const ResumeSection = memo(({ title, children }) => {
 
                 <Text pt="2" fontSize="sm">
                   <Text textColor="telegram.500">
-                    WATI | São Paulo | SP 2020 a 2021
+                    WATI | São Paulo | SP - 2020 a 2021 (1 ano e 4 meses)
                   </Text>
                   <Text as="i">
                     {" "}
@@ -185,7 +239,9 @@ const ResumeSection = memo(({ title, children }) => {
                     projetos.
                   </Text>
 
-                  <Text fontWeight="bold">Analista de Testes e Qualidade</Text>
+                  <Text fontWeight="bold" textColor="telegram.500">
+                    Analista de Testes e Qualidade
+                  </Text>
                   <List spacing={3}>
                     <ListItem>
                       <ListIcon as={MdCheckCircle} color="#FFE13B" />
@@ -230,14 +286,16 @@ const ResumeSection = memo(({ title, children }) => {
                 </Text>
 
                 <Text pt="2" fontSize="sm">
-                  <Text textColor="telegram.500">YANAK | PE | 2019 a 2020</Text>
+                  <Text textColor="telegram.500">
+                    YANAK | PE - 2019 a 2020 (1 ano){" "}
+                  </Text>
                   <Text as="i">
                     {" "}
                     Empresa Privada | A Yanak é uma empresa privada que atua no
                     segmento de alimentação e delivery.
                   </Text>
 
-                  <Text fontWeight="bold">
+                  <Text fontWeight="bold" textColor="telegram.500">
                     Desenvolvedor Front-end freelancer
                   </Text>
                   <List spacing={3}>
@@ -259,14 +317,11 @@ const ResumeSection = memo(({ title, children }) => {
                   <Text textColor="telegram.500">
                     FORÇA AÉREA BRASILEIRA | 2011 a 2017
                   </Text>
-                  <Text as="i">
-                    {" "}
-                    Empresa Privada / A WATI é uma empresa de prestação de
-                    serviços de TI e especializada na terceirização e gestão de
-                    projetos.
-                  </Text>
+                  <Text as="i"> Empresa Pública.</Text>
 
-                  <Text fontWeight="bold">Assistente Administrativo</Text>
+                  <Text fontWeight="bold" textColor="telegram.500">
+                    Assistente Administrativo
+                  </Text>
                   <List spacing={3}>
                     <ListItem>
                       <ListIcon as={MdCheckCircle} color="#FFE13B" />
