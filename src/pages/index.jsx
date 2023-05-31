@@ -69,6 +69,7 @@ import { Header } from "../components/Header";
 import { Sidebar } from "../components/Sidebar";
 import { CardProfile } from "../components/Cards/CardProfile";
 import Footer from "../components/Footer";
+import { TechBox } from "../components/TechBox";
 
 export default function Home() {
   return (
@@ -98,447 +99,447 @@ export default function Home() {
         <Text textAlign="center" px="4">
           Welcome to my projects
         </Text>
-      <SimpleGrid minChildWidth="320px" mt="10" gap={2}>
-        <Box
-          p="4"
-          borderRadius="8"
-          // border="1px solid"
-          // borderColor="#FFE13B"
-        >
+        <SimpleGrid minChildWidth="320px" mt="10" gap={2}>
           <Box
-            d="flex"
-            alignItems="center"
-            flexDir="column"
-            textAlign="center"
-            size="md"
+            p="4"
+            borderRadius="8"
+            // border="1px solid"
+            // borderColor="#FFE13B"
           >
-            <Text
-              as="h2"
-              textAlign="center"
-              color="#FFE13B"
-              fontWeight="semibold"
-              fontSize="32px"
-              borderRadius="8"
-              mb="4"
-            >
-              Dashgo
-            </Text>
-            <Image src="/images/dashgo.png" />
-
             <Box
-              size="md"
               d="flex"
               alignItems="center"
               flexDir="column"
               textAlign="center"
-              borderRadius="8"
-              p="4"
+              size="md"
             >
-              <Text textAlign="center" noOfLines={3} px={["0", "0", "24"]}>
-                DashGo is an application for dashboards in general with pages
-                and pagination, login and user inclusion system made with
-                Next.js, Typescript, React-query and other technologies.
-              </Text>
-              <Button
+              <Text
+                as="h2"
+                textAlign="center"
                 color="#FFE13B"
-                my="4"
-                variant="outline"
-                size="md"
-                fontSize="20px"
+                fontWeight="semibold"
+                fontSize="32px"
+                borderRadius="8"
+                mb="4"
               >
-                See more
-              </Button>
-              <Divider />
+                Dashgo
+              </Text>
+              <Image src="/images/dashgo.png" />
+
+              <Box
+                size="md"
+                d="flex"
+                alignItems="center"
+                flexDir="column"
+                textAlign="center"
+                borderRadius="8"
+                p="4"
+              >
+                <Text textAlign="center" noOfLines={3} px={["0", "0", "24"]}>
+                  DashGo is an application for dashboards in general with pages
+                  and pagination, login and user inclusion system made with
+                  Next.js, Typescript, React-query and other technologies.
+                </Text>
+                <Button
+                  color="#FFE13B"
+                  my="4"
+                  variant="outline"
+                  size="md"
+                  fontSize="20px"
+                >
+                  See more
+                </Button>
+                <Divider />
+              </Box>
             </Box>
           </Box>
-        </Box>
-      </SimpleGrid>
-      <SimpleGrid minChildWidth="320px" gap={2}>
-        <Box
-          p="4"
-          borderRadius="8"
-          // border="1px solid"
-          // borderColor="#FFE13B"
-        >
+        </SimpleGrid>
+        <SimpleGrid minChildWidth="320px" gap={2}>
           <Box
-            d="flex"
-            alignItems="center"
-            flexDir="column"
-            textAlign="center"
-            size="md"
+            p="4"
+            borderRadius="8"
+            // border="1px solid"
+            // borderColor="#FFE13B"
           >
-            <Text
-              as="h2"
-              textAlign="center"
-              color="#FFE13B"
-              fontWeight="semibold"
-              fontSize="32px"
-              borderRadius="8"
-              mb="4"
-            >
-              Yan Bot
-            </Text>
-            <Image src="/images/yanBot.png" />
-
             <Box
-              size="md"
               d="flex"
               alignItems="center"
               flexDir="column"
               textAlign="center"
-              borderRadius="8"
-              p="4"
+              size="md"
             >
-              <Text noOfLines={3} textAlign="center" px={["0", "0", "24"]}>
-                🧠 Yan is an artificial intelligence that uses Machine learning
-                and NLP (natural language processing). 🌎 It is multilingual and
-                supports 40 languages natively and 104 languages through BERT
-                integration. 👨‍🚀 Born with the purpose of understanding customers
-                intentions and providing a quick and effective response, the
-                more you talk to Yan, the more he learns and improves the user
-                experience. 🤘 This project has the help of the open source
-                community in Brazil and the world.
-              </Text>
-              <Button
+              <Text
+                as="h2"
+                textAlign="center"
                 color="#FFE13B"
-                my="4"
-                variant="outline"
-                size="md"
-                fontSize="20px"
+                fontWeight="semibold"
+                fontSize="32px"
+                borderRadius="8"
+                mb="4"
               >
-                See more
-              </Button>
-              <Divider />
+                Yan Bot
+              </Text>
+              <Image src="/images/yanBot.png" />
+
+              <Box
+                size="md"
+                d="flex"
+                alignItems="center"
+                flexDir="column"
+                textAlign="center"
+                borderRadius="8"
+                p="4"
+              >
+                <Text noOfLines={3} textAlign="center" px={["0", "0", "24"]}>
+                  🧠 Yan is an artificial intelligence that uses Machine
+                  learning and NLP (natural language processing). 🌎 It is
+                  multilingual and supports 40 languages natively and 104
+                  languages through BERT integration. 👨‍🚀 Born with the purpose
+                  of understanding customers intentions and providing a quick
+                  and effective response, the more you talk to Yan, the more he
+                  learns and improves the user experience. 🤘 This project has
+                  the help of the open source community in Brazil and the world.
+                </Text>
+                <Button
+                  color="#FFE13B"
+                  my="4"
+                  variant="outline"
+                  size="md"
+                  fontSize="20px"
+                >
+                  See more
+                </Button>
+                <Divider />
+              </Box>
             </Box>
           </Box>
-        </Box>
-      </SimpleGrid>
-      <SimpleGrid minChildWidth="320px" gap={2}>
-        <Box
-          p="4"
-          borderRadius="8"
-          // border="1px solid"
-          // borderColor="#FFE13B"
-        >
+        </SimpleGrid>
+        <SimpleGrid minChildWidth="320px" gap={2}>
           <Box
-            d="flex"
-            alignItems="center"
-            flexDir="column"
-            textAlign="center"
-            size="md"
+            p="4"
+            borderRadius="8"
+            // border="1px solid"
+            // borderColor="#FFE13B"
           >
-            <Text
-              as="h2"
-              textAlign="center"
-              color="#FFE13B"
-              fontWeight="semibold"
-              fontSize="32px"
-              borderRadius="8"
-              mb="4"
-            >
-              hq.news
-            </Text>
-            <Image src="/images/hqNews.png" />
-
             <Box
-              size="md"
               d="flex"
               alignItems="center"
               flexDir="column"
               textAlign="center"
-              borderRadius="8"
-              p="4"
+              size="md"
             >
-              <Text noOfLines={3} textAlign="center" px={["0", "0", "24"]}>
-                The hq.news project is a blog where users can access the content
-                of each post according to their subscription status through a
-                Stripe payment system integration.
-              </Text>
-              <Button
+              <Text
+                as="h2"
+                textAlign="center"
                 color="#FFE13B"
-                my="4"
-                variant="outline"
-                size="md"
-                fontSize="20px"
+                fontWeight="semibold"
+                fontSize="32px"
+                borderRadius="8"
+                mb="4"
               >
-                See more
-              </Button>
-              <Divider />
+                hq.news
+              </Text>
+              <Image src="/images/hqNews.png" />
+
+              <Box
+                size="md"
+                d="flex"
+                alignItems="center"
+                flexDir="column"
+                textAlign="center"
+                borderRadius="8"
+                p="4"
+              >
+                <Text noOfLines={3} textAlign="center" px={["0", "0", "24"]}>
+                  The hq.news project is a blog where users can access the
+                  content of each post according to their subscription status
+                  through a Stripe payment system integration.
+                </Text>
+                <Button
+                  color="#FFE13B"
+                  my="4"
+                  variant="outline"
+                  size="md"
+                  fontSize="20px"
+                >
+                  See more
+                </Button>
+                <Divider />
+              </Box>
             </Box>
           </Box>
-        </Box>
-      </SimpleGrid>
-      <SimpleGrid minChildWidth="320px" gap={2}>
-        <Box
-          p="4"
-          borderRadius="8"
-          // border="1px solid"
-          // borderColor="#FFE13B"
-        >
+        </SimpleGrid>
+        <SimpleGrid minChildWidth="320px" gap={2}>
           <Box
-            d="flex"
-            alignItems="center"
-            flexDir="column"
-            textAlign="center"
-            size="md"
+            p="4"
+            borderRadius="8"
+            // border="1px solid"
+            // borderColor="#FFE13B"
           >
-            <Text
-              as="h2"
-              textAlign="center"
-              color="#FFE13B"
-              fontWeight="semibold"
-              fontSize="32px"
-              borderRadius="8"
-              mb="4"
-            >
-              Feed
-            </Text>
-            <Image src="/images/feed.png" />
-
             <Box
-              size="md"
               d="flex"
               alignItems="center"
               flexDir="column"
               textAlign="center"
-              borderRadius="8"
-              p="4"
+              size="md"
             >
-              <Text noOfLines={3} textAlign="center" px={["0", "0", "24"]}>
-                Feed is an application like a social network where you can like
-                and comment on a third-party publication and was developed with
-                Next.js, Javascript, and Styled-Components and other
-                technologies.
-              </Text>
-              <Button
+              <Text
+                as="h2"
+                textAlign="center"
                 color="#FFE13B"
-                my="4"
-                variant="outline"
-                size="md"
-                fontSize="20px"
+                fontWeight="semibold"
+                fontSize="32px"
+                borderRadius="8"
+                mb="4"
               >
-                See more
-              </Button>
-              <Divider />
+                Feed
+              </Text>
+              <Image src="/images/feed.png" />
+
+              <Box
+                size="md"
+                d="flex"
+                alignItems="center"
+                flexDir="column"
+                textAlign="center"
+                borderRadius="8"
+                p="4"
+              >
+                <Text noOfLines={3} textAlign="center" px={["0", "0", "24"]}>
+                  Feed is an application like a social network where you can
+                  like and comment on a third-party publication and was
+                  developed with Next.js, Javascript, and Styled-Components and
+                  other technologies.
+                </Text>
+                <Button
+                  color="#FFE13B"
+                  my="4"
+                  variant="outline"
+                  size="md"
+                  fontSize="20px"
+                >
+                  See more
+                </Button>
+                <Divider />
+              </Box>
             </Box>
           </Box>
-        </Box>
-      </SimpleGrid>
-      <SimpleGrid minChildWidth="320px" gap={2}>
-        <Box p="4" borderRadius="8">
-          <Box
-            d="flex"
-            alignItems="center"
-            flexDir="column"
-            textAlign="center"
-            size="md"
-          >
-            <Text
-              as="h2"
-              textAlign="center"
-              color="#FFE13B"
-              fontWeight="semibold"
-              fontSize="32px"
-              borderRadius="8"
-              mb="4"
-            >
-              Watch.me
-            </Text>
-            <Image src="/images/watchMe.png" />
-
+        </SimpleGrid>
+        <SimpleGrid minChildWidth="320px" gap={2}>
+          <Box p="4" borderRadius="8">
             <Box
-              size="md"
               d="flex"
               alignItems="center"
               flexDir="column"
               textAlign="center"
-              borderRadius="8"
-              p="4"
+              size="md"
             >
-              <Text noOfLines={3} textAlign="center" px={["0", "0", "24"]}>
-                Application that allows the user to have greater accuracy in
-                personal financial control by recording financial inputs and
-                outputs. There is the possibility of adding, editing or deleting
-                transactions in addition to storing and persisting data in local
-                storage.
-              </Text>
-              <Button
+              <Text
+                as="h2"
+                textAlign="center"
                 color="#FFE13B"
-                my="4"
-                variant="outline"
-                size="md"
-                fontSize="20px"
+                fontWeight="semibold"
+                fontSize="32px"
+                borderRadius="8"
+                mb="4"
               >
-                See more
-              </Button>
-              <Divider />
+                Watch.me
+              </Text>
+              <Image src="/images/watchMe.png" />
+
+              <Box
+                size="md"
+                d="flex"
+                alignItems="center"
+                flexDir="column"
+                textAlign="center"
+                borderRadius="8"
+                p="4"
+              >
+                <Text noOfLines={3} textAlign="center" px={["0", "0", "24"]}>
+                  Application that allows the user to have greater accuracy in
+                  personal financial control by recording financial inputs and
+                  outputs. There is the possibility of adding, editing or
+                  deleting transactions in addition to storing and persisting
+                  data in local storage.
+                </Text>
+                <Button
+                  color="#FFE13B"
+                  my="4"
+                  variant="outline"
+                  size="md"
+                  fontSize="20px"
+                >
+                  See more
+                </Button>
+                <Divider />
+              </Box>
             </Box>
           </Box>
-        </Box>
-      </SimpleGrid>
-      <SimpleGrid minChildWidth="320px" gap={2}>
-        <Box
-          p="4"
-          borderRadius="8"
-          // border="1px solid"
-          // borderColor="#FFE13B"
-        >
+        </SimpleGrid>
+        <SimpleGrid minChildWidth="320px" gap={2}>
           <Box
-            d="flex"
-            alignItems="center"
-            flexDir="column"
-            textAlign="center"
-            size="md"
+            p="4"
+            borderRadius="8"
+            // border="1px solid"
+            // borderColor="#FFE13B"
           >
-            <Text
-              as="h2"
-              textAlign="center"
-              color="#FFE13B"
-              fontWeight="semibold"
-              fontSize="32px"
-              borderRadius="8"
-              mb="4"
-            >
-              B7Delivery
-            </Text>
-            <Image src="/images/delivery.png" />
-
             <Box
-              size="md"
               d="flex"
               alignItems="center"
               flexDir="column"
               textAlign="center"
-              borderRadius="8"
-              p="4"
+              size="md"
             >
-              <Text noOfLines={3} textAlign="center" px={["0", "0", "24"]}>
-                Multi-tenancy SaaS made with Typescript and Next.js. Delivery
-                system for small and medium businesses where it is possible to
-                place orders for registered restaurants.
-              </Text>
-              <Button
+              <Text
+                as="h2"
+                textAlign="center"
                 color="#FFE13B"
-                my="4"
-                variant="outline"
-                size="md"
-                fontSize="20px"
+                fontWeight="semibold"
+                fontSize="32px"
+                borderRadius="8"
+                mb="4"
               >
-                See more
-              </Button>
-              <Divider />
+                B7Delivery
+              </Text>
+              <Image src="/images/delivery.png" />
+
+              <Box
+                size="md"
+                d="flex"
+                alignItems="center"
+                flexDir="column"
+                textAlign="center"
+                borderRadius="8"
+                p="4"
+              >
+                <Text noOfLines={3} textAlign="center" px={["0", "0", "24"]}>
+                  Multi-tenancy SaaS made with Typescript and Next.js. Delivery
+                  system for small and medium businesses where it is possible to
+                  place orders for registered restaurants.
+                </Text>
+                <Button
+                  color="#FFE13B"
+                  my="4"
+                  variant="outline"
+                  size="md"
+                  fontSize="20px"
+                >
+                  See more
+                </Button>
+                <Divider />
+              </Box>
             </Box>
           </Box>
-        </Box>
-      </SimpleGrid>
-      <SimpleGrid minChildWidth="320px" gap={2}>
-        <Box
-          p="4"
-          borderRadius="8"
-          // border="1px solid"
-          // borderColor="#FFE13B"
-        >
+        </SimpleGrid>
+        <SimpleGrid minChildWidth="320px" gap={2}>
           <Box
-            d="flex"
-            alignItems="center"
-            flexDir="column"
-            textAlign="center"
-            size="md"
+            p="4"
+            borderRadius="8"
+            // border="1px solid"
+            // borderColor="#FFE13B"
           >
-            <Text
-              as="h2"
-              textAlign="center"
-              color="#FFE13B"
-              fontWeight="semibold"
-              fontSize="32px"
-              borderRadius="8"
-              mb="4"
-            >
-              Rocketshoes
-            </Text>
-            <Image src="/images/rocketshoes.png" />
-
             <Box
-              size="md"
               d="flex"
               alignItems="center"
               flexDir="column"
               textAlign="center"
-              borderRadius="8"
-              p="4"
+              size="md"
             >
-              <Text noOfLines={3} textAlign="center" px={["0", "0", "24"]}>
-                This project was developed at the RocketSeat Ignite Bootcamp
-                with the following technologies: ReactJS, Redux, Redux-Saga,
-                React, Router, v4, Axios, Polished, React-Toastify,
-                styled-components, React-Icons, react-loading-skeleton,
-                react-loader-spinner, json-server and more.
-              </Text>
-              <Button
+              <Text
+                as="h2"
+                textAlign="center"
                 color="#FFE13B"
-                my="4"
-                variant="outline"
-                size="md"
-                fontSize="20px"
+                fontWeight="semibold"
+                fontSize="32px"
+                borderRadius="8"
+                mb="4"
               >
-                See more
-              </Button>
-              <Divider />
+                Rocketshoes
+              </Text>
+              <Image src="/images/rocketshoes.png" />
+
+              <Box
+                size="md"
+                d="flex"
+                alignItems="center"
+                flexDir="column"
+                textAlign="center"
+                borderRadius="8"
+                p="4"
+              >
+                <Text noOfLines={3} textAlign="center" px={["0", "0", "24"]}>
+                  This project was developed at the RocketSeat Ignite Bootcamp
+                  with the following technologies: ReactJS, Redux, Redux-Saga,
+                  React, Router, v4, Axios, Polished, React-Toastify,
+                  styled-components, React-Icons, react-loading-skeleton,
+                  react-loader-spinner, json-server and more.
+                </Text>
+                <Button
+                  color="#FFE13B"
+                  my="4"
+                  variant="outline"
+                  size="md"
+                  fontSize="20px"
+                >
+                  See more
+                </Button>
+                <Divider />
+              </Box>
             </Box>
           </Box>
-        </Box>
-      </SimpleGrid>
-      <SimpleGrid minChildWidth="320px" gap={2}>
-        <Box p="4" borderRadius="8">
-          <Box
-            d="flex"
-            alignItems="center"
-            flexDir="column"
-            textAlign="center"
-            size="md"
-          >
-            <Text
-              as="h2"
-              textAlign="center"
-              color="#FFE13B"
-              fontWeight="semibold"
-              fontSize="32px"
-              borderRadius="8"
-              mb="4"
-            >
-              Control of Expenses
-            </Text>
-            <Image src="/images/controleDeDespesas.png" />
-
+        </SimpleGrid>
+        <SimpleGrid minChildWidth="320px" gap={2}>
+          <Box p="4" borderRadius="8">
             <Box
-              size="md"
               d="flex"
               alignItems="center"
               flexDir="column"
               textAlign="center"
-              borderRadius="8"
-              p="4"
+              size="md"
             >
-              <Text noOfLines={3} textAlign="center" px={["0", "0", "24"]}>
-                Application that allows the user to have greater accuracy in
-                personal financial control by recording financial inputs and
-                outputs. There is the possibility of adding, editing or deleting
-                transactions in addition to storing and persisting data in local
-                storage.
-              </Text>
-              <Button
+              <Text
+                as="h2"
+                textAlign="center"
                 color="#FFE13B"
-                my="4"
-                variant="outline"
-                size="md"
-                fontSize="20px"
+                fontWeight="semibold"
+                fontSize="32px"
+                borderRadius="8"
+                mb="4"
               >
-                See more
-              </Button>
+                Control of Expenses
+              </Text>
+              <Image src="/images/controleDeDespesas.png" />
+
+              <Box
+                size="md"
+                d="flex"
+                alignItems="center"
+                flexDir="column"
+                textAlign="center"
+                borderRadius="8"
+                p="4"
+              >
+                <Text noOfLines={3} textAlign="center" px={["0", "0", "24"]}>
+                  Application that allows the user to have greater accuracy in
+                  personal financial control by recording financial inputs and
+                  outputs. There is the possibility of adding, editing or
+                  deleting transactions in addition to storing and persisting
+                  data in local storage.
+                </Text>
+                <Button
+                  color="#FFE13B"
+                  my="4"
+                  variant="outline"
+                  size="md"
+                  fontSize="20px"
+                >
+                  See more
+                </Button>
+              </Box>
             </Box>
           </Box>
-        </Box>
-      </SimpleGrid>
+        </SimpleGrid>
       </Flex>
 
       {/* //!TECHS */}
@@ -561,590 +562,131 @@ export default function Home() {
 
       <SimpleGrid as="section" gap={6} mt="20" px="6" minChildWidth="320px">
         <>
-          <Box
-            boxShadow="dark-lg"
-            borderRadius="8"
-            border="1px solid "
-            borderColor="#FFE13B"
-            w="100%"
-            h="100%"
-            size="sm"
-            // variant={container}
-            // initial="hidden"
-            // animate="visible"
-          >
-            <Stack alignItems="center" textAlign="center" p="8">
-              <SiHtml5 size={80} />
-              <Text
-                fontWeight="medium"
-                color="#FFE13B"
-                fontSize="24px"
-                translate="no"
-              >
-                HTML5
-              </Text>
-              <Text fontSize="16px">
-                Markup language for the World Wide Web and is a key Internet
-                technology, originally proposed by Opera Software. It is the
-                fifth version of the HTML language.
-              </Text>
-            </Stack>
-          </Box>
+          <TechBox
+            icon={<SiHtml5 size={80} />}
+            title="HTML5"
+            description="Markup language for the World Wide Web and is a key Internet
+            technology, originally proposed by Opera Software. It is the
+            fifth version of the HTML language."
+          />
+          <TechBox
+            icon={<SiCss3 size={80} />}
+            title="CSS"
+            description="Cascading Style Sheets is a mechanism for adding style to a web document."
+          />
+          <TechBox
+            icon={<SiJavascript size={80} />}
+            title="JavaScript"
+            description="JavaScript is a structured, multi-paradigm, weak dynamically typed, high-level scripting interpreted programming language."
+          />
+          <TechBox
+            icon={<SiTypescript size={80} />}
+            title="TypeScript"
+            description="TypeScript is an open source programming language developed by Microsoft. It is a strict syntactic superset of JavaScript and adds optional static typing to the language."
+          />
 
-          <Box
-            boxShadow="dark-lg"
-            borderRadius="8"
-            border="1px solid "
-            borderColor="#FFE13B"
-            w="100%"
-            h="100%"
-          >
-            <Stack
-              bgColor="transparent"
-              alignItems="center"
-              textAlign="center"
-              p="8"
-            >
-              <SiCss3 size={80} />
-              <Text fontWeight="medium" color="#FFE13B" fontSize="24px">
-                CSS
-              </Text>
-              <Text textAlign="center" fontSize="16px">
-                Cascading Style Sheets is a mechanism for adding style to a web
-                document.
-              </Text>
-            </Stack>
-          </Box>
+          <TechBox
+            icon={<SiReact size={80} />}
+            title="React"
+            description="JavaScript library focused on creating user interfaces on web
+            pages. It is maintained by Facebook."
+          />
 
-          <Box
-            boxShadow="dark-lg"
-            borderRadius="8"
-            border="1px solid "
-            borderColor="#FFE13B"
-            w="100%"
-            h="100%"
-          >
-            <Stack
-              bgColor="transparent"
-              alignItems="center"
-              textAlign="center"
-              p="8"
-            >
-              <SiJavascript size={80} />
-              <Text
-                fontWeight="medium"
-                color="#FFE13B"
-                fontSize="24px"
-                translate="no"
-              >
-                JavaScript
-              </Text>
-              <Text textAlign="center" fontSize="16px">
-                JavaScript is a structured, multi-paradigm, weak dynamically
-                typed, high-level scripting interpreted programming language.
-              </Text>
-            </Stack>
-          </Box>
+          <TechBox
+            icon={<SiNextdotjs size={80} />}
+            title="Next.js"
+            description="Framework de desenvolvimento front-end React de código aberto criado pela Vercel que permite funcionalidades como renderização do lado do servidor e geração de sites estáticos para aplicativos da web baseados em React."
+          />
 
-          <Box
-            boxShadow="dark-lg"
-            borderRadius="8"
-            border="1px solid "
-            borderColor="#FFE13B"
-            w="100%"
-            h="100%"
-          >
-            <Stack
-              bgColor="transparent"
-              alignItems="center"
-              textAlign="center"
-              p="8"
-            >
-              <SiTypescript size={80} />
+          <TechBox
+            icon={<SiNodedotjs size={80} />}
+            title="Node"
+            description="Um software de código aberto e multiplataforma, baseado no interpretador V8 do Google, que permite a execução de código JavaScript fora de um navegador da web."
+          />
 
-              <Text
-                fontWeight="medium"
-                color="#FFE13B"
-                fontSize="24px"
-                translate="no"
-              >
-                Typescript
-              </Text>
-              <Text textAlign="lefcentert" fontSize="16px">
-                TypeScript is an open source programming language developed by
-                Microsoft. It is a strict syntactic superset of JavaScript and
-                adds optional static typing to the language.
-              </Text>
-            </Stack>
-          </Box>
-
-          <Box
-            boxShadow="dark-lg"
-            borderRadius="8"
-            border="1px solid "
-            borderColor="#FFE13B"
-            w="100%"
-            h="100%"
-          >
-            <Stack
-              bgColor="transparent"
-              alignItems="center"
-              textAlign="center"
-              p="8"
-            >
-              <SiReact size={80} />
-
-              <Text
-                fontWeight="medium"
-                color="#FFE13B"
-                fontSize="24px"
-                translate="no"
-              >
-                React
-              </Text>
-              <Text textAlign="center" fontSize="16px">
-                JavaScript library focused on creating user interfaces on web
-                pages. It is maintained by Facebook.
-              </Text>
-            </Stack>
-          </Box>
-
-          <Box
-            boxShadow="dark-lg"
-            borderRadius="8"
-            border="1px solid "
-            borderColor="#FFE13B"
-            w="100%"
-            h="100%"
-          >
-            <Stack
-              bgColor="transparent"
-              alignItems="center"
-              textAlign="center"
-              p="8"
-            >
-              <SiNextdotjs size={80} />
-
-              <Text
-                fontWeight="medium"
-                color="#FFE13B"
-                fontSize="24px"
-                translate="no"
-              >
-                Next.js
-              </Text>
-              <Text textAlign="center" fontSize="16px">
-                Open source React front-end development web framework created by
-                Vercel that enables functionality such as server-side rendering
-                and static website generation for React-based web applications.
-              </Text>
-            </Stack>
-          </Box>
-
-          <Box
-            boxShadow="dark-lg"
-            borderRadius="8"
-            border="1px solid "
-            borderColor="#FFE13B"
-            w="100%"
-            h="100%"
-          >
-            <Stack
-              bgColor="transparent"
-              alignItems="center"
-              textAlign="center"
-              p="8"
-            >
-              <SiNodedotjs size={80} />
-
-              <Text
-                fontWeight="medium"
-                color="#FFE13B"
-                fontSize="24px"
-                translate="no"
-              >
-                Node
-              </Text>
-              <Text textAlign="center" fontSize="16px">
-                An open-source, cross-platform software, based on Googles V8
-                interpreter, that allows the execution of JavaScript code
-                outside of a web browser.
-              </Text>
-            </Stack>
-          </Box>
-
-          <Box
-            boxShadow="dark-lg"
-            borderRadius="8"
-            border="1px solid "
-            borderColor="#FFE13B"
-            w="100%"
-            h="100%"
-          >
-            <Stack
-              bgColor="transparent"
-              alignItems="center"
-              textAlign="center"
-              p="8"
-            >
+          <TechBox
+            icon={
               <HStack>
                 <SiGit size={80} />
                 <SiGithub size={80} />
                 <SiGitlab size={80} />
               </HStack>
+            }
+            title="Git, Github e Gitlab"
+            description="Plataforma de hospedagem de arquivos e código-fonte com controle de versão usando Git. Ele permite que programadores, utilitários ou qualquer usuário registrado na plataforma contribua para projetos privados e/ou de código aberto de qualquer lugar do mundo."
+          />
 
-              <Text fontWeight="medium" color="#FFE13B" fontSize="24px">
-                Git, Github and Gitlab
-              </Text>
-              <Text textAlign="center" fontSize="16px">
-                Source code and file hosting platform with version control using
-                Git. It allows programmers, utilities or any user registered on
-                the platform to contribute to private and/or Open Source
-                projects from anywhere in the world.
-              </Text>
-            </Stack>
-          </Box>
+          <TechBox
+            icon={<SiTailwindcss className="animate-pulse" size={80} />}
+            title="TailwindCSS"
+            description="Um framework CSS utility-first para construir rapidamente interfaces de usuário personalizadas."
+          />
 
-          <Box
-            boxShadow="dark-lg"
-            borderRadius="8"
-            border="1px solid "
-            borderColor="#FFE13B"
-            w="100%"
-            h="100%"
-          >
-            <Stack
-              bgColor="transparent"
-              alignItems="center"
-              textAlign="center"
-              p="8"
-            >
-              <SiTailwindcss className="animate-pulse" size={80} />
+          <TechBox
+            icon={<SiStyledcomponents className="animate-pulse" size={80} />}
+            title="Styled Components"
+            description="Uma biblioteca popular usada para estilizar aplicativos React. Ele permite que você construa componentes personalizados escrevendo CSS real em seu JavaScript."
+          />
 
-              <Text fontWeight="medium" color="#FFE13B" fontSize="24px">
-                TailwindCSS
-              </Text>
-              <Text textAlign="center" fontSize="16px">
-                A utility-first CSS framework for rapidly building custom user
-                interfaces.
-              </Text>
-            </Stack>
-          </Box>
+          <TechBox
+            icon={<SiSass className="animate-pulse" size={80} />}
+            title="Sass"
+            description="Linguagem de folha de estilo inicialmente concebida por Hampton Catlin e desenvolvida por Natalie Weizenbaum."
+          />
 
-          <Box
-            boxShadow="dark-lg"
-            borderRadius="8"
-            border="1px solid "
-            borderColor="#FFE13B"
-            w="100%"
-            h="100%"
-          >
-            <Stack
-              bgColor="transparent"
-              alignItems="center"
-              textAlign="center"
-              p="8"
-            >
-              <SiStyledcomponents className="animate-pulse" size={80} />
+          <TechBox
+            icon={<SiPuppeteer className="animate-pulse" size={80} />}
+            title="Puppeteer"
+            description="A Node.js library which provides a high-level API to control Chrome/Chromium over the DevTools Protocol."
+          />
 
-              <Text fontWeight="medium" color="#FFE13B" fontSize="24px">
-                Styled Components
-              </Text>
-              <Text textAlign="center" fontSize="16px">
-                A popular library that is used to style React applications. It
-                allows you to build custom components by writing actual CSS in
-                your JavaScript.
-              </Text>
-            </Stack>
-          </Box>
+          <TechBox
+            icon={<SiJest className="animate-pulse" size={80} />}
+            title="Jest"
+            description="A JavaScript testing framework built on top of Jasmine and maintained by Meta."
+          />
 
-          <Box
-            boxShadow="dark-lg"
-            borderRadius="8"
-            border="1px solid "
-            borderColor="#FFE13B"
-            w="100%"
-            h="100%"
-          >
-            <Stack
-              bgColor="transparent"
-              alignItems="center"
-              textAlign="center"
-              p="8"
-            >
-              <SiSass className="animate-pulse" size={80} />
+          <TechBox
+            icon={<SiMongodb className="animate-pulse" size={80} />}
+            title="MongoDB"
+            description="Open-source, cross-platform document-oriented database software written in the C++ language. Classified as a NoSQL database."
+          />
 
-              <Text fontWeight="medium" color="#FFE13B" fontSize="24px">
-                Sass
-              </Text>
-              <Text textAlign="center" fontSize="16px">
-                Stylesheet language initially conceived by Hampton Catlin and
-                developed by Natalie Weizenbaum.
-              </Text>
-            </Stack>
-          </Box>
+          <TechBox
+            icon={<DiMysql className="animate-pulse" size={80} />}
+            title="MySQL"
+            description="MySQL is a database management system, which uses the SQL language as an interface. It is currently one of Oracle Corporations most popular database management systems."
+          />
 
-          <Box
-            boxShadow="dark-lg"
-            borderRadius="8"
-            border="1px solid "
-            borderColor="#FFE13B"
-            w="100%"
-            h="100%"
-          >
-            <Stack
-              bgColor="transparent"
-              alignItems="center"
-              textAlign="center"
-              p="8"
-            >
-              <SiPuppeteer className="animate-pulse" size={80} />
+          <TechBox
+            icon={<SiLinux className="animate-pulse" size={80} />}
+            title="Linux"
+            description="Linux is a term popularly used to refer to operating systems or operating systems that use the Linux Kernel."
+          />
 
-              <Text fontWeight="medium" color="#FFE13B" fontSize="24px">
-                Puppeteer
-              </Text>
-              <Text textAlign="center" fontSize="16px">
-                A Node.js library which provides a high-level API to control
-                Chrome/Chromium over the DevTools Protocol.
-              </Text>
-            </Stack>
-          </Box>
+          <TechBox
+            icon={<SiDocker size={80} />}
+            title="Docker"
+            description="Docker is a set of platform-as-a-service products that use operating system-level virtualization to deliver software in packages called containers."
+          />
 
-          <Box
-            boxShadow="dark-lg"
-            borderRadius="8"
-            border="1px solid "
-            borderColor="#FFE13B"
-            w="100%"
-            h="100%"
-          >
-            <Stack
-              bgColor="transparent"
-              alignItems="center"
-              textAlign="center"
-              p="8"
-            >
-              <SiJest className="animate-pulse" size={80} />
+          <TechBox
+            icon={<SiFigma className="animate-pulse" size={80} />}
+            title="Figma"
+            description="Figma is a vector graphics editor and design project prototyping based primarily on the web browser."
+          />
 
-              <Text
-                fontWeight="medium"
-                color="#FFE13B"
-                fontSize="24px"
-                translate="no"
-              >
-                Jest
-              </Text>
-              <Text textAlign="center" fontSize="16px">
-                A JavaScript testing framework built on top of Jasmine and
-                maintained by Meta.
-              </Text>
-            </Stack>
-          </Box>
+          <TechBox
+            icon={<SiChakraui className="animate-pulse" size={80} />}
+            title="Chakra UI"
+            description="Modular and accessible component library that gives you the building blocks you need to build your React applications."
+          />
 
-          <Box
-            boxShadow="dark-lg"
-            borderRadius="8"
-            border="1px solid "
-            borderColor="#FFE13B"
-            w="100%"
-            h="100%"
-          >
-            <Stack
-              bgColor="transparent"
-              alignItems="center"
-              textAlign="center"
-              p="8"
-            >
-              <SiMongodb className="animate-pulse" size={80} />
-
-              <Text fontWeight="medium" color="#FFE13B" fontSize="24px">
-                MongoDB
-              </Text>
-              <Text textAlign="center" fontSize="16px">
-                Open-source, cross-platform document-oriented database software
-                written in the C++ language. Classified as a NoSQL database
-              </Text>
-            </Stack>
-          </Box>
-
-          <Box
-            boxShadow="dark-lg"
-            borderRadius="8"
-            border="1px solid "
-            borderColor="#FFE13B"
-            w="100%"
-            h="100%"
-          >
-            <Stack
-              bgColor="transparent"
-              alignItems="center"
-              textAlign="center"
-              p="8"
-            >
-              <DiMysql className="animate-pulse" size={80} />
-
-              <Text fontWeight="medium" color="#FFE13B" fontSize="24px">
-                MySQL
-              </Text>
-              <Text textAlign="center" fontSize="16px">
-                MySQL is a database management system, which uses the SQL
-                language as an interface. It is currently one of Oracle
-                Corporations most popular database management systems.
-              </Text>
-            </Stack>
-          </Box>
-
-          <Box
-            boxShadow="dark-lg"
-            borderRadius="8"
-            border="1px solid "
-            borderColor="#FFE13B"
-            w="100%"
-            h="100%"
-          >
-            <Stack
-              bgColor="transparent"
-              alignItems="center"
-              textAlign="center"
-              p="8"
-            >
-              <SiLinux className="animate-pulse" size={80} />
-
-              <Text fontWeight="medium" color="#FFE13B" fontSize="24px">
-                Linux
-              </Text>
-              <Text textAlign="center" fontSize="16px">
-                Linux is a term popularly used to refer to operating systems or
-                operating systems that use the Linux Kernel.
-              </Text>
-            </Stack>
-          </Box>
-
-          <Box
-            boxShadow="dark-lg"
-            borderRadius="8"
-            border="1px solid "
-            borderColor="#FFE13B"
-            w="100%"
-            h="100%"
-          >
-            <Stack
-              bgColor="transparent"
-              alignItems="center"
-              textAlign="center"
-              p="8"
-            >
-              <SiDocker size={80} />
-
-              <Text
-                fontWeight="medium"
-                color="#FFE13B"
-                fontSize="24px"
-                translate="no"
-              >
-                Docker
-              </Text>
-              <Text textAlign="center" fontSize="16px">
-                Docker is a set of platform-as-a-service products that use
-                operating system-level virtualization to deliver software in
-                packages called containers.
-              </Text>
-            </Stack>
-          </Box>
-
-          <Box
-            boxShadow="dark-lg"
-            borderRadius="8"
-            border="1px solid "
-            borderColor="#FFE13B"
-            w="100%"
-            h="100%"
-          >
-            <Stack
-              bgColor="transparent"
-              alignItems="center"
-              textAlign="center"
-              p="8"
-            >
-              <SiFigma className="animate-pulse" size={80} />
-
-              <Text
-                fontWeight="medium"
-                color="#FFE13B"
-                fontSize="24px"
-                translate="no"
-              >
-                Figma
-              </Text>
-              <Text textAlign="center" fontSize="16px">
-                Figma is a vector graphics editor and design project prototyping
-                based primarily on the web browser.
-              </Text>
-            </Stack>
-          </Box>
-
-          <Box
-            boxShadow="dark-lg"
-            borderRadius="8"
-            border="1px solid "
-            borderColor="#FFE13B"
-            w="100%"
-            h="100%"
-          >
-            <Stack
-              bgColor="transparent"
-              alignItems="center"
-              textAlign="center"
-              p="8"
-            >
-              <SiChakraui className="animate-pulse" size={80} />
-
-              <Text
-                fontWeight="medium"
-                color="#FFE13B"
-                fontSize="24px"
-                translate="no"
-              >
-                Chakra UI
-              </Text>
-              <Text textAlign="center" fontSize="16px">
-                Modular and accessible component library that gives you the
-                building blocks you need to build your React applications.
-              </Text>
-            </Stack>
-          </Box>
-
-          <Box
-            boxShadow="dark-lg"
-            borderRadius="8"
-            border="1px solid "
-            borderColor="#FFE13B"
-            w="100%"
-            h="100%"
-          >
-            <Stack
-              bgColor="transparent"
-              alignItems="center"
-              textAlign="center"
-              p="8"
-            >
-              <SiCypress className="animate-pulse" size={80} />
-
-              <Text
-                fontWeight="medium"
-                color="#FFE13B"
-                fontSize="24px"
-                translate="no"
-              >
-                Cypress
-              </Text>
-              <Text textAlign="center" fontSize="16px">
-                A purely JavaScript-based front-end testing tool built for the
-                modern web. It aims to address the pain points developers or QA
-                engineers face while testing an application.
-              </Text>
-            </Stack>
-          </Box>
+          <TechBox
+            icon={<SiCypress className="animate-pulse" size={80} />}
+            title="Cypress"
+            description="A purely JavaScript-based front-end testing tool built for the modern web. It aims to address the pain points developers or QA engineers face while testing an application."
+          />
         </>
       </SimpleGrid>
 
