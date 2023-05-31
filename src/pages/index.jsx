@@ -12,17 +12,21 @@ import {
   Divider,
   IconButton,
   Highlight,
+  useTheme,
 } from "@chakra-ui/react";
 
 import { FaLinkedin, FaYoutube } from "react-icons/fa";
 
 import { Header } from "../components/Header";
 import { Sidebar } from "../components/Sidebar";
-import { CardProfile } from "../components/Cards/CardProfile";
+import { CardProfile } from "../components/CardProfile/CardProfile";
 import Footer from "../components/Footer";
 import { TechSection } from "../components/TechSection";
+import { ProjectsSection } from "../components/ProjectsSection";
 
 export default function Home() {
+  const theme = useTheme();
+
   return (
     <>
       {/* //!Profile Section */}
@@ -31,471 +35,25 @@ export default function Home() {
 
         <Sidebar />
 
-        <Flex as="section" justify="center" h={`calc(100vh - 20px)`}>
+        <Flex
+          as="section"
+          justify="center"
+          h={`calc(100vh - 60px)`}
+          bg={`linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.647)),url('/images/boyCoding.jpg')`}
+          // bg={`radial-gradient(rgba(0, 0, 0, 0.9), ${theme.colors.gray[600]}),url('/images/boyCoding.jpg')`}
+          // bg={`radial-gradient(circle at center, ${theme.colors.gray[900]}, transparent), url('/images/boyCoding.jpg')`}
+          // bg={`radial-gradient(circle at center, rgba(0, 0, 0, 0.891), ${theme.colors.gray[900]}), url('/images/boyCoding.jpg')`}
+          backgroundPosition="80% center"
+          backgroundRepeat="no-repeat"
+          backgroundSize="cover"
+        >
           <CardProfile />
         </Flex>
       </Flex>
 
-      <Flex as="section" direction="column" h="100%" justify="center">
-        <Heading
-          as="h1"
-          id="projects"
-          mt="10"
-          textAlign="center"
-          borderBottom="4px solid"
-          borderColor="#FFE13B"
-        >
-          Projects <span>💛</span>
-        </Heading>{" "}
-        <Text textAlign="center" px="4">
-          Welcome to my projects
-        </Text>
-        <SimpleGrid minChildWidth="320px" mt="10" gap={2}>
-          <Box
-            p="4"
-            borderRadius="8"
-            // border="1px solid"
-            // borderColor="#FFE13B"
-          >
-            <Box
-              d="flex"
-              alignItems="center"
-              flexDir="column"
-              textAlign="center"
-              size="md"
-            >
-              <Text
-                as="h2"
-                textAlign="center"
-                color="#FFE13B"
-                fontWeight="semibold"
-                fontSize="32px"
-                borderRadius="8"
-                mb="4"
-              >
-                Dashgo
-              </Text>
-              <Image src="/images/dashgo.png" />
-
-              <Box
-                size="md"
-                d="flex"
-                alignItems="center"
-                flexDir="column"
-                textAlign="center"
-                borderRadius="8"
-                p="4"
-              >
-                <Text textAlign="center" noOfLines={3} px={["0", "0", "24"]}>
-                  DashGo is an application for dashboards in general with pages
-                  and pagination, login and user inclusion system made with
-                  Next.js, Typescript, React-query and other technologies.
-                </Text>
-                <Button
-                  color="#FFE13B"
-                  my="4"
-                  variant="outline"
-                  size="md"
-                  fontSize="20px"
-                >
-                  See more
-                </Button>
-                <Divider />
-              </Box>
-            </Box>
-          </Box>
-        </SimpleGrid>
-        <SimpleGrid minChildWidth="320px" gap={2}>
-          <Box
-            p="4"
-            borderRadius="8"
-            // border="1px solid"
-            // borderColor="#FFE13B"
-          >
-            <Box
-              d="flex"
-              alignItems="center"
-              flexDir="column"
-              textAlign="center"
-              size="md"
-            >
-              <Text
-                as="h2"
-                textAlign="center"
-                color="#FFE13B"
-                fontWeight="semibold"
-                fontSize="32px"
-                borderRadius="8"
-                mb="4"
-              >
-                Yan Bot
-              </Text>
-              <Image src="/images/yanBot.png" />
-
-              <Box
-                size="md"
-                d="flex"
-                alignItems="center"
-                flexDir="column"
-                textAlign="center"
-                borderRadius="8"
-                p="4"
-              >
-                <Text noOfLines={3} textAlign="center" px={["0", "0", "24"]}>
-                  🧠 Yan is an artificial intelligence that uses Machine
-                  learning and NLP (natural language processing). 🌎 It is
-                  multilingual and supports 40 languages natively and 104
-                  languages through BERT integration. 👨‍🚀 Born with the purpose
-                  of understanding customers intentions and providing a quick
-                  and effective response, the more you talk to Yan, the more he
-                  learns and improves the user experience. 🤘 This project has
-                  the help of the open source community in Brazil and the world.
-                </Text>
-                <Button
-                  color="#FFE13B"
-                  my="4"
-                  variant="outline"
-                  size="md"
-                  fontSize="20px"
-                >
-                  See more
-                </Button>
-                <Divider />
-              </Box>
-            </Box>
-          </Box>
-        </SimpleGrid>
-        <SimpleGrid minChildWidth="320px" gap={2}>
-          <Box
-            p="4"
-            borderRadius="8"
-            // border="1px solid"
-            // borderColor="#FFE13B"
-          >
-            <Box
-              d="flex"
-              alignItems="center"
-              flexDir="column"
-              textAlign="center"
-              size="md"
-            >
-              <Text
-                as="h2"
-                textAlign="center"
-                color="#FFE13B"
-                fontWeight="semibold"
-                fontSize="32px"
-                borderRadius="8"
-                mb="4"
-              >
-                hq.news
-              </Text>
-              <Image src="/images/hqNews.png" />
-
-              <Box
-                size="md"
-                d="flex"
-                alignItems="center"
-                flexDir="column"
-                textAlign="center"
-                borderRadius="8"
-                p="4"
-              >
-                <Text noOfLines={3} textAlign="center" px={["0", "0", "24"]}>
-                  The hq.news project is a blog where users can access the
-                  content of each post according to their subscription status
-                  through a Stripe payment system integration.
-                </Text>
-                <Button
-                  color="#FFE13B"
-                  my="4"
-                  variant="outline"
-                  size="md"
-                  fontSize="20px"
-                >
-                  See more
-                </Button>
-                <Divider />
-              </Box>
-            </Box>
-          </Box>
-        </SimpleGrid>
-        <SimpleGrid minChildWidth="320px" gap={2}>
-          <Box
-            p="4"
-            borderRadius="8"
-            // border="1px solid"
-            // borderColor="#FFE13B"
-          >
-            <Box
-              d="flex"
-              alignItems="center"
-              flexDir="column"
-              textAlign="center"
-              size="md"
-            >
-              <Text
-                as="h2"
-                textAlign="center"
-                color="#FFE13B"
-                fontWeight="semibold"
-                fontSize="32px"
-                borderRadius="8"
-                mb="4"
-              >
-                Feed
-              </Text>
-              <Image src="/images/feed.png" />
-
-              <Box
-                size="md"
-                d="flex"
-                alignItems="center"
-                flexDir="column"
-                textAlign="center"
-                borderRadius="8"
-                p="4"
-              >
-                <Text noOfLines={3} textAlign="center" px={["0", "0", "24"]}>
-                  Feed is an application like a social network where you can
-                  like and comment on a third-party publication and was
-                  developed with Next.js, Javascript, and Styled-Components and
-                  other technologies.
-                </Text>
-                <Button
-                  color="#FFE13B"
-                  my="4"
-                  variant="outline"
-                  size="md"
-                  fontSize="20px"
-                >
-                  See more
-                </Button>
-                <Divider />
-              </Box>
-            </Box>
-          </Box>
-        </SimpleGrid>
-        <SimpleGrid minChildWidth="320px" gap={2}>
-          <Box p="4" borderRadius="8">
-            <Box
-              d="flex"
-              alignItems="center"
-              flexDir="column"
-              textAlign="center"
-              size="md"
-            >
-              <Text
-                as="h2"
-                textAlign="center"
-                color="#FFE13B"
-                fontWeight="semibold"
-                fontSize="32px"
-                borderRadius="8"
-                mb="4"
-              >
-                Watch.me
-              </Text>
-              <Image src="/images/watchMe.png" />
-
-              <Box
-                size="md"
-                d="flex"
-                alignItems="center"
-                flexDir="column"
-                textAlign="center"
-                borderRadius="8"
-                p="4"
-              >
-                <Text noOfLines={3} textAlign="center" px={["0", "0", "24"]}>
-                  Application that allows the user to have greater accuracy in
-                  personal financial control by recording financial inputs and
-                  outputs. There is the possibility of adding, editing or
-                  deleting transactions in addition to storing and persisting
-                  data in local storage.
-                </Text>
-                <Button
-                  color="#FFE13B"
-                  my="4"
-                  variant="outline"
-                  size="md"
-                  fontSize="20px"
-                >
-                  See more
-                </Button>
-                <Divider />
-              </Box>
-            </Box>
-          </Box>
-        </SimpleGrid>
-        <SimpleGrid minChildWidth="320px" gap={2}>
-          <Box
-            p="4"
-            borderRadius="8"
-            // border="1px solid"
-            // borderColor="#FFE13B"
-          >
-            <Box
-              d="flex"
-              alignItems="center"
-              flexDir="column"
-              textAlign="center"
-              size="md"
-            >
-              <Text
-                as="h2"
-                textAlign="center"
-                color="#FFE13B"
-                fontWeight="semibold"
-                fontSize="32px"
-                borderRadius="8"
-                mb="4"
-              >
-                B7Delivery
-              </Text>
-              <Image src="/images/delivery.png" />
-
-              <Box
-                size="md"
-                d="flex"
-                alignItems="center"
-                flexDir="column"
-                textAlign="center"
-                borderRadius="8"
-                p="4"
-              >
-                <Text noOfLines={3} textAlign="center" px={["0", "0", "24"]}>
-                  Multi-tenancy SaaS made with Typescript and Next.js. Delivery
-                  system for small and medium businesses where it is possible to
-                  place orders for registered restaurants.
-                </Text>
-                <Button
-                  color="#FFE13B"
-                  my="4"
-                  variant="outline"
-                  size="md"
-                  fontSize="20px"
-                >
-                  See more
-                </Button>
-                <Divider />
-              </Box>
-            </Box>
-          </Box>
-        </SimpleGrid>
-        <SimpleGrid minChildWidth="320px" gap={2}>
-          <Box
-            p="4"
-            borderRadius="8"
-            // border="1px solid"
-            // borderColor="#FFE13B"
-          >
-            <Box
-              d="flex"
-              alignItems="center"
-              flexDir="column"
-              textAlign="center"
-              size="md"
-            >
-              <Text
-                as="h2"
-                textAlign="center"
-                color="#FFE13B"
-                fontWeight="semibold"
-                fontSize="32px"
-                borderRadius="8"
-                mb="4"
-              >
-                Rocketshoes
-              </Text>
-              <Image src="/images/rocketshoes.png" />
-
-              <Box
-                size="md"
-                d="flex"
-                alignItems="center"
-                flexDir="column"
-                textAlign="center"
-                borderRadius="8"
-                p="4"
-              >
-                <Text noOfLines={3} textAlign="center" px={["0", "0", "24"]}>
-                  This project was developed at the RocketSeat Ignite Bootcamp
-                  with the following technologies: ReactJS, Redux, Redux-Saga,
-                  React, Router, v4, Axios, Polished, React-Toastify,
-                  styled-components, React-Icons, react-loading-skeleton,
-                  react-loader-spinner, json-server and more.
-                </Text>
-                <Button
-                  color="#FFE13B"
-                  my="4"
-                  variant="outline"
-                  size="md"
-                  fontSize="20px"
-                >
-                  See more
-                </Button>
-                <Divider />
-              </Box>
-            </Box>
-          </Box>
-        </SimpleGrid>
-        <SimpleGrid minChildWidth="320px" gap={2}>
-          <Box p="4" borderRadius="8">
-            <Box
-              d="flex"
-              alignItems="center"
-              flexDir="column"
-              textAlign="center"
-              size="md"
-            >
-              <Text
-                as="h2"
-                textAlign="center"
-                color="#FFE13B"
-                fontWeight="semibold"
-                fontSize="32px"
-                borderRadius="8"
-                mb="4"
-              >
-                Control of Expenses
-              </Text>
-              <Image src="/images/controleDeDespesas.png" />
-
-              <Box
-                size="md"
-                d="flex"
-                alignItems="center"
-                flexDir="column"
-                textAlign="center"
-                borderRadius="8"
-                p="4"
-              >
-                <Text noOfLines={3} textAlign="center" px={["0", "0", "24"]}>
-                  Application that allows the user to have greater accuracy in
-                  personal financial control by recording financial inputs and
-                  outputs. There is the possibility of adding, editing or
-                  deleting transactions in addition to storing and persisting
-                  data in local storage.
-                </Text>
-                <Button
-                  color="#FFE13B"
-                  my="4"
-                  variant="outline"
-                  size="md"
-                  fontSize="20px"
-                >
-                  See more
-                </Button>
-              </Box>
-            </Box>
-          </Box>
-        </SimpleGrid>
-      </Flex>
+      <ProjectsSection />
 
       <TechSection />
-
-      {/* <Divider /> */}
 
       {/* //!Content creator*/}
       <Flex as="section" h="100vh" justify="center">
@@ -621,10 +179,9 @@ export default function Home() {
           {/* //!END Botões de interação */}
         </Stack>
       </Flex>
-      {/* //!END Content creator*/}
 
       <Divider />
-      {/* //!START Content comments */}
+
       <Footer />
     </>
   );
