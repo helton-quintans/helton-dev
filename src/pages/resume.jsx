@@ -133,7 +133,7 @@ const ResumeSection = memo(({ title, children }) => {
 
                 <Text pt="2" fontSize="sm">
                   <Text textColor="telegram.500">
-                    Nuvem Tecnologia | Cuiabá | MT - 2023 a 2023 (4 meses)
+                    Nuvem Tecnologia | Cuiabá | MT - 2023 a Atual (4 meses)
                   </Text>
                   <Text as="i">
                     {" "}
@@ -320,7 +320,7 @@ const ResumeSection = memo(({ title, children }) => {
 
                 <Text pt="2" fontSize="sm">
                   <Text textColor="telegram.500">
-                    FORÇA AÉREA BRASILEIRA | 2011 a 2017
+                    FORÇA AÉREA BRASILEIRA | 2011 a 2017 (6 anos)
                   </Text>
                   <Text as="i"> Empresa Pública.</Text>
 
