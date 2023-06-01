@@ -23,8 +23,11 @@ import {
   SiInstagram,
 } from "react-icons/si";
 import { FaDev } from "react-icons/fa";
+import { useRouter } from "next/router";
 
 export function CardProfile() {
+  const router = useRouter();
+
   return (
     <Card
       maxW={["sm", "lg"]}
@@ -125,6 +128,9 @@ export function CardProfile() {
                   transform: "scale(1.2)",
                   transition: "all 0.2s ease-in-out",
                 }}
+                onClick={() =>
+                  router.push("https://github.com/helton-quintans")
+                }
               />
               <IconButton
                 variant="outline"
@@ -136,6 +142,9 @@ export function CardProfile() {
                   transform: "scale(1.2)",
                   transition: "all 0.2s ease-in-out",
                 }}
+                onClick={() =>
+                  router.push("https://www.linkedin.com/in/heltonquintans/")
+                }
               />
               <IconButton
                 variant="outline"
@@ -147,6 +156,11 @@ export function CardProfile() {
                   transform: "scale(1.2)",
                   transition: "all 0.2s ease-in-out",
                 }}
+                onClick={() =>
+                  router.push(
+                    "https://www.youtube.com/channel/UCWe9h44jq9KiHYFmJTvgchQ"
+                  )
+                }
               />
               <IconButton
                 variant="outline"
@@ -158,6 +172,9 @@ export function CardProfile() {
                   transform: "scale(1.2)",
                   transition: "all 0.2s ease-in-out",
                 }}
+                onClick={() =>
+                  router.push("https://www.instagram.com/helton_quintans/")
+                }
               />
             </ButtonGroup>
           </CardFooter>

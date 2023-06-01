@@ -1,6 +1,6 @@
 import { Box, Button, Divider, Flex, Image, Text } from "@chakra-ui/react";
 
-export const ProjectCard = ({ title, imageSrc, description }) => (
+export const ProjectCard = ({ title, imageSrc, description, children }) => (
   <Flex p="4">
     <Box
       d="flex"
@@ -43,20 +43,9 @@ export const ProjectCard = ({ title, imageSrc, description }) => (
         >
           {description}
         </Text>
-        <Button
-          color="#FFE13B"
-          my="4"
-          variant="outline"
-          size="md"
-          fontSize="20px"
-          _hover={{
-            opacity: 0.7,
-            transform: "scale(1.2)",
-            transition: "all 0.2s ease-in-out",
-          }}
-        >
-          See more
-        </Button>
+
+        {children}
+
         <Divider />
       </Box>
     </Box>
