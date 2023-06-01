@@ -24,8 +24,11 @@ import {
 } from "react-icons/si";
 import { FaDev } from "react-icons/fa";
 import { useRouter } from "next/router";
+import { useState } from "react";
 
 export function CardProfile() {
+  const [isFloating, setIsFloating] = useState(true);
+  const [isHovered, setIsHovered] = useState(true);
   const router = useRouter();
 
   return (
@@ -36,6 +39,16 @@ export function CardProfile() {
       py={["0", "150"]}
       justify="center"
       alignItems="center"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      css={{
+        animation: `${isHovered ? "floatUpDown 2.5s infinite" : "none"}`,
+        "@keyframes floatUpDown": {
+          "0%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-10px)" },
+          "100%": { transform: "translateY(0)" },
+        },
+      }}
     >
       <CardBody px="4">
         <Flex justify="center">
