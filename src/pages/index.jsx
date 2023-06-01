@@ -2,13 +2,10 @@
 import {
   Flex,
   Box,
-  Button,
   Heading,
   Text,
   Stack,
   AspectRatio,
-  SimpleGrid,
-  Image,
   Divider,
   IconButton,
   Highlight,
@@ -29,7 +26,6 @@ export default function Home() {
 
   return (
     <>
-      {/* //!Profile Section */}
       <Flex direction="column" h="100vh">
         <Header />
 
@@ -43,9 +39,9 @@ export default function Home() {
           // bg={`radial-gradient(rgba(0, 0, 0, 0.9), ${theme.colors.gray[600]}),url('/images/boyCoding.jpg')`}
           // bg={`radial-gradient(circle at center, ${theme.colors.gray[900]}, transparent), url('/images/boyCoding.jpg')`}
           // bg={`radial-gradient(circle at center, rgba(0, 0, 0, 0.891), ${theme.colors.gray[900]}), url('/images/boyCoding.jpg')`}
-          backgroundPosition="80% center"
-          backgroundRepeat="no-repeat"
-          backgroundSize="cover"
+          // backgroundPosition="80% center"
+          // backgroundRepeat="no-repeat"
+          // backgroundSize="cover"
         >
           <CardProfile />
         </Flex>
