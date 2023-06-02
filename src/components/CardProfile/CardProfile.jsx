@@ -39,16 +39,16 @@ export function CardProfile() {
       py={["0", "150"]}
       justify="center"
       alignItems="center"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-      css={{
-        animation: `${isHovered ? "floatUpDown 2.5s infinite" : "none"}`,
-        "@keyframes floatUpDown": {
-          "0%": { transform: "translateY(0)" },
-          "50%": { transform: "translateY(-10px)" },
-          "100%": { transform: "translateY(0)" },
-        },
-      }}
+      // onMouseEnter={() => setIsHovered(true)}
+      // onMouseLeave={() => setIsHovered(false)}
+      // css={{
+      //   animation: `${isHovered ? "floatUpDown 2.5s infinite" : "none"}`,
+      //   "@keyframes floatUpDown": {
+      //     "0%": { transform: "translateY(0)" },
+      //     "50%": { transform: "translateY(-10px)" },
+      //     "100%": { transform: "translateY(0)" },
+      //   },
+      // }}
     >
       <CardBody px="4">
         <Flex justify="center">
