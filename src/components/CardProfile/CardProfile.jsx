@@ -27,8 +27,8 @@ import { useRouter } from "next/router";
 import { useState } from "react";
 
 export function CardProfile() {
-  const [isFloating, setIsFloating] = useState(true);
-  const [isHovered, setIsHovered] = useState(true);
+  // const [isFloating, setIsFloating] = useState(true);
+  // const [isHovered, setIsHovered] = useState(true);
   const router = useRouter();
 
   return (
