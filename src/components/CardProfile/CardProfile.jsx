@@ -24,7 +24,6 @@ import {
 } from "react-icons/si";
 import { FaDev } from "react-icons/fa";
 import { useRouter } from "next/router";
-import { useState } from "react";
 
 export function CardProfile() {
   // const [isFloating, setIsFloating] = useState(true);
