@@ -122,57 +122,6 @@ export default function Home() {
               icon={<FaLinkedin size="sm" />}
             />{" "}
           </Text>
-          {/* //!Botões de interação */}
-          {/* <Flex spacing="4">
-            <Flex
-              flex="1"
-              gap="4"
-              justify="center"
-              alignItems="center"
-              flexWrap="wrap"
-              py="8"
-            >
-              <HStack
-                justify="space-between"
-                flexWrap="wrap"
-                sx={{
-                  "& > button": {
-                    minW: "136px",
-                    miax: "150px",
-                  },
-                }}
-              >
-                <Button
-                  flex="1"
-                  variant="outline"
-                  color="#FFE13B"
-                  size="lg"
-                  leftIcon={<BiLike />}
-                >
-                  Like
-                </Button>
-                <Button
-                  flex="1"
-                  variant="outline"
-                  color="#FFE13B"
-                  size="lg"
-                  leftIcon={<BiChat />}
-                >
-                  Comment
-                </Button>
-                <Button
-                  flex="1"
-                  variant="outline"
-                  color="#FFE13B"
-                  size="lg"
-                  leftIcon={<BiShare />}
-                >
-                  Share
-                </Button>
-              </HStack>
-            </Flex>
-          </Flex> */}
-          {/* //!END Botões de interação */}
         </Stack>
       </Flex>
 
