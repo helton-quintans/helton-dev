@@ -1,6 +1,7 @@
 import { Flex, Heading, HStack, SimpleGrid, Text } from "@chakra-ui/react";
 import { DiMysql } from "react-icons/di";
 import {
+  SiAntdesign,
   SiChakraui,
   SiCss3,
   SiCypress,
@@ -23,6 +24,8 @@ import {
   SiTailwindcss,
   SiTypescript,
 } from "react-icons/si";
+
+import { TbBrandReactNative } from "react-icons/tb"
 import { TechBox } from "./TechBox";
 
 export function TechSection() {
@@ -76,16 +79,28 @@ export function TechSection() {
             pages. It is maintained by Facebook."
           />
 
+          {/* <TechBox
+            icon={<SiReact size={80} />}
+            title="React Native"
+            description="React Native is a JavaScript framework for building mobile applications that allows developers to write code once and deploy it across multiple platforms, including iOS and Android."
+          /> */}
+
+          <TechBox
+            icon={<TbBrandReactNative size={80} />}
+            title="React Query"
+            description="React Query is a library for managing asynchronous data in React applications. It provides features such as fetching, caching, and updating data, making it a powerful tool for optimizing performance and building great user experiences."
+          />
+
           <TechBox
             icon={<SiNextdotjs size={80} />}
             title="Next.js"
-            description="Framework de desenvolvimento front-end React de código aberto criado pela Vercel que permite funcionalidades como renderização do lado do servidor e geração de sites estáticos para aplicativos da web baseados em React."
+            description="Open-source React front-end development framework created by Vercel that enables functionality such as server-side rendering and static website generation for React-based web applications."
           />
 
           <TechBox
             icon={<SiNodedotjs size={80} />}
             title="Node"
-            description="Um software de código aberto e multiplataforma, baseado no interpretador V8 do Google, que permite a execução de código JavaScript fora de um navegador da web."
+            description="An open-source, cross-platform software based on Google's V8 interpreter that allows JavaScript code to run outside of a web browser."
           />
 
           <TechBox
@@ -97,25 +112,25 @@ export function TechSection() {
               </HStack>
             }
             title="Git, Github e Gitlab"
-            description="Plataforma de hospedagem de arquivos e código-fonte com controle de versão usando Git. Ele permite que programadores, utilitários ou qualquer usuário registrado na plataforma contribua para projetos privados e/ou de código aberto de qualquer lugar do mundo."
+            description="File and source code hosting platform with version control using Git. It allows programmers, utilities or any user registered on the platform to contribute to private and/or open source projects from anywhere in the world."
           />
 
           <TechBox
             icon={<SiTailwindcss className="animate-pulse" size={80} />}
             title="TailwindCSS"
-            description="Um framework CSS utility-first para construir rapidamente interfaces de usuário personalizadas."
+            description="A utility-first CSS framework for quickly building custom user interfaces."
           />
 
           <TechBox
             icon={<SiStyledcomponents className="animate-pulse" size={80} />}
             title="Styled Components"
-            description="Uma biblioteca popular usada para estilizar aplicativos React. Ele permite que você construa componentes personalizados escrevendo CSS real em seu JavaScript."
+            description="A popular library used for styling React apps. It allows you to build custom components by writing real CSS in your JavaScript."
           />
 
           <TechBox
             icon={<SiSass className="animate-pulse" size={80} />}
             title="Sass"
-            description="Linguagem de folha de estilo inicialmente concebida por Hampton Catlin e desenvolvida por Natalie Weizenbaum."
+            description="Stylesheet language initially conceived by Hampton Catlin and developed by Natalie Weizenbaum."
           />
 
           <TechBox
@@ -136,11 +151,11 @@ export function TechSection() {
             description="Open-source, cross-platform document-oriented database software written in the C++ language. Classified as a NoSQL database."
           />
 
-          <TechBox
+          {/* <TechBox
             icon={<DiMysql className="animate-pulse" size={80} />}
             title="MySQL"
             description="MySQL is a database management system, which uses the SQL language as an interface. It is currently one of Oracle Corporations most popular database management systems."
-          />
+          /> */}
 
           <TechBox
             icon={<SiLinux className="animate-pulse" size={80} />}
@@ -164,6 +179,12 @@ export function TechSection() {
             icon={<SiChakraui className="animate-pulse" size={80} />}
             title="Chakra UI"
             description="Modular and accessible component library that gives you the building blocks you need to build your React applications."
+          />
+
+          <TechBox
+            icon={<SiAntdesign className="animate-pulse" size={80} />}
+            title="AntDesign"
+            description="Ant Design is a React UI kit that is considered one of the best in the world. It is widely used and downloaded, with over 83K stars on GitHub."
           />
 
           <TechBox
