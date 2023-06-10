@@ -52,7 +52,7 @@ export default function Home() {
       <TechSection />
 
       {/* //!Content creator*/}
-      <Flex as="section" h="100vh" justify="center">
+      <Flex as="section"  justify="center" mb="12">
         <Stack px="4" spacing="">
           <Heading
             as="h1"
