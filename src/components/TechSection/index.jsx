@@ -146,6 +146,11 @@ export function TechSection() {
           />
 
           <TechBox
+            icon={<SiCypress className="animate-pulse" size={80} />}
+            title="Cypress"
+            description="A purely JavaScript-based front-end testing tool built for the modern web. It aims to address the pain points developers or QA engineers face while testing an application."
+          />
+          <TechBox
             icon={<SiMongodb className="animate-pulse" size={80} />}
             title="MongoDB"
             description="Open-source, cross-platform document-oriented database software written in the C++ language. Classified as a NoSQL database."
@@ -187,11 +192,6 @@ export function TechSection() {
             description="Ant Design is a React UI kit that is considered one of the best in the world. It is widely used and downloaded, with over 83K stars on GitHub."
           />
 
-          <TechBox
-            icon={<SiCypress className="animate-pulse" size={80} />}
-            title="Cypress"
-            description="A purely JavaScript-based front-end testing tool built for the modern web. It aims to address the pain points developers or QA engineers face while testing an application."
-          />
         </>
       </SimpleGrid>
     </>
