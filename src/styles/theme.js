@@ -28,7 +28,7 @@ export const theme = extendTheme({
         color: "gray.50",
       },
       "::-webkit-scrollbar": {
-        width: "6px",
+        width: "10px",
       },
       "::-webkit-scrollbar-thumb": {
         backgroundColor: "#FFE13B",
