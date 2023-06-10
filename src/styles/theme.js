@@ -27,6 +27,13 @@ export const theme = extendTheme({
         bg: "gray.900",
         color: "gray.50",
       },
+      "::-webkit-scrollbar": {
+        width: "10px",
+      },
+      "::-webkit-scrollbar-thumb": {
+        backgroundColor: "#FFE13B",
+        borderRadius: "10px"
+      },
     },
   },
 });
