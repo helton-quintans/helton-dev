@@ -138,7 +138,7 @@ export function ProjectsSection() {
 
       <ProjectCard
         title="Watch.me"
-        imageSrc="/images/WatchMe.png"
+        imageSrc="/images/watchMe.png"
         description="
         Application made with typescript that lists movies by categories."
       >
