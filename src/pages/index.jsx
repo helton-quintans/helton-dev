@@ -36,6 +36,9 @@ export default function Home() {
           as="section"
           justify="center"
           h={`calc(100vh - 60px)`}
+          backgroundImage= 'url("images/bgHome.png")'
+          backgroundPosition= '30% center'
+          backgroundSize= 'cover'
           // bg={`linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.647)),url('/images/boyCoding.jpg')`}
           // bg={`radial-gradient(rgba(0, 0, 0, 0.9), ${theme.colors.gray[600]}),url('/images/boyCoding.jpg')`}
           // bg={`radial-gradient(circle at center, ${theme.colors.gray[900]}, transparent), url('/images/boyCoding.jpg')`}
