@@ -10,6 +10,7 @@ import {
   IconButton,
   Highlight,
   useTheme,
+  Center,
 } from "@chakra-ui/react";
 
 import { FaLinkedin, FaYoutube } from "react-icons/fa";
@@ -49,81 +50,85 @@ export default function Home() {
 
       <ProjectsSection />
 
-      <TechSection />
+      {/* <Flex flexDir={"column"} alignItems={"center"}> */}
+        <TechSection />
+      {/* </Flex> */}
 
       {/* //!Content creator*/}
-      <Flex as="section"  justify="center" mb="12">
-        <Stack px="4" spacing="">
-          <Heading
-            as="h1"
-            id="projects"
-            mt="16"
-            textAlign="center"
-            borderBottom="4px solid"
-            borderColor="#FFE13B"
-          >
-            Content Creation
-            {/* <span>💛</span> */}
-          </Heading>{" "}
-          <Text textAlign="center" color="gray.200">
-            <Text>
-              I make videos to teach people how to rebuild and redefine
-              fundamental programming concepts on Youtube
-            </Text>
+      {/* <Flex flexDir={"column"} alignItems={"center"}> */}
+        <Flex as="section"   align={"center"} justify="center" mb="12">
+          <Stack px="4" spacing="">
+            <Heading
+              as="h1"
+              id="projects"
+              mt="16"
+              textAlign="center"
+              borderBottom="4px solid"
+              borderColor="#FFE13B"
+            >
+              Content Creation
+              {/* <span>💛</span> */}
+            </Heading>{" "}
+            <Text textAlign="center" color="gray.200">
+              <Text>
+                I make videos to teach people how to rebuild and redefine
+                fundamental programming concepts on Youtube
+              </Text>
 
-            <IconButton
-              variant="filled"
-              color="#F5423E"
-              aria-label="See menu"
-              icon={<FaYoutube size="sm" />}
-            />
-          </Text>
-          {/* //!Video do youtube */}
-          <Box
-            border={["1px solid", "0px"]}
-            borderRadius="8"
-            boxShadow="dark-lg"
-            align="center"
-            p="2"
-            justifyItems="center"
-            mt="4"
-          >
-            <AspectRatio
-              justifyContent="center"
-              // maxW="920px"
-              // maxH="450px"
-              minH="30vh"
-              maxH="78vh"
-              ratio="2"
+              {/* <IconButton
+                variant="filled"
+                color="#F5423E"
+                aria-label="See menu"
+                icon={<FaYoutube size="sm" />}
+              /> */}
+            </Text>
+            {/* //!Video do youtube */}
+            <Box
+              border={["1px solid", "0px"]}
+              borderRadius="8"
+              boxShadow="dark-lg"
+              align="center"
+              p="2"
+              justifyItems="center"
+              mt="4"
             >
-              <iframe
-                width="804"
-                height="452"
-                src="https://www.youtube.com/embed/jnd-BnjiujU?list=PLbVhk8EESZtbuUeopDQS79mqZw44WDrwf"
-                title="ES6+ Manipulando de Array - Map"
-                // frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
-            </AspectRatio>
-          </Box>
-          {/* //!END Video do youtube */}
-          <Text px="4" textAlign="center" textColor="gray.200">
-            <Highlight
-              query={["100k"]}
-              styles={{ px: "2", py: "1", rounded: "full", bg: "#FFE13B" }}
-            >
-              My posts have reached over 100K impressions per week on Linkedin
-            </Highlight>{" "}
-            <IconButton
-              variant="filled"
-              color="blue.600"
-              aria-label="See menu"
-              icon={<FaLinkedin size="sm" />}
-            />{" "}
-          </Text>
-        </Stack>
-      </Flex>
+              <AspectRatio
+                justifyContent="center"
+                // maxW="920px"
+                // maxH="450px"
+                minH="30vh"
+                maxH="78vh"
+                minW={[0, 1160]}
+                ratio="2"
+              >
+                <iframe
+                  width="804"
+                  height="452"
+                  src="https://www.youtube.com/embed/jnd-BnjiujU?list=PLbVhk8EESZtbuUeopDQS79mqZw44WDrwf"
+                  title="ES6+ Manipulando de Array - Map"
+                  // frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
+              </AspectRatio>
+            </Box>
+            <Text px="4" textAlign="center" textColor="gray.200">
+              <Highlight
+                query={["100k"]}
+                styles={{ px: "2", py: "1", rounded: "full", bg: "#FFE13B" }}
+              >
+                My posts have reached over 100K impressions per week on Linkedin
+              </Highlight>{" "}
+              <IconButton
+                variant="filled"
+                color="blue.600"
+                aria-label="See menu"
+                icon={<FaLinkedin size="sm" />}
+              />{" "}
+            </Text>
+          </Stack>
+        </Flex>
+      {/* </Flex> */}
 
       <Divider />
 

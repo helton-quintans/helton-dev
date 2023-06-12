@@ -110,7 +110,7 @@ export function ProjectsSection() {
           See more
         </Button>
       </ProjectCard>
-
+      
       <ProjectCard
         title="Feed"
         imageSrc="/images/feed.png"

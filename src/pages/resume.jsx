@@ -24,7 +24,16 @@ import { SlGraduation } from "react-icons/sl";
 import { Header } from "../components/Header";
 
 import { MdOutlineFileDownload } from "react-icons/md";
+import { keyframes } from "@emotion/react";
 import Footer from "../components/Footer";
+
+
+
+const blinkAnimation = keyframes`
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+`;
 
 const ResumeSection = memo(({ title, children }) => {
   return (
@@ -32,29 +41,35 @@ const ResumeSection = memo(({ title, children }) => {
       <Header />
       <Center py="4">
         <Link target="_blank" download href="/cv.pdf">
-          <IconButton
+          <Button
             variant="outline"
-            me="2"
-            aria-label="Search database"
-            icon={<MdOutlineFileDownload />}
+            minW="200px"
+            // me="2"
+            aria-label="download"
+            leftIcon={<MdOutlineFileDownload />}
+            animation={`${blinkAnimation} 2s infinite`}
+            boxShadow="1px 5px 10px rgba(206, 203, 22, 0.637)"
             _hover={{
               opacity: 0.7,
-              transform: "scale(1.2)",
+              transform: "scale(1.1)",
               transition: "all 0.2s ease-in-out",
+              color: "#FFE13B",
             }}
-          ></IconButton>
-          Donwload Resume
+          >
+
+          Donwload
+          </Button>
         </Link>
       </Center>
 
       {/* <Divider mt="8" /> */}
-      <Center px={["0", "44"]}>
+      <Center mx={"auto"} maxW="1160px">
         <Card variant="outline" p={["4", "8"]} mt="8" m="2">
-          <CardHeader>
-            <Heading size="md" color="#FFE13B">
+          <CardHeader >
+            <Heading size="md" color="#FFE13B" mx>
               Helton Quintans da Silva
             </Heading>
-            <Text>Brasileiro, 30 anos</Text>
+            <Text textColor={"telegram.500"}>Brasileiro, 30 anos</Text>
           </CardHeader>
 
           <CardBody color="gray.50">
@@ -69,15 +84,7 @@ const ResumeSection = memo(({ title, children }) => {
                   RESUMO DE QUALIFICAÇÃO
                 </Heading>
                 <Text pt="2" fontSize="sm">
-                  Atuação no segmento da Tecnologia da Informação, certificado
-                  pelo SFPC® - Scrum Foundations Professional Certificate com
-                  experiência desenvolvendo e testando aplicações no ecossistema
-                  React utilizando Javascript, TypeScript, NodeJS e outras
-                  tecnologias aplicando princípios e boas práticas de UI/UX,
-                  Desenvolvimento e Testes de Softwares em ambientes com
-                  metodologia ágil (SCRUM). Atuação: Desenvolvimento de
-                  interfaces, Teste automatizados, RPA - (Robotic process
-                  automation).
+                Atuação no segmento da Tecnologia da Informação, certificado pelo SFPC® - Scrum Foundations Professional Certificate com experiência desenvolvendo e testando aplicações no ecossistema React utilizando Javascript, TypeScript e outras tecnologias aplicando princípios e boas práticas de UI/UX, Desenvolvimento e Testes de Softwares em ambientes com metodologia ágil (SCRUMe Kanban).
                 </Text>
               </Box>
               <Box>
@@ -107,18 +114,25 @@ const ResumeSection = memo(({ title, children }) => {
 
                   <Text fontWeight="bold" color="telegram.500">
                     {" "}
-                    Conhecimentos Específicos::
+                    Conhecimentos Específicos:
                   </Text>
 
                   <Text>
-                    Sistemas Operacionais: Windows, Linux. Metodologias: SCRUM.
-                    Testes: Jest, Robot Framework, Cypress. Ferramentas:
-                    Next.js, React Query, React Hooks, HTML, CSS, SASS, SCSS,
-                    Styled Components, Tailwind CSS, Chakra UI, Graphql,
-                    Postman, Puppeteer, Axios, REST API, JWT, MirageJS, Strapi
-                    CMS, Jira, GitHub, Git, SPA, Context API, Figma, Vite, Yarn,
-                    Visual Studio Code.
+                    Sistemas Operacionais:  Linux, IOS, Windows.
                   </Text>
+
+                  <Text>
+                    Metodologias: SCRUM e Kanban.
+                  </Text>
+                  <Text>
+                  Testes:  Jest, Testing library, Cypress. 
+                  </Text>
+                  <Text>
+                  Ferramentas:
+                  Next.js, React Query, React Hooks, HTML, CSS, SASS, SCSS, Styled Components, Tailwind CSS, Chakra UI, Ant Design, Prime React, Material UI, Postman, Axios, REST API, JWT, MirageJS, Jira, Confluence, Azure AD, GitHub, Git, SPA, Context API,  Figma, Vite, Yarn, Visual Studio Code.
+                  </Text>
+
+                  
                 </Text>
               </Box>
               <Box>
@@ -137,8 +151,7 @@ const ResumeSection = memo(({ title, children }) => {
                   </Text>
                   <Text as="i">
                     {" "}
-                    Empresa Privada | Empresa do setor agrícola que atual na
-                    exportação de milho, soja e algodão.
+                    Empresa Privada | Soluções para o agronegócio, sistemas com imagens via satélite e referência geoespacial, integrado com ERPs agrícolas para fazer exportação de milho, algodão e soja.
                   </Text>
 
                   <Text fontWeight="bold" color="telegram.500">
@@ -152,35 +165,41 @@ const ResumeSection = memo(({ title, children }) => {
                     </ListItem>
                     <ListItem>
                       <ListIcon as={MdCheckCircle} color="#FFE13B" />
-                      Desenvolvimento de interfaces utilizando o ecossistema
-                      React, Styled Components, Chakra Ui, Ant-Design e
-                      Prime-React.
+                      Responsável pela criação de um sistema de gerenciamento de arquivos persistidos na AWS S3, upload, download, criação de diretórios, navegação entre diretórios e categorização por tags categóricas e/ou personalizadas pelo próprio usuário.
                     </ListItem>
                     <ListItem>
                       <ListIcon as={MdCheckCircle} color="#FFE13B" />
-                      Typescript.
+                      Responsável por manter a qualidade de código.
                     </ListItem>
                     <ListItem>
                       <ListIcon as={MdCheckCircle} color="#FFE13B" />
-                      React Query
+                      Responsável por implementar novas features e refatorar features já existentes.
                     </ListItem>
                     <ListItem>
                       <ListIcon as={MdCheckCircle} color="#FFE13B" />
-                      Utilização do JIRA e Azure.
+                      Transformar as necessidades do cliente em código.
+                    </ListItem>  
+                    <ListItem>
+                      <ListIcon as={MdCheckCircle} color="#FFE13B" />
+                      Criação de hooks para melhorar performance e manutenção do código.
+                    </ListItem>
+                    <ListItem>
+                    <ListItem>
+                      <ListIcon as={MdCheckCircle} color="#FFE13B" />
+                      Utilização de Azure AD, JIRA e Confluence.
                     </ListItem>
                     <ListItem>
                       <ListIcon as={MdCheckCircle} color="#FFE13B" />
                       Swagger e documentação.
                     </ListItem>
-                    <ListItem>
-                      <ListIcon as={MdCheckCircle} color="#FFE13B" />
-                      Desenvolvimento em sitema integrado com ERPs agícolas que
-                      utiliza imagens de satélite e referência geoespacial.
-                    </ListItem>
+                    
                     <ListItem>
                       <ListIcon as={MdCheckCircle} color="#FFE13B" />
                       Configuração de ambientes IOS.
                     </ListItem>
+                      <ListIcon as={MdCheckCircle} color="#FFE13B" />
+                      Principais tecnologias usadas nos projetos: React, React Native, Google Maps API, GeoJSON, React-query, axios, Typescript, Google Earth KML, CI/CD, styled-components, chakra-ui, Ant Design, Recharts, Azure AD.
+                    </ListItem>                      
                   </List>
                 </Text>
 
@@ -221,10 +240,6 @@ const ResumeSection = memo(({ title, children }) => {
                     <ListItem>
                       <ListIcon as={MdCheckCircle} color="#FFE13B" />
                       PostMan, Swagger e documentação.
-                    </ListItem>
-                    <ListItem>
-                      <ListIcon as={MdCheckCircle} color="#FFE13B" />
-                      RPA com Puppeteer.
                     </ListItem>
                     <ListItem>
                       <ListIcon as={MdCheckCircle} color="#FFE13B" />
@@ -362,6 +377,10 @@ const ResumeSection = memo(({ title, children }) => {
                 </Heading>
 
                 <List spacing={3}>
+                  <ListItem>
+                    <ListIcon as={SlGraduation} color="#FFE13B" />
+                    2023 | TDC (The Developers Conference)  - Trilha Web e Front-end, presencial,  Recife -PE
+                  </ListItem>
                   <ListItem>
                     <ListIcon as={SlGraduation} color="#FFE13B" />
                     2021 | Curso Ignite - RocketSeat
