@@ -1,33 +1,32 @@
 /* eslint-disable jsx-a11y/alt-text */
 import {
-  Flex,
-  Box,
-  Heading,
-  Text,
-  Stack,
   AspectRatio,
+  Box,
   Divider,
-  IconButton,
+  Flex,
+  Heading,
   Highlight,
-  useTheme,
-  Center,
+  IconButton,
+  Stack,
+  Text,
+  useTheme
 } from "@chakra-ui/react";
 
-import { FaLinkedin, FaYoutube } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
-import { Header } from "../components/Header";
-import { Sidebar } from "../components/Sidebar";
 import { CardProfile } from "../components/CardProfile/CardProfile";
 import Footer from "../components/Footer";
-import { TechSection } from "../components/TechSection";
+import { Header } from "../components/Header";
 import { ProjectsSection } from "../components/ProjectsSection";
+import { Sidebar } from "../components/Sidebar";
+import { TechSection } from "../components/TechSection";
 
 export default function Home() {
   const theme = useTheme();
 
   return (
     <>
-      <Flex direction="column" h="100vh">
+      <Flex direction="column" h="100dvh">
         <Header />
 
         <Sidebar />
@@ -35,7 +34,7 @@ export default function Home() {
         <Flex
           as="section"
           justify="center"
-          h={`calc(100vh - 60px)`}
+          h={`calc(100dvh - 60px)`}
           backgroundImage= 'url("images/bgHome.png")'
           backgroundPosition= '30% center'
           backgroundSize= 'cover'
@@ -99,14 +98,14 @@ export default function Home() {
                 justifyContent="center"
                 // maxW="920px"
                 // maxH="450px"
-                minH="30vh"
-                maxH="78vh"
-                minW={[0, 1160]}
+                // minH={["100px", 0]}
+                // maxH="78vh"
+                // minW={[1160, '420px']}
                 ratio="2"
               >
                 <iframe
-                  width="804"
-                  height="452"
+                  // width="804"
+                  // height="452"
                   src="https://www.youtube.com/embed/jnd-BnjiujU?list=PLbVhk8EESZtbuUeopDQS79mqZw44WDrwf"
                   title="ES6+ Manipulando de Array - Map"
                   // frameborder="0"
@@ -115,7 +114,7 @@ export default function Home() {
                 />
               </AspectRatio>
             </Box>
-            <Text px="4" textAlign="center" textColor="gray.200">
+            <Text px="4" textAlign="center" textColor="gray.200" mt="4">
               <Highlight
                 query={["100k"]}
                 styles={{ px: "2", py: "1", rounded: "full", bg: "#FFE13B" }}
