@@ -8,7 +8,7 @@ export function Profile({ showProfileData }) {
         <Box mr="4" textAlign="right">
           <Text>Helton Quintans</Text>
           <Text color="gray.300" fontSize="s">
-            heltonquintansdev@gmail.com
+            helton.quit@gmail.com
           </Text>
         </Box>
       )}
