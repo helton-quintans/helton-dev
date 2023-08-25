@@ -6,9 +6,7 @@ import {
   CardHeader,
   Center,
   Divider,
-  Flex,
   Heading,
-  IconButton,
   Link,
   List,
   ListIcon,
@@ -144,6 +142,56 @@ const ResumeSection = memo(({ title, children }) => {
                 >
                   EXPERIÊNCIA PROFISSIONAL
                 </Heading>
+
+                <Text pt="2" fontSize="sm">
+                  <Text textColor="telegram.500">
+                    Justa Soluções Financeiras | Recife | PE - Jun/2023 a Atual 
+                  </Text>
+                  <Text as="i">
+                    {" "}
+                    Empresa Privada | Fintech de soluções financeiras para pequenos e médios negócios do Brasil.
+                  </Text>
+
+                  <Text fontWeight="bold" color="telegram.500">
+                    {" "}
+                    Desenvolvedor Front-End Pleno
+                  </Text>
+                  <List spacing={3}>
+                    <ListItem>
+                      <ListIcon as={MdCheckCircle} color="#FFE13B" />
+                      Atuação em time ágil (SCRUM e Kanban)
+                    </ListItem>
+                    <ListItem>
+                      <ListIcon as={MdCheckCircle} color="#FFE13B" />
+                      Responsável por manter e desenvolver novas funcionalidades da conta justa, por exemplo: Cartão de crédito, Pix e QRCode, Extrato Bancário e muito mais.
+                    </ListItem>
+                    <ListItem>
+                      <ListIcon as={MdCheckCircle} color="#FFE13B" />
+                      Responsável por manter a qualidade de código.
+                    </ListItem>
+                    <ListItem>
+                      <ListIcon as={MdCheckCircle} color="#FFE13B" />
+                      Corbetura de testes unitários e de integração (no mínimo 70%)
+                    </ListItem>
+                    <ListItem>
+                      <ListIcon as={MdCheckCircle} color="#FFE13B" />
+                      Transformar as necessidades do cliente em código.
+                    </ListItem>  
+                    <ListItem>
+                      <ListIcon as={MdCheckCircle} color="#FFE13B" />
+                      Criação de hooks para melhorar performance e manutenção do código.
+                    </ListItem>
+                    <ListItem>
+                    <ListItem>
+                      <ListIcon as={MdCheckCircle} color="#FFE13B" />
+                      Utilização de JIRA e Confluence.
+                    </ListItem>
+                      <ListIcon as={MdCheckCircle} color="#FFE13B" />
+                      Principais tecnologias usadas nos projetos: React, Next.js, Flutter, React-query, Sentry, Axios, Typescript, CI/CD, styled-components, chakra-ui.
+                    </ListItem>                      
+                  </List>
+                </Text>
+                
 
                 <Text pt="2" fontSize="sm">
                   <Text textColor="telegram.500">
