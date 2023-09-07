@@ -82,7 +82,7 @@ const ResumeSection = memo(({ title, children }) => {
             }}
           >
 
-          Baixar [ pt-br ]
+          Baixar cv [ pt-br ]
           </Button>
         </Link>
       </Center>
@@ -133,7 +133,7 @@ const ResumeSection = memo(({ title, children }) => {
 
                 <Text pt="2" fontSize="sm">
                   <Text textColor="telegram.500" fontWeight="black">
-                    Justa Soluções Financeiras | Recife | PE - Jun/2023 a Atual 
+                    JUSTA SOLUÇÕES FINANCEIRAS | Recife | PE - 2023 a Atual 
                   </Text>
                   <Text as="i" textColor="gray.200">
                     {" "}
@@ -158,16 +158,16 @@ const ResumeSection = memo(({ title, children }) => {
                     <ListItem fontWeight='medium'>
                       <ListIcon as={MdCheckCircle} color="#FFE13B" />
                       Tecnologias utilizadas: <Text fontStyle='italic'>TypeScript, React, React Query, Angular, Axios, Zustand, Jotai, CI/CD, Styled-components,
-                      Storybook, Chakra UI, Sentry, Jest, React Testing Library, ESLint, Prettier, Husky, Git e Github.</Text>
+                      Storybook, Chakra UI, Sentry, Jest, React Testing Library, ESLint, Prettier, Husky, JIRA, Git e Github.</Text>
                     </ListItem>                      
                   </List>
-                  
+                  <Divider mt="4"/>
                 </Text>
                 
 
                 <Box pt="2" fontSize="sm" >
-                  <Text textColor="telegram.500" fontWeight="black">
-                    Nuvem Tecnologia | Cuiabá | MT - 2023 (4 meses)
+                  <Text textColor="telegram.500" fontWeight="black" mt="4">
+                    NUVEM TECNOLOGIA | Cuiabá | MT - 2023 (4 meses)
                   </Text>
                   <Text as="i" textColor="gray.200">
                     {" "}
@@ -192,115 +192,79 @@ const ResumeSection = memo(({ title, children }) => {
                     <ListItem fontWeight='medium'>
                       <ListIcon as={MdCheckCircle} color="#FFE13B" />
                       Tecnologias utilizadas: <Text fontStyle='italic'>React, Google Maps API, GeoJSON, React-query, Axios, TypeScript, Google Earth KML,
-                      CI/CD, styled-components, Chakra UI, Ant Design, Recharts, Zustand, Azure AD, IOS.</Text>
+                      CI/CD, styled-components, Chakra UI, Ant Design, Recharts, Zustand, Azure AD, JIRA IOS.</Text>
                     </ListItem>                     
                   </List>
+                  <Divider mt="4"/>
                 </Box>
 
                 <Text pt="2" fontSize="sm">
-                  <Text textColor="telegram.500">
+                  <Text textColor="telegram.500" fontWeight="black"  mt="4">
                     AEOLUS CLOUD | Recife | PE - 2022 a 2023 (1 ano e 1 mês)
                   </Text>
-                  <Text as="i">
+                  <Text as="i" textColor="gray.200">
                     {" "}
                     Empresa Privada | Empresa do setor de segurança, soluções de
                     Inteligência Artificial (AI) e Internet das Coisas (IoT).
                   </Text>
 
-                  <Text fontWeight="bold" color="telegram.500">
+                  <Text fontWeight="bold" color="telegram.500" mt="2">
                     {" "}
                     Desenvolvedor Front-End
                   </Text>
                   <List spacing={3}>
-                    <ListItem>
+                    <Text>
+                      Desempenhei um papel importante na implementação de um sistema de autenticação com JWT e na
+                      construção de CRUDs. Priorizei a qualidade ao criar páginas responsivas, garantindo uma
+                      experiência de usuário de alta qualidade. Além disso, contribuí para desenvolver um sistema de
+                      monitoramento de vídeo, facilitando o acesso a registros anteriores por meio da nuvem.
+                    </Text>
+                  <ListItem fontWeight='medium'>
                       <ListIcon as={MdCheckCircle} color="#FFE13B" />
-                      Atuação em time ágil (SCRUM)
-                    </ListItem>
-                    <ListItem>
-                      <ListIcon as={MdCheckCircle} color="#FFE13B" />
-                      Desenvolvimento de interfaces utilizando o ecossistema
-                      React, Node, Next.js como framework e Chakra Ui
-                      (programação declarativa) e outras tecnologias.
-                    </ListItem>
-                    <ListItem>
-                      <ListIcon as={MdCheckCircle} color="#FFE13B" />
-                      Estruturação da esteira de automação de testes e2e com
-                      Cypress.
-                    </ListItem>
-                    <ListItem>
-                      <ListIcon as={MdCheckCircle} color="#FFE13B" />
-                      Testes unitários com Jest.
-                    </ListItem>
-                    <ListItem>
-                      <ListIcon as={MdCheckCircle} color="#FFE13B" />
-                      PostMan, Swagger e documentação.
-                    </ListItem>
-                    <ListItem>
-                      <ListIcon as={MdCheckCircle} color="#FFE13B" />
-                      Configuração de ambientes linux.
-                    </ListItem>
+                      Tecnologias utilizadas: <Text fontStyle='italic'>React, React-query, Axios, TypeScript, CI/CD, styled-components, Chakra UI, Git e Github
+                      Recharts, JWT, Postman, Jest, Testing Library, Strapi CMS, Linux.</Text>
+                    </ListItem>  
                   </List>
+                  <Divider mt="4"/>
                 </Text>
 
                 <Text pt="2" fontSize="sm">
-                  <Text textColor="telegram.500">
+                  <Text textColor="telegram.500" fontWeight="black"  mt="4">
                     WATI | São Paulo | SP - 2020 a 2021 (1 ano e 4 meses)
                   </Text>
-                  <Text as="i">
+                  <Text as="i" textColor="gray.200">
                     {" "}
                     Empresa Privada / A WATI é uma empresa de prestação de
                     serviços de TI e especializada na terceirização e gestão de
                     projetos.
                   </Text>
 
-                  <Text fontWeight="bold" textColor="telegram.500">
+                  <Text fontWeight="black" textColor="telegram.500" mt="2">
                     Analista de Testes e Qualidade
                   </Text>
-                  <List spacing={3}>
-                    <ListItem>
+                  <Text>
+                    Na WATI, prestadora de serviços para a MV Sistemas, líder em tecnologia para gestão de saúde na
+                    América Latina. Trabalhando em produtos críticos, como o Prontuário Eletrônico do Paciente e
+                    sistemas financeiros e de suprimentos hospitalares, realizei uma ampla variedade de testes, destaco
+                    minha participação na cobertura de testes regressivos utilizando Robot Framework, BDD e Gherkin.
+                    Além disso, gerenciei com sucesso tickets nacionais e internacionais através do JIRA, garantindo
+                    cobertura abrangente nos testes e estabilidade e desempenho dos sistemas críticos da MV, ajudando
+                    a prevenir erros e garantir um fluxo de trabalho tranquilo para os usuários finais.
+                  </Text>
+                   <List>
+                    <ListItem fontWeight='medium' mt="4">
                       <ListIcon as={MdCheckCircle} color="#FFE13B" />
-                      Atuação em time ágil (SCRUM)
-                    </ListItem>
-                    <ListItem>
-                      <ListIcon as={MdCheckCircle} color="#FFE13B" />
-                      Utilização da ferramenta TESTLINK para escrita e
-                      planejamento dos casos de testes.
-                    </ListItem>
-                    <ListItem>
-                      <ListIcon as={MdCheckCircle} color="#FFE13B" />
-                      Conhecimento em ferramentas de Gestão de Projetos Ágeis
-                      (JIRA).
-                    </ListItem>
-                    <ListItem>
-                      <ListIcon as={MdCheckCircle} color="#FFE13B" />
-                      Testes funcionais manuais utilizando principalmente
-                      técnicas como Caixa Preta, Implantação e Exploratório.
-                    </ListItem>
-                    <ListItem>
-                      <ListIcon as={MdCheckCircle} color="#FFE13B" />
-                      Execução e estruturamento de testes e Regressivos.
-                    </ListItem>
-                    <ListItem>
-                      <ListIcon as={MdCheckCircle} color="#FFE13B" />
-                      Testes Automatizados com ROBOT FRAMEWORK.
-                    </ListItem>
-                    <ListItem>
-                      <ListIcon as={MdCheckCircle} color="#FFE13B" />
-                      BDD, GHERKIN e CUCUMBER
-                    </ListItem>
-                    <ListItem>
-                      <ListIcon as={MdCheckCircle} color="#FFE13B" />
-                      Testes de API usando POSTMAN
-                    </ListItem>
-                    <ListItem>
-                      <ListIcon as={MdCheckCircle} color="#FFE13B" />
-                      Cobertura de Tickets nacionais e internacionais.
-                    </ListItem>
-                  </List>
+                      Tecnologias utilizadas: 
+                      <Text fontStyle='italic'>
+                      Robot Framework, JIRA, CI/CD, Git e Github Recharts, Postman, BDD e Gherkin.
+                      </Text>
+                    </ListItem>  
+                    </List>
+                  <Divider mt="4"/>
                 </Text>
 
                 <Text pt="2" fontSize="sm">
-                  <Text textColor="telegram.500">
+                  <Text textColor="telegram.500" fontWeight="black" mt="4">
                     YANAK | PE - 2019 a 2020 (1 ano){" "}
                   </Text>
                   <Text as="i">
@@ -309,49 +273,51 @@ const ResumeSection = memo(({ title, children }) => {
                     segmento de alimentação e delivery.
                   </Text>
 
-                  <Text fontWeight="bold" textColor="telegram.500">
+                  <Text fontWeight="bold" textColor="telegram.500" mt="4">
                     Desenvolvedor Front-end freelancer
                   </Text>
-                  <List spacing={3}>
-                    <ListItem>
-                      <ListIcon as={MdCheckCircle} color="#FFE13B" />
-                      Atuando como front-end realizei a criação de interfaces
-                      com REACT e NEXT.JS como framework.
-                    </ListItem>
-                    <ListItem>
-                      <ListIcon as={MdCheckCircle} color="#FFE13B" />
-                      No back-end, entreguei um chatbot com linguagem natural
-                      que suporta 40 idiomas nativamente e 104 através de
-                      integração BERT.
-                    </ListItem>
-                  </List>
+                    <Text>
+                      Na função de Desenvolvedor Front-end, minha responsabilidade era projetar interfaces utilizando as
+                      tecnologias, React e Next.js, assegurando experiências de usuário atraentes e funcionais. Também
+                      me destaquei na criação de um chatbot com habilidades de processamento de linguagem natural,
+                      oferecendo suporte nativo para 40 idiomas e integração avançada com BERT, permitindo
+                      comunicação eficaz em 104 idiomas. Além disso, desenvolvi soluções de RPA (Robotic Process
+                      Automation) utilizando Puppeteer.
+                  </Text>
+                  <List>
+                    <ListItem fontWeight='medium'>
+                      <ListIcon as={MdCheckCircle} color="#FFE13B" mt="4"/>
+                      Tecnologias utilizadas: 
+                      <Text fontStyle='italic'>
+                        React, React-query, Axios, TypeScript, CI/CD, styled-components, Chakra UI, MUI, Git e
+                        Github Recharts, JWT, Postman, Jest, Testing Library, Strapi CMS.
+                      </Text>
+                    </ListItem>  
+                    </List>
                 </Text>
 
                 <Text pt="2" fontSize="sm">
-                  <Text textColor="telegram.500">
+                  <Text textColor="telegram.500" fontWeight="black">
                     FORÇA AÉREA BRASILEIRA | 2011 a 2017 (6 anos)
                   </Text>
-                  <Text as="i"> Empresa Pública.</Text>
+                  <Text as="i" color="gray.200"> Empresa Pública.</Text>
 
-                  <Text fontWeight="bold" textColor="telegram.500">
+                  <Text fontWeight="bold" textColor="telegram.500" mt="4">
                     Assistente Administrativo
                   </Text>
-                  <List spacing={3}>
+                  <List spacing={3} textAlign="justify">
                     <ListItem>
-                      <ListIcon as={MdCheckCircle} color="#FFE13B" />
+                     
                       Cobertura no atendimento a civis e militares para a
                       garantia dos direitos assistenciais como Assistência,
                       Assistência médico-hospitalar, Assistência pré-escolar,
                       Auxílio natalidade, Auxílio Transporte e Declaração de
                       Beneficiários.
-                    </ListItem>
-                    <ListItem>
-                      <ListIcon as={MdCheckCircle} color="#FFE13B" />
+                    
+                     
                       Publicação dos processos e seus desfechos em boletim
                       oficial da FAB e no Diário Oficial da União.
-                    </ListItem>
-                    <ListItem>
-                      <ListIcon as={MdCheckCircle} color="#FFE13B" />
+                     
                       Cobertura da Prestação de Contas e Auditoria dos
                       benefícios concedidos pela União.
                     </ListItem>
@@ -360,62 +326,7 @@ const ResumeSection = memo(({ title, children }) => {
 
                 <Divider py="2" />
 
-                <Heading
-                  size="xs"
-                  textTransform="uppercase"
-                  borderBottom="2px solid"
-                  borderBottomColor="#FFE13B"
-                  my="4"
-                >
-                  INFORMAÇÕES COMPLEMENTARES | CURSOS E CONGRESSOS
-                </Heading>
-
-                <List spacing={3}>
-                  <ListItem>
-                    <ListIcon as={SlGraduation} color="#FFE13B" />
-                    2023 | TDC (The Developers Conference)  - Trilha Web e Front-end, presencial,  Recife -PE
-                  </ListItem>
-                  <ListItem>
-                    <ListIcon as={SlGraduation} color="#FFE13B" />
-                    2021 | Curso Ignite - RocketSeat
-                  </ListItem>
-                  <ListItem>
-                    <ListIcon as={SlGraduation} color="#FFE13B" />
-                    2020 | Fundamentos de Arquitetura de Sistemas – Digital
-                    Innovation One.
-                  </ListItem>
-                  <ListItem>
-                    <ListIcon as={SlGraduation} color="#FFE13B" />
-                    2019 | Introdução ao ReactJS - Digital Innovation One.
-                  </ListItem>
-                  <ListItem>
-                    <ListIcon as={SlGraduation} color="#FFE13B" />
-                    Introdução ao NodeJS com Express - Digital Innovation One.
-                  </ListItem>
-                  <ListItem>
-                    <ListIcon as={SlGraduation} color="#FFE13B" />
-                    2019 | Introdução ao Git e GitHub - Digital Innovation One.
-                  </ListItem>
-                  <ListItem>
-                    <ListIcon as={SlGraduation} color="#FFE13B" />
-                    Automação de Testes com Robot Framework básico – Udemy.
-                  </ListItem>
-                  <ListItem>
-                    <ListIcon as={SlGraduation} color="#FFE13B" />
-                    2019 | Javascript - Web moderna - Cod3r.
-                  </ListItem>
-                  <ListItem>
-                    <ListIcon as={SlGraduation} color="#FFE13B" />
-                    2019 | TSPI - Júlio de Lima.
-                  </ListItem>
-                  <ListItem>
-                    <ListIcon as={SlGraduation} color="#FFE13B" />
-                    2018 | Lógica de Programação – Fuctura Tecnologia.
-                  </ListItem>
-                </List>
-              </Box>
-
-              <Box>
+                <Box mt="4">
                 <Heading
                   size="xs"
                   textTransform="uppercase"
@@ -464,7 +375,61 @@ const ResumeSection = memo(({ title, children }) => {
                 </Text>
               </Box>
 
-              
+                <Heading
+                  size="xs"
+                  textTransform="uppercase"
+                  borderBottom="2px solid"
+                  borderBottomColor="#FFE13B"
+                  my="4"
+                >
+                  INFORMAÇÕES COMPLEMENTARES | CURSOS E CONGRESSOS
+                </Heading>
+
+                <List spacing={3} textAlign="justify">
+                  <ListItem>
+                    <ListIcon as={SlGraduation} color="#FFE13B" />
+                    2023 | TDC (The Developers Conference)  - Trilha Web e Front-end, presencial,  Recife -PE
+                  </ListItem>
+                  <ListItem>
+                    <ListIcon as={SlGraduation} color="#FFE13B" />
+                    2021 | Curso Ignite - RocketSeat
+                  </ListItem>
+                  <ListItem>
+                    <ListIcon as={SlGraduation} color="#FFE13B" />
+                    2020 | Fundamentos de Arquitetura de Sistemas – Digital
+                    Innovation One.
+                  </ListItem>
+                  <ListItem>
+                    <ListIcon as={SlGraduation} color="#FFE13B" />
+                    2019 | Introdução ao ReactJS - Digital Innovation One.
+                  </ListItem>
+                  <ListItem>
+                    <ListIcon as={SlGraduation} color="#FFE13B" />
+                    Introdução ao NodeJS com Express - Digital Innovation One.
+                  </ListItem>
+                  <ListItem>
+                    <ListIcon as={SlGraduation} color="#FFE13B" />
+                    2019 | Introdução ao Git e GitHub - Digital Innovation One.
+                  </ListItem>
+                  <ListItem>
+                    <ListIcon as={SlGraduation} color="#FFE13B" />
+                    Automação de Testes com Robot Framework básico – Udemy.
+                  </ListItem>
+                  <ListItem>
+                    <ListIcon as={SlGraduation} color="#FFE13B" />
+                    2019 | Javascript - Web moderna - Cod3r.
+                  </ListItem>
+                  <ListItem>
+                    <ListIcon as={SlGraduation} color="#FFE13B" />
+                    2019 | TSPI - Júlio de Lima.
+                  </ListItem>
+                  <ListItem>
+                    <ListIcon as={SlGraduation} color="#FFE13B" />
+                    2018 | Lógica de Programação – Fuctura Tecnologia.
+                  </ListItem>
+                </List>
+              </Box>
+
             </Stack>
           </CardBody>
         </Card>
