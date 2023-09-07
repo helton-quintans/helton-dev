@@ -26,40 +26,25 @@ import { FaDev } from "react-icons/fa";
 import { useRouter } from "next/router";
 
 export function CardProfile() {
-  // const [isFloating, setIsFloating] = useState(true);
-  // const [isHovered, setIsHovered] = useState(true);
   const router = useRouter();
 
   return (
     <Flex
           as="section"
           justify="center"
-          // h={`calc(100vh - 80px)`}
-          mt="2"
+          // h={`calc(100vh - 60px)`}
           backgroundImage= 'url("images/bgHome.png")'
           backgroundPosition= '30% center'
           backgroundSize= 'cover'
-    
+
         >
           <Card
       maxW={["sm", "lg"]}
       variant="gost"
-      // h="100%"
-      // py={["0", "24"]}
       justify="center"
       alignItems="center"
       mt="24"
       borderRadius="full"
-      // onMouseEnter={() => setIsHovered(true)}
-      // onMouseLeave={() => setIsHovered(false)}
-      // css={{
-      //   animation: `${isHovered ? "floatUpDown 2.5s infinite" : "none"}`,
-      //   "@keyframes floatUpDown": {
-      //     "0%": { transform: "translateY(0)" },
-      //     "50%": { transform: "translateY(-10px)" },
-      //     "100%": { transform: "translateY(0)" },
-      //   },
-      // }}
     >
       <CardBody px="4">
         <Flex justify="center">
@@ -206,6 +191,6 @@ export function CardProfile() {
       </CardBody>
     </Card>
         </Flex>
-    
+
   );
 }
