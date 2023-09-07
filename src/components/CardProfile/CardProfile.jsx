@@ -31,13 +31,25 @@ export function CardProfile() {
   const router = useRouter();
 
   return (
-    <Card
+    <Flex
+          as="section"
+          justify="center"
+          // h={`calc(100vh - 80px)`}
+          mt="2"
+          backgroundImage= 'url("images/bgHome.png")'
+          backgroundPosition= '30% center'
+          backgroundSize= 'cover'
+    
+        >
+          <Card
       maxW={["sm", "lg"]}
       variant="gost"
-      h="100%"
-      py={["0", "150"]}
+      // h="100%"
+      // py={["0", "24"]}
       justify="center"
       alignItems="center"
+      mt="24"
+      borderRadius="full"
       // onMouseEnter={() => setIsHovered(true)}
       // onMouseLeave={() => setIsHovered(false)}
       // css={{
@@ -193,5 +205,7 @@ export function CardProfile() {
         </Stack>
       </CardBody>
     </Card>
+        </Flex>
+    
   );
 }

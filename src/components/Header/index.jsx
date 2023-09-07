@@ -20,7 +20,18 @@ export function Header() {
   });
 
   return (
-    <Flex as="header" w="100%" px="6" justify={"center"} alignItems={"center"}>
+    <Flex 
+      as="header" 
+      w="100%" 
+      px="6" 
+      justify={"center"} 
+      alignItems={"center"} 
+      boxShadow="md"  
+      position="fixed" 
+      top="0" 
+      zIndex="999" 
+      bg="gray.900"
+    >
       {!isWideVersion && (
         <>
           <IconButton

@@ -1,6 +1,5 @@
 import { Avatar, Box, Flex, Text } from "@chakra-ui/react";
 
-
 export function Profile({ showProfileData }) {
   return (
     <Flex align="center">

@@ -26,38 +26,17 @@ export default function Home() {
 
   return (
     <>
-      <Flex direction="column" h="100dvh">
         <Header />
 
         <Sidebar />
+     
+        <CardProfile />
 
-        <Flex
-          as="section"
-          justify="center"
-          h={`calc(100dvh - 60px)`}
-          backgroundImage= 'url("images/bgHome.png")'
-          backgroundPosition= '30% center'
-          backgroundSize= 'cover'
-          // bg={`linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.647)),url('/images/boyCoding.jpg')`}
-          // bg={`radial-gradient(rgba(0, 0, 0, 0.9), ${theme.colors.gray[600]}),url('/images/boyCoding.jpg')`}
-          // bg={`radial-gradient(circle at center, ${theme.colors.gray[900]}, transparent), url('/images/boyCoding.jpg')`}
-          // bg={`radial-gradient(circle at center, rgba(0, 0, 0, 0.891), ${theme.colors.gray[900]}), url('/images/boyCoding.jpg')`}
-          // backgroundPosition="80% center"
-          // backgroundRepeat="no-repeat"
-          // backgroundSize="cover"
-        >
-          <CardProfile />
-        </Flex>
-      </Flex>
+        <ProjectsSection />
 
-      <ProjectsSection />
-
-      {/* <Flex flexDir={"column"} alignItems={"center"}> */}
         <TechSection />
-      {/* </Flex> */}
 
       {/* //!Content creator*/}
-      {/* <Flex flexDir={"column"} alignItems={"center"}> */}
         <Flex as="section"   align={"center"} justify="center" mb="12">
           <Stack px="4" spacing="">
             <Heading
@@ -130,7 +109,6 @@ export default function Home() {
             </Text>
           </Stack>
         </Flex>
-      {/* </Flex> */}
 
       <Divider />
 

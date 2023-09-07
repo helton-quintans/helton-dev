@@ -1,4 +1,4 @@
-import { Flex, Box, Stack, Text, Link as ChakraLink, Icon, LinkProps as ChakraLinkProps } from "@chakra-ui/react";
+import { Flex, Box, Stack, Text, Link as ChakraLink, Icon } from "@chakra-ui/react";
 import { ElementType } from "react";
 import { ActiveLink } from "../ActiveLink";
 

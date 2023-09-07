@@ -44,7 +44,7 @@ const ResumeSection = memo(({ title, children }) => {
   return (
     <>
       <Header />
-      <Center >
+      <Center mt="24">
           {/* <Link target="_blank" download href="/cv.pdf" >
           <Button
             variant="outline"
