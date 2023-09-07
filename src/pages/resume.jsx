@@ -25,7 +25,7 @@ import { MdOutlineFileDownload } from "react-icons/md";
 import { keyframes } from "@emotion/react";
 import Footer from "../components/Footer";
 
-
+import { differenceInYears, isBefore } from "date-fns";
 
 const blinkAnimation = keyframes`
   0% { opacity: 1; }
@@ -34,14 +34,41 @@ const blinkAnimation = keyframes`
 `;
 
 const ResumeSection = memo(({ title, children }) => {
+  const dataInicioExperiencia = new Date("2019-01-19"); 
+  const dataAtual = new Date();
+
+  const anosDeExperiencia = differenceInYears(
+    dataAtual,
+    dataInicioExperiencia
+  );
   return (
     <>
       <Header />
-      <Center py="4">
-        <Link target="_blank" download href="/cv.pdf">
+      <Center >
+          {/* <Link target="_blank" download href="/cv.pdf" >
           <Button
             variant="outline"
-            minW="200px"
+            minW="170px"
+            aria-label="download"
+            leftIcon={<MdOutlineFileDownload />}
+            animation={`${blinkAnimation} 2s infinite`}
+            boxShadow="1px 5px 10px rgba(206, 203, 22, 0.637)"
+            _hover={{
+              opacity: 0.7,
+              transform: "scale(1.1)",
+              transition: "all 0.2s ease-in-out",
+              color: "#FFE13B",
+            }}
+          >
+
+          Download [en]
+          </Button>
+        </Link> */}
+
+        <Link target="_blank" download href="/cv.pdf" >
+          <Button
+            variant="outline"
+            minW="170px"
             // me="2"
             aria-label="download"
             leftIcon={<MdOutlineFileDownload />}
@@ -55,14 +82,14 @@ const ResumeSection = memo(({ title, children }) => {
             }}
           >
 
-          Donwload
+          Baixar [ pt-br ]
           </Button>
         </Link>
       </Center>
 
       {/* <Divider mt="8" /> */}
-      <Center mx={"auto"} maxW="1160px">
-        <Card variant="outline" p={["4", "8"]} mt="8" m="2">
+      <Center mx={"auto"} maxW="890px" textAlign="justify">
+        <Card variant="outline" p={["4", "24"]} mt="8" m="2">
           <CardHeader >
             <Heading size="md" color="#FFE13B" mx>
               Helton Quintans da Silva
@@ -81,58 +108,19 @@ const ResumeSection = memo(({ title, children }) => {
                 >
                   RESUMO DE QUALIFICAÇÃO
                 </Heading>
-                <Text pt="2" fontSize="sm">
-                Atuação no segmento da Tecnologia da Informação, certificado pelo SFPC® - Scrum Foundations Professional Certificate com experiência desenvolvendo e testando aplicações no ecossistema React utilizando Javascript, TypeScript e outras tecnologias aplicando princípios e boas práticas de UI/UX, Desenvolvimento e Testes de Softwares em ambientes com metodologia ágil (SCRUMe Kanban).
+                <Text pt="2" fontSize="sm" textAlign="justify">
+                  Desenvolvedor Front-End com <Text as="span" fontWeight="bold" color="telegram.500">{anosDeExperiencia}{" "}
+                  {anosDeExperiencia === 1 ? "ano" : "anos"} </Text> de experiência,
+                  especializado em <Text as="span" fontWeight="bold" color="telegram.500">React</Text> e com expertise em soluções para 4 setores econômicos
+                  do país: Agrícola, Financeiro, Saúde e Segurança. No setor agrícola destaco o
+                  desenvolvimento do <Text as="span" fontWeight="bold" color="telegram.500">AgroSIG</Text>, adotado pela AMAGGI, uma das dez maiores empresas
+                  do agronegócio no Brasil de acordo com a<Text as="span" fontWeight="bold" color="telegram.500"> Forbes Agro100.</Text> No setor financeiro,
+                  contribui significativamente nos módulos de Extrato Bancário, PIX e Link de
+                  Pagamentos, por meio da aplicação <Text as="span" fontWeight="bold" color="telegram.500">Conta Justa</Text>, atendendo a uma base de <Text as="span" fontWeight="bold" color="telegram.500">mais
+                  de 50 mil usuários </Text>.
                 </Text>
               </Box>
-              <Box>
-                <Heading
-                  size="xs"
-                  textTransform="uppercase"
-                  borderBottom="2px solid"
-                  borderBottomColor="#FFE13B"
-                >
-                  FORMAÇÃO ACADÊMICA
-                </Heading>
-                <Text pt="2" fontSize="sm">
-                  <Text>
-                    Graduando em Análise e desenvolvimento de sistemas.
-                  </Text>
-                  <Text> UCB - Universidade Católica de Brasília.</Text>
-                  <Text> 2020-2023.</Text>
 
-                  <Text fontWeight="bold" color="telegram.500">
-                    {" "}
-                    Certificações:
-                  </Text>
-                  <Text>
-                    {" "}
-                    SFPC® - Scrum Foundations Professional Certificate PTBR
-                  </Text>
-
-                  <Text fontWeight="bold" color="telegram.500">
-                    {" "}
-                    Conhecimentos Específicos:
-                  </Text>
-
-                  <Text>
-                    Sistemas Operacionais:  Linux, IOS, Windows.
-                  </Text>
-
-                  <Text>
-                    Metodologias: SCRUM e Kanban.
-                  </Text>
-                  <Text>
-                  Testes:  Jest, Testing library, Cypress. 
-                  </Text>
-                  <Text>
-                  Ferramentas:
-                  Next.js, React Query, React Hooks, HTML, CSS, SASS, SCSS, Styled Components, Tailwind CSS, Chakra UI, Ant Design, Prime React, Material UI, Postman, Axios, REST API, JWT, MirageJS, Jira, Confluence, Azure AD, GitHub, Git, SPA, Context API,  Figma, Vite, Yarn, Visual Studio Code.
-                  </Text>
-
-                  
-                </Text>
-              </Box>
               <Box>
                 <Heading
                   size="xs"
@@ -144,112 +132,70 @@ const ResumeSection = memo(({ title, children }) => {
                 </Heading>
 
                 <Text pt="2" fontSize="sm">
-                  <Text textColor="telegram.500">
+                  <Text textColor="telegram.500" fontWeight="black">
                     Justa Soluções Financeiras | Recife | PE - Jun/2023 a Atual 
                   </Text>
-                  <Text as="i">
+                  <Text as="i" textColor="gray.200">
                     {" "}
                     Empresa Privada | Fintech de soluções financeiras para pequenos e médios negócios do Brasil.
                   </Text>
 
-                  <Text fontWeight="bold" color="telegram.500">
+                  <Text fontWeight="bold" color="telegram.500" mt="2">
                     {" "}
                     Desenvolvedor Front-End Pleno
                   </Text>
                   <List spacing={3}>
-                    <ListItem>
+                    <Text>
+                      Contribuí ativamente com os módulos PIX, Extrato Bancário e a criação do Cartão de Crédito,
+                      integrando parcerias e bandeiras como a American Express, Visa e Mastercard. Alcancei resultados
+                      notáveis, incluindo um aumento de 7% no uso diário após a reformulação do Extrato Bancário e uma
+                      melhoria de 15% na performance geral da aplicação com otimizações e hooks. Mantive uma sólida
+                      cobertura de testes unitários e de integração, superando a meta de 70%, resultando em uma redução
+                      significativa das consultas de suporte ao cliente. Promovo qualidade e avanço técnico para a equipe
+                      através de encontros semanais com front-ends de 5 squads responsáveis pelo desenvolvimento e
+                      manutenção de 2 importantes produtos da Justa e em menor proporção trabalho com Angular.
+                    </Text>
+                    <ListItem fontWeight='medium'>
                       <ListIcon as={MdCheckCircle} color="#FFE13B" />
-                      Atuação em time ágil (SCRUM e Kanban)
-                    </ListItem>
-                    <ListItem>
-                      <ListIcon as={MdCheckCircle} color="#FFE13B" />
-                      Responsável por manter e desenvolver novas funcionalidades da conta justa, por exemplo: Cartão de crédito, Pix e QRCode, Extrato Bancário e muito mais.
-                    </ListItem>
-                    <ListItem>
-                      <ListIcon as={MdCheckCircle} color="#FFE13B" />
-                      Responsável por manter a qualidade de código.
-                    </ListItem>
-                    <ListItem>
-                      <ListIcon as={MdCheckCircle} color="#FFE13B" />
-                      Corbetura de testes unitários e de integração (no mínimo 70%)
-                    </ListItem>
-                    <ListItem>
-                      <ListIcon as={MdCheckCircle} color="#FFE13B" />
-                      Transformar as necessidades do cliente em código.
-                    </ListItem>  
-                    <ListItem>
-                      <ListIcon as={MdCheckCircle} color="#FFE13B" />
-                      Criação de hooks para melhorar performance e manutenção do código.
-                    </ListItem>
-                    <ListItem>
-                    <ListItem>
-                      <ListIcon as={MdCheckCircle} color="#FFE13B" />
-                      Utilização de JIRA e Confluence.
-                    </ListItem>
-                      <ListIcon as={MdCheckCircle} color="#FFE13B" />
-                      Principais tecnologias usadas nos projetos: React, Next.js, Flutter, React-query, Sentry, Axios, Typescript, CI/CD, styled-components, chakra-ui.
+                      Tecnologias utilizadas: <Text fontStyle='italic'>TypeScript, React, React Query, Angular, Axios, Zustand, Jotai, CI/CD, Styled-components,
+                      Storybook, Chakra UI, Sentry, Jest, React Testing Library, ESLint, Prettier, Husky, Git e Github.</Text>
                     </ListItem>                      
                   </List>
+                  
                 </Text>
                 
 
-                <Text pt="2" fontSize="sm">
-                  <Text textColor="telegram.500">
-                    Nuvem Tecnologia | Cuiabá | MT - 2023 a Atual (4 meses)
+                <Box pt="2" fontSize="sm" >
+                  <Text textColor="telegram.500" fontWeight="black">
+                    Nuvem Tecnologia | Cuiabá | MT - 2023 (4 meses)
                   </Text>
-                  <Text as="i">
+                  <Text as="i" textColor="gray.200">
                     {" "}
-                    Empresa Privada | Soluções para o agronegócio, sistemas com imagens via satélite e referência geoespacial, integrado com ERPs agrícolas para fazer exportação de milho, algodão e soja.
+                    Empresa Privada | Soluções para o agronegócio, sistemas com imagens via satélite e referência geoespacial,
+                    integrado com ERPs agrícolas para impulsionar a exportação mundial de milho, algodão e soja.
                   </Text>
 
-                  <Text fontWeight="bold" color="telegram.500">
+                  <Text fontWeight="bold" color="telegram.500" mt="2">
                     {" "}
                     Desenvolvedor Front-End Pleno
                   </Text>
                   <List spacing={3}>
-                    <ListItem>
+                    <Text>
+                      Desempenhei um papel essencial no AgroSIG, um produto que utiliza imagens de satélite e
+                      referência geoespacial para apoiar decisões agrícolas. Em resposta a incidentes de perda de estudos
+                      científicos cruciais para o ciclo de cultivo, assumi a liderança no desenvolvimento de um sistema de
+                      gerenciamento de arquivos na AWS S3. Em colaboração com o time de dados, aprimorei operações
+                      de download, upload, edição de arquivos e navegação entre diretórios, resultando em maior
+                      eficiência dos usuários e contribuindo para a exportação de toneladas de milho, soja e algodão,
+                      apoiando estudos científicos que impulsionaram a produção e a qualidade desses produtos
+                    </Text>
+                    <ListItem fontWeight='medium'>
                       <ListIcon as={MdCheckCircle} color="#FFE13B" />
-                      Atuação em time ágil (SCRUM e Kanban)
-                    </ListItem>
-                    <ListItem>
-                      <ListIcon as={MdCheckCircle} color="#FFE13B" />
-                      Responsável pela criação de um sistema de gerenciamento de arquivos persistidos na AWS S3, upload, download, criação de diretórios, navegação entre diretórios e categorização por tags categóricas e/ou personalizadas pelo próprio usuário.
-                    </ListItem>
-                    <ListItem>
-                      <ListIcon as={MdCheckCircle} color="#FFE13B" />
-                      Responsável por manter a qualidade de código.
-                    </ListItem>
-                    <ListItem>
-                      <ListIcon as={MdCheckCircle} color="#FFE13B" />
-                      Responsável por implementar novas features e refatorar features já existentes.
-                    </ListItem>
-                    <ListItem>
-                      <ListIcon as={MdCheckCircle} color="#FFE13B" />
-                      Transformar as necessidades do cliente em código.
-                    </ListItem>  
-                    <ListItem>
-                      <ListIcon as={MdCheckCircle} color="#FFE13B" />
-                      Criação de hooks para melhorar performance e manutenção do código.
-                    </ListItem>
-                    <ListItem>
-                    <ListItem>
-                      <ListIcon as={MdCheckCircle} color="#FFE13B" />
-                      Utilização de Azure AD, JIRA e Confluence.
-                    </ListItem>
-                    <ListItem>
-                      <ListIcon as={MdCheckCircle} color="#FFE13B" />
-                      Swagger e documentação.
-                    </ListItem>
-                    
-                    <ListItem>
-                      <ListIcon as={MdCheckCircle} color="#FFE13B" />
-                      Configuração de ambientes IOS.
-                    </ListItem>
-                      <ListIcon as={MdCheckCircle} color="#FFE13B" />
-                      Principais tecnologias usadas nos projetos: React, React Native, Google Maps API, GeoJSON, React-query, axios, Typescript, Google Earth KML, CI/CD, styled-components, chakra-ui, Ant Design, Recharts, Azure AD.
-                    </ListItem>                      
+                      Tecnologias utilizadas: <Text fontStyle='italic'>React, Google Maps API, GeoJSON, React-query, Axios, TypeScript, Google Earth KML,
+                      CI/CD, styled-components, Chakra UI, Ant Design, Recharts, Zustand, Azure AD, IOS.</Text>
+                    </ListItem>                     
                   </List>
-                </Text>
+                </Box>
 
                 <Text pt="2" fontSize="sm">
                   <Text textColor="telegram.500">
@@ -468,6 +414,57 @@ const ResumeSection = memo(({ title, children }) => {
                   </ListItem>
                 </List>
               </Box>
+
+              <Box>
+                <Heading
+                  size="xs"
+                  textTransform="uppercase"
+                  borderBottom="2px solid"
+                  borderBottomColor="#FFE13B"
+                >
+                  FORMAÇÃO ACADÊMICA
+                </Heading>
+                <Text pt="2" fontSize="sm">
+                  <Text>
+                    Graduando em Análise e desenvolvimento de sistemas.
+                  </Text>
+                  <Text> UCB - Universidade Católica de Brasília.</Text>
+                  <Text> 2020-2023.</Text>
+
+                  <Text fontWeight="bold" color="telegram.500">
+                    {" "}
+                    Certificações:
+                  </Text>
+                  <Text>
+                    {" "}
+                    SFPC® - Scrum Foundations Professional Certificate PTBR
+                  </Text>
+
+                  <Text fontWeight="bold" color="telegram.500">
+                    {" "}
+                    Conhecimentos Específicos:
+                  </Text>
+
+                  <Text>
+                    Sistemas Operacionais:  Linux, IOS, Windows.
+                  </Text>
+
+                  <Text>
+                    Metodologias: SCRUM e Kanban.
+                  </Text>
+                  <Text>
+                  Testes:  Jest, Testing library, Cypress. 
+                  </Text>
+                  <Text textAlign="justify">
+                  Ferramentas:
+                  Next.js, React Query, React Hooks, HTML, CSS, SASS, SCSS, Styled Components, Tailwind CSS, Chakra UI, Ant Design, Prime React, Material UI, Postman, Axios, REST API, JWT, MirageJS, Jira, Confluence, Azure AD, GitHub, Git, SPA, Context API,  Figma, Vite, Yarn, Visual Studio Code.
+                  </Text>
+
+                  
+                </Text>
+              </Box>
+
+              
             </Stack>
           </CardBody>
         </Card>
