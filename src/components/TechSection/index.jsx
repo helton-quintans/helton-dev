@@ -31,12 +31,15 @@ import { TechBox } from "./TechBox";
 export function TechSection() {
   return (
     <>
-      <Flex as="section"
+      <Flex 
+        as="section"
         direction="column"
         h="100%"
         justify="center"
         alignItems={"center"} 
-        px="24"
+        maxW="1080px"
+        margin="0 auto"
+        p="4"
       >
         <Heading
            as="h1"
@@ -54,7 +57,7 @@ export function TechSection() {
           Main technologies I work currently.
         </Text>
 
-        <SimpleGrid  as="section" gap={6} mt="20" minChildWidth="320px" >
+        <SimpleGrid  as="section" gap={6} mt="20" minChildWidth="280px">
           <>
             <TechBox
               icon={<SiHtml5 size={80} />}

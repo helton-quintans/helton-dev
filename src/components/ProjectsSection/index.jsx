@@ -24,7 +24,7 @@ export function ProjectsSection() {
       >
         Projects <span>💛</span>
       </Heading>
-      <Text textAlign="center" px="4">
+      <Text textAlign="center" px="4" >
         Welcome to my projects
       </Text>
 

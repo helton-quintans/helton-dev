@@ -24,6 +24,7 @@ import {
 } from "react-icons/si";
 import { FaDev } from "react-icons/fa";
 import { useRouter } from "next/router";
+import { motion } from "framer-motion";
 
 export function CardProfile() {
   const router = useRouter();
@@ -39,13 +40,13 @@ export function CardProfile() {
 
         >
           <Card
-      maxW={["sm", "lg"]}
-      variant="gost"
-      justify="center"
-      alignItems="center"
-      mt="24"
-      borderRadius="full"
-    >
+            maxW={["sm", "lg"]}
+            variant="gost"
+            justify="center"
+            alignItems="center"
+            mt={['16', "28"]}
+            borderRadius="full"
+          >
       <CardBody px="4">
         <Flex justify="center">
           <Avatar
@@ -67,7 +68,7 @@ export function CardProfile() {
           </Avatar>
         </Flex>
         <Stack spacing="4" mt="6" justifyContent={"center"}>
-          <Heading size={["2xl", "lg"]} textAlign="center" textColor="gray.50">
+          <Heading size={["xl", "lg"]} textAlign="center" textColor="gray.50">
             {" "}
             Hi, my name is{" "}
             <Text
@@ -90,7 +91,7 @@ export function CardProfile() {
             height="2px"
           />
 
-          <Heading size={["4xl", "xl"]} fontWeight="700" textAlign="center">
+          <Heading size={["2xl", "xl"]} fontWeight="700" textAlign="center">
             <Text as="span" textColor="gray.50">
               I work with{" "}
               <Text as="span" color="telegram.500">
@@ -99,7 +100,14 @@ export function CardProfile() {
               Ecosystem.
             </Text>{" "}
             <Center color="telegram.500">
-              <SiReact fontSize={50} />
+              {/* <SiReact fontSize={50} /> */}
+              <motion.div
+                initial={{ rotate: 0 }}
+                animate={{ rotate: 360 }}
+                transition={{ duration: 5, loop: Infinity, ease: "linear" }}
+              >
+                <SiReact fontSize={50} />
+              </motion.div>
             </Center>
           </Heading>
 

@@ -29,7 +29,7 @@ export default function Home() {
         <Header />
 
         <Sidebar />
-     
+
         <CardProfile />
 
         <ProjectsSection />
@@ -37,33 +37,29 @@ export default function Home() {
         <TechSection />
 
       {/* //!Content creator*/}
-        <Flex as="section"   align={"center"} justify="center" mb="12">
-          <Stack px="4" spacing="">
+        <Flex 
+          as="section" 
+          mb="12"  
+          direction="column"
+          h="100%"
+          justify="center"
+          alignItems={"center"}>
+          {/* <Stack px="4" > */}
             <Heading
               as="h1"
-              id="projects"
-              mt="16"
+              id="content-creation"
+              mt="10"
               textAlign="center"
               borderBottom="4px solid"
               borderColor="#FFE13B"
             >
               Content Creation
-              {/* <span>💛</span> */}
+              <span>💛</span>
             </Heading>{" "}
-            <Text textAlign="center" color="gray.200">
-              <Text>
+            <Text textAlign="center" mt="4" px="4">
                 I make videos to teach people how to rebuild and redefine
                 fundamental programming concepts on Youtube
-              </Text>
-
-              {/* <IconButton
-                variant="filled"
-                color="#F5423E"
-                aria-label="See menu"
-                icon={<FaYoutube size="sm" />}
-              /> */}
             </Text>
-            {/* //!Video do youtube */}
             <Box
               border={["1px solid", "0px"]}
               borderRadius="8"
@@ -75,21 +71,16 @@ export default function Home() {
             >
               <AspectRatio
                 justifyContent="center"
-                // maxW="920px"
-                // maxH="450px"
-                // minH={["100px", 0]}
-                // maxH="78vh"
-                // minW={[1160, '420px']}
                 ratio="2"
+                w={['320px', "420px", "1040px"]}
+                h={['180px', "auto"]}
               >
                 <iframe
-                  // width="804"
-                  // height="452"
                   src="https://www.youtube.com/embed/jnd-BnjiujU?list=PLbVhk8EESZtbuUeopDQS79mqZw44WDrwf"
                   title="ES6+ Manipulando de Array - Map"
-                  // frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
+                  
                 />
               </AspectRatio>
             </Box>
@@ -107,7 +98,7 @@ export default function Home() {
                 icon={<FaLinkedin size="sm" />}
               />{" "}
             </Text>
-          </Stack>
+          {/* </Stack> */}
         </Flex>
 
       <Divider />
