@@ -82,7 +82,7 @@ const ResumeSection = memo(({ title, children }) => {
             }}
           >
 
-          Baixar cv [ pt-br ]
+          Baixar CV
           </Button>
         </Link>
       </Center>
