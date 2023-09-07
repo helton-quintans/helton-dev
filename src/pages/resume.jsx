@@ -41,6 +41,11 @@ const ResumeSection = memo(({ title, children }) => {
     dataAtual,
     dataInicioExperiencia
   );
+
+const dataNascimento = new Date('1992-09-02');
+const idade = differenceInYears(dataAtual, dataNascimento);
+
+
   return (
     <>
       <Header />
@@ -94,7 +99,7 @@ const ResumeSection = memo(({ title, children }) => {
             <Heading size="md" color="#FFE13B" mx>
               Helton Quintans da Silva
             </Heading>
-            <Text textColor={"telegram.500"}>Brasileiro, 30 anos</Text>
+            <Text textColor={"telegram.500"}>Brasileiro, {idade} anos</Text>
           </CardHeader>
 
           <CardBody color="gray.50">
