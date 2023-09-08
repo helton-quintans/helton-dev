@@ -304,9 +304,10 @@ const idade = differenceInYears(dataAtual, dataNascimento);
                       </Text>
                     </ListItem>  
                     </List>
+                    <Divider mt="4"/>
                 </Text>
 
-                <Text pt="2" fontSize="sm">
+                <Text pt="2" fontSize="sm" mt="4">
                   <Text textColor="telegram.500" fontWeight="black">
                     FORÇA AÉREA BRASILEIRA | 2011 a 2017 (6 anos)
                   </Text>
@@ -317,17 +318,13 @@ const idade = differenceInYears(dataAtual, dataNascimento);
                   </Text>
                   <List spacing={3} textAlign="justify">
                     <ListItem>
-                     
                       Cobertura no atendimento a civis e militares para a
                       garantia dos direitos assistenciais como Assistência,
                       Assistência médico-hospitalar, Assistência pré-escolar,
                       Auxílio natalidade, Auxílio Transporte e Declaração de
                       Beneficiários.
-                    
-                     
                       Publicação dos processos e seus desfechos em boletim
                       oficial da FAB e no Diário Oficial da União.
-                     
                       Cobertura da Prestação de Contas e Auditoria dos
                       benefícios concedidos pela União.
                     </ListItem>
@@ -380,9 +377,8 @@ const idade = differenceInYears(dataAtual, dataNascimento);
                   Ferramentas:
                   Next.js, React Query, React Hooks, HTML, CSS, SASS, SCSS, Styled Components, Tailwind CSS, Chakra UI, Ant Design, Prime React, Material UI, Postman, Axios, REST API, JWT, MirageJS, Jira, Confluence, Azure AD, GitHub, Git, SPA, Context API,  Figma, Vite, Yarn, Visual Studio Code.
                   </Text>
-
-                  
                 </Text>
+                <Divider mt="4"/>
               </Box>
 
                 <Heading
