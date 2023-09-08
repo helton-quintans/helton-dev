@@ -20,12 +20,16 @@ import { Header } from "../components/Header";
 import { ProjectsSection } from "../components/ProjectsSection";
 import { Sidebar } from "../components/Sidebar";
 import { TechSection } from "../components/TechSection";
+import Head from "next/head";
 
 export default function Home() {
-  const theme = useTheme();
 
   return (
     <>
+    <Head>
+        <title>hqdev/Portfolio</title>
+    </Head>
+
         <Header />
 
         <Sidebar />

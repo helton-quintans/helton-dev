@@ -26,6 +26,7 @@ import { keyframes } from "@emotion/react";
 import Footer from "../components/Footer";
 
 import { differenceInYears, isBefore } from "date-fns";
+import Head from "next/head";
 
 const blinkAnimation = keyframes`
   0% { opacity: 1; }
@@ -48,6 +49,10 @@ const idade = differenceInYears(dataAtual, dataNascimento);
 
   return (
     <>
+      <Head>
+          <title>hqdev/Resume</title>
+      </Head>
+
       <Header />
       <Center mt="24">
           {/* <Link target="_blank" download href="/cv.pdf" >

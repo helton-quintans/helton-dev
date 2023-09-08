@@ -1,36 +1,24 @@
 import { Image } from "@chakra-ui/react";
 
 import {
-  Box,
-  Button,
-  Card,
-  CardBody,
-  CardHeader,
   Center,
-  Divider,
   Flex,
   Heading,
-  IconButton,
-  Link,
-  List,
-  ListIcon,
-  ListItem,
-  Stack,
-  StackDivider,
+
   Text,
 } from "@chakra-ui/react";
-import { FC, memo, PropsWithChildren } from "react";
-import { MdCheckCircle } from "react-icons/md";
-import { SlGraduation } from "react-icons/sl";
+
 
 import { Header } from "../components/Header";
-
-import { MdOutlineFileDownload } from "react-icons/md";
 import Footer from "../components/Footer";
+import Head from "next/head";
 
 export default function Blog() {
   return (
     <>
+      <Head>
+          <title>hqdev/Blog</title>
+      </Head>
       <Header />
       <Flex as="section" direction="column" h="100%" justify="center">
         <Heading
